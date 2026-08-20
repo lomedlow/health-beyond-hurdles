@@ -31,11 +31,11 @@ const sizes: Record<NonNullable<BaseProps["size"]>, string> = {
 const base =
   "inline-flex items-center justify-center gap-2 rounded-full font-semibold tracking-tight transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50";
 
-const EXTERNAL_HREF_PATTERN = /^(mailto:|tel:|https?:)/;
+const EXTERNAL_HREF_PATTERN = /^(mailto:|tel:|https?:|\/api\/)/;
 
 type ButtonAsLink = BaseProps & { href: InternalHref | string } & Pick<
     ComponentProps<"a">,
-    "target" | "rel"
+    "target" | "rel" | "download"
   >;
 type ButtonAsButton = BaseProps & {
   href?: undefined;
@@ -54,6 +54,7 @@ export function Button(props: ButtonAsLink | ButtonAsButton) {
           onClick={onClick}
           target={props.target}
           rel={props.rel}
+          download={props.download}
         >
           {children}
         </a>

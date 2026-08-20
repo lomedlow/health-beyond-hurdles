@@ -161,6 +161,15 @@ function ProgramBody() {
             </AccordionItem>
           </Accordion>
         </Reveal>
+
+        <Reveal delay={0.08}>
+          <div className="mx-auto mt-8 max-w-4xl text-center">
+            <Button href="/guide" variant="outline">
+              {t("topics.guideCta")}
+              <ArrowRight className="h-4 w-4" />
+            </Button>
+          </div>
+        </Reveal>
       </Section>
 
       {/* Distribution + evaluation */}

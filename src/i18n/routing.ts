@@ -17,6 +17,10 @@ export const routing = defineRouting({
       en: "/program",
       fr: "/programme",
     },
+    "/guide": {
+      en: "/guide",
+      fr: "/guide",
+    },
     "/get-involved": {
       en: "/get-involved",
       fr: "/simpliquer",
