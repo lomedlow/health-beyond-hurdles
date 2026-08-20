@@ -15,6 +15,7 @@
     "home": "Accueil",
     "about": "À propos",
     "program": "Programme",
+    "guide": "Guide",
     "getInvolved": "S'impliquer",
     "partners": "Partenaires",
     "contact": "Contact",
@@ -249,7 +250,8 @@
         "Comment se connecter aux agences d'établissement, à l'aide au transport, aux programmes alimentaires, au soutien au logement et à d'autres ressources touchant la santé et le bien-être",
         "Une liste de ressources de santé provinciales et communautaires de confiance",
         "Des fiches d'information, listes de vérification, affiches, infographies, feuilles de préparation aux rendez-vous, listes de vocabulaire santé et cartes d'information d'urgence, plus courtes"
-      ]
+      ],
+      "guideCta": "Lire le guide complet"
     },
     "education": {
       "title": "Éducation bilingue en santé",
@@ -532,6 +534,35 @@
     "notify": {
       "title": "Soyez averti·e en premier",
       "body": "Abonnez-vous à l'infolettre et nous vous informerons dès que les options de don seront disponibles."
+    }
+  },
+  "guide": {
+    "hero": {
+      "eyebrow": "La première ressource du programme",
+      "title": "Le guide santé pour nouveaux arrivants",
+      "subtitle": "Une introduction en langage clair au système de santé de la Saskatchewan, en français et en anglais, à égalité.",
+      "downloadPdf": "Télécharger en PDF",
+      "lastUpdated": "Mis à jour {date}",
+      "version": "{version}"
+    },
+    "toc": {
+      "title": "Table des matières",
+      "openLabel": "Table des matières",
+      "closeLabel": "Fermer la table des matières"
+    },
+    "callout": {
+      "warning": "Important",
+      "info": "À savoir",
+      "tip": "Astuce"
+    },
+    "backToTop": "Retour en haut",
+    "shareSection": "Copier le lien de cette section",
+    "linkCopied": "Lien copié",
+    "nextSection": "Suivant",
+    "cta": {
+      "title": "Une question sans réponse dans ce guide?",
+      "body": "Écrivez-nous et nous vous aiderons directement, ou vous dirigerons vers le bon organisme.",
+      "button": "Nous contacter"
     }
   }
 }

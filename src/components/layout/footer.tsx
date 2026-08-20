@@ -15,6 +15,7 @@ export function Footer() {
       links: [
         { href: "/about" as const, label: t("about") },
         { href: "/program" as const, label: t("program") },
+        { href: "/guide" as const, label: t("guide") },
         { href: "/get-involved" as const, label: t("getInvolved") },
         { href: "/partners" as const, label: t("partners") },
       ],

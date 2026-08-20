@@ -15,6 +15,7 @@
     "home": "Home",
     "about": "About",
     "program": "Program",
+    "guide": "Guide",
     "getInvolved": "Get Involved",
     "partners": "Partners",
     "contact": "Contact",
@@ -249,7 +250,8 @@
         "How to connect with settlement agencies, transportation assistance, food programs, housing supports, and other resources affecting health and well-being",
         "A list of trusted provincial and community healthcare resources",
         "Shorter fact sheets, checklists, posters, infographics, appointment-preparation worksheets, healthcare vocabulary lists, and emergency-information cards"
-      ]
+      ],
+      "guideCta": "Read the full guide"
     },
     "education": {
       "title": "Bilingual health education",
@@ -532,6 +534,35 @@
     "notify": {
       "title": "Be the first to know",
       "body": "Join the newsletter and we'll let you know the moment giving options go live."
+    }
+  },
+  "guide": {
+    "hero": {
+      "eyebrow": "The first program resource",
+      "title": "The Newcomer Healthcare Guide",
+      "subtitle": "A plain-language introduction to Saskatchewan's healthcare system, in French and English, side by side.",
+      "downloadPdf": "Download as PDF",
+      "lastUpdated": "Last updated {date}",
+      "version": "{version}"
+    },
+    "toc": {
+      "title": "Contents",
+      "openLabel": "Contents",
+      "closeLabel": "Close contents"
+    },
+    "callout": {
+      "warning": "Important",
+      "info": "Good to know",
+      "tip": "Tip"
+    },
+    "backToTop": "Back to top",
+    "shareSection": "Copy link to this section",
+    "linkCopied": "Link copied",
+    "nextSection": "Next",
+    "cta": {
+      "title": "Have a question this guide didn't answer?",
+      "body": "Reach out and we'll help directly, or point you to the right organization.",
+      "button": "Contact us"
     }
   }
 }
