@@ -101,7 +101,7 @@
   --brand-900: #0e3f3a;
   --brand-950: #082826;
 
-  /* Fixed (non-inverting) deep-teal banner tokens — always dark bg + light text, in both themes */
+  /* Fixed (non-inverting) deep-teal banner tokens: always dark bg + light text, in both themes */
   --brand-ink: #0a211f;
   --brand-ink-accent: #8fd0bd;
 
@@ -113,7 +113,7 @@
   --accent-sky: #5f8ba8;
   --accent-lavender: #8474b3;
 
-  /* Exact palette from brand reference — used as light section/badge backgrounds */
+  /* Exact palette from brand reference, used as light section/badge backgrounds */
   --accent-coral-soft: #ffadad;
   --accent-peach-soft: #ffd6a5;
   --accent-butter-soft: #fdffb6;
@@ -143,7 +143,7 @@
   --brand-900: #d9f0e8;
   --brand-950: #eff9f6;
 
-  /* Fixed regardless of theme — see :root */
+  /* Fixed regardless of theme, see :root */
   --brand-ink: #0a211f;
   --brand-ink-accent: #8fd0bd;
 

@@ -1,6 +1,6 @@
 /**
  * Central place for real-world facts that are still placeholders.
- * Replace these before the site goes live publicly — everything here
+ * Replace these before the site goes live publicly; everything here
  * is either explicitly provided by the org or an honest "TBD" placeholder,
  * never an invented fact (no fake phone numbers, staff names, or addresses).
  */

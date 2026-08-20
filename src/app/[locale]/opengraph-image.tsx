@@ -53,7 +53,7 @@ export default async function Image({
           <div style={{ fontSize: 30, fontWeight: 600 }}>Health Beyond Hurdles</div>
         </div>
         <div style={{ fontSize: 52, fontWeight: 700, lineHeight: 1.15, maxWidth: 980 }}>
-          {t("defaultTitle").split("—")[0]}
+          {t("defaultTitle").split(":")[0]}
         </div>
         <div style={{ fontSize: 26, marginTop: 28, opacity: 0.85, maxWidth: 900 }}>
           {t("description")}
