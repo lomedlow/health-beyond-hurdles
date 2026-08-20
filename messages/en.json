@@ -1,0 +1,537 @@
+{
+  "meta": {
+    "defaultTitle": "Health Beyond Hurdles: Bilingual Healthcare Navigation for Newcomers in Saskatchewan",
+    "description": "A proposed bilingual (French & English) nonprofit helping newcomers in Saskatchewan understand and access the healthcare system through the Newcomer Health Navigation Project."
+  },
+  "common": {
+    "theme": {
+      "switchToLight": "Switch to light mode",
+      "switchToDark": "Switch to dark mode"
+    },
+    "learnMore": "Learn more",
+    "proposedBadge": "Proposed nonprofit · seeking founding funding"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "program": "Program",
+    "getInvolved": "Get Involved",
+    "partners": "Partners",
+    "contact": "Contact",
+    "support": "Support Us",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "organization": "Organization",
+    "connect": "Connect"
+  },
+  "footer": {
+    "tagline": "Helping newcomers navigate Saskatchewan's healthcare system, in French and in English, with equal care.",
+    "newsletterTitle": "Stay informed",
+    "newsletterBody": "Get updates as the Newcomer Health Navigation Project launches in Regina.",
+    "rights": "All rights reserved.",
+    "proposedNotice": "Health Beyond Hurdles / Santé sans obstacles is a proposed nonprofit organization currently seeking funding to launch its pilot program."
+  },
+  "newsletter": {
+    "emailLabel": "Email address",
+    "emailPlaceholder": "you@example.com",
+    "subscribe": "Subscribe",
+    "sending": "Sending…",
+    "success": "Thank you, you're on the list.",
+    "error": "Something went wrong. Please try again."
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "A proposed bilingual nonprofit · Saskatchewan",
+      "title": "Healthcare in Saskatchewan can be confusing. No one should face it alone, in either language.",
+      "subtitle": "Health Beyond Hurdles / Santé sans obstacles will help newcomers understand and navigate Saskatchewan's healthcare system through bilingual education, plain-language guides, and respectful, judgment-free support, in French and in English, equally.",
+      "ctaPrimary": "Discover the Program",
+      "ctaSecondary": "Get Involved",
+      "badges": ["Bilingual, FR / EN", "Regina pilot", "For newcomers < 5 years in SK"]
+    },
+    "mission": {
+      "eyebrow": "Our mission",
+      "title": "Mission",
+      "body": "To help newcomers in Canada and underserved communities navigate and understand Saskatchewan's healthcare system by providing them with the support, education, and resources they need to make informed decisions about their health and well-being."
+    },
+    "vision": {
+      "eyebrow": "Our vision",
+      "title": "Vision",
+      "body": "A Saskatchewan where every newcomer, regardless of language, culture, income, or immigration experience, can confidently access healthcare services, understand their options, and participate actively in decisions concerning their health."
+    },
+    "challenge": {
+      "eyebrow": "The challenge",
+      "title": "Why newcomers are left behind",
+      "subtitle": "Newcomers often arrive with little knowledge of how Saskatchewan's healthcare system operates. A combination of everyday barriers can turn a routine health need into a crisis.",
+      "items": [
+        {
+          "title": "Language barriers",
+          "body": "Conversational English or French isn't the same as understanding medical terminology, consent forms, or instructions given during a stressful appointment."
+        },
+        {
+          "title": "Unfamiliar terminology",
+          "body": "Referrals, requisitions, deductibles, HealthLine: the vocabulary of the system is rarely explained in plain language."
+        },
+        {
+          "title": "Cultural differences",
+          "body": "Expectations around appointments, consent, and provider relationships can differ significantly from a newcomer's home country."
+        },
+        {
+          "title": "Transportation challenges",
+          "body": "Getting to a clinic, pharmacy, or appointment isn't always straightforward without a vehicle or transit knowledge."
+        },
+        {
+          "title": "Limited service knowledge",
+          "body": "Many newcomers simply don't know what services exist, who provides them, or when to use which one."
+        }
+      ],
+      "consequence": "Together, these barriers can prevent people from seeking care, delay treatment, or push them toward the emergency department when another option would have served them better."
+    },
+    "programTeaser": {
+      "eyebrow": "Our first program",
+      "title": "The Newcomer Health Navigation Project",
+      "body": "A bilingual health education and navigation initiative for newcomers who have lived in Saskatchewan for less than five years. Clear, accessible, culturally respectful support, in French and English, equally.",
+      "bullets": [
+        "Downloadable PDF guides and printed booklets",
+        "Plain language, not medical jargon",
+        "Reviewed by healthcare professionals",
+        "Distributed where newcomers already go"
+      ],
+      "cta": "Explore the program"
+    },
+    "bilingual": {
+      "eyebrow": "Bilingualism at our core",
+      "title": "French and English, equally, everywhere",
+      "body": "Bilingualism sits at the centre of our identity, not as an add-on. Every major program, educational resource, workshop, intake process, and public communication will be offered in both French and English, with no language treated as secondary.",
+      "points": [
+        "Equal-quality resources in both languages, not a translated afterthought",
+        "Plain language over complicated medical terminology, with key terms explained in both languages",
+        "Bilingual volunteers, staff, board members, and healthcare-professional advisors",
+        "Partnerships with Francophone organizations and newcomer-serving agencies"
+      ]
+    },
+    "whoWeServe": {
+      "eyebrow": "Who we serve",
+      "title": "Built for newcomers, piloted in Regina",
+      "body": "The pilot will serve immigrants, refugees, international students, temporary and permanent residents, and newcomer families who meet the program's criteria.",
+      "criteria": [
+        "Lived in Saskatchewan < 5 years",
+        "Currently reside in Saskatchewan",
+        "Need healthcare navigation support",
+        "Prefer French or English"
+      ],
+      "cta": "See the full picture"
+    },
+    "outcomes": {
+      "eyebrow": "What success looks like",
+      "title": "Expected outcomes",
+      "items": [
+        "Better understand Saskatchewan's healthcare system",
+        "Know where to seek appropriate care",
+        "Feel more confident communicating with providers",
+        "Access reliable health information in French or English",
+        "Connect with healthcare and community services",
+        "Reduce confusion around appointments & referrals",
+        "Become more independent navigating the system",
+        "Make informed decisions about their health & well-being"
+      ]
+    },
+    "getInvolvedTeaser": {
+      "eyebrow": "Join us",
+      "title": "This only works with bilingual volunteers",
+      "body": "Nursing and healthcare students, retired healthcare professionals, settlement workers, experienced newcomers, translators, and educators: your language skills and lived experience are exactly what this program needs.",
+      "cta": "See volunteer roles"
+    },
+    "partnersTeaser": {
+      "eyebrow": "Built together",
+      "title": "We succeed through partnership, not duplication",
+      "body": "We're seeking partnerships with newcomer and settlement agencies, Francophone organizations, Saskatchewan healthcare providers, pharmacies, universities, libraries, and municipal and provincial programs.",
+      "cta": "View partnership opportunities"
+    },
+    "newsletterCta": {
+      "eyebrow": "Stay connected",
+      "title": "Follow the launch of the Regina pilot",
+      "body": "Be the first to know when guides are published, volunteer applications open, and the program launches."
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "About us",
+      "title": "A proposed nonprofit built around one belief: language should never be a barrier to health",
+      "subtitle": "Health Beyond Hurdles / Santé sans obstacles is dedicated to improving access to health information, healthcare services, and community support for newcomers and underserved communities in Saskatchewan."
+    },
+    "overview": {
+      "title": "Organizational overview",
+      "paragraphs": [
+        "Health Beyond Hurdles / Santé sans obstacles is a proposed bilingual nonprofit organization dedicated to improving access to health information, healthcare services, and community support for newcomers and underserved communities in Saskatchewan.",
+        "The organization will help individuals better understand Saskatchewan's healthcare system and connect them with the appropriate services, resources, and professionals.",
+        "Newcomers often arrive in Canada with limited knowledge of how the provincial healthcare system operates: how to apply for a Saskatchewan health card, find a family doctor or nurse practitioner, access a walk-in clinic, use pharmacy services, obtain a referral, call HealthLine 811, or determine when emergency care is required.",
+        "Language barriers, unfamiliar terminology, cultural differences, transportation challenges, and limited knowledge of available services can make the healthcare system difficult to understand. These challenges may prevent newcomers from seeking care, cause delays in treatment, or lead individuals to use emergency services when another healthcare option may be more appropriate.",
+        "The Newcomer Health Navigation Project responds to these challenges by offering clear, accessible, culturally respectful, and bilingual support in both French and English."
+      ]
+    },
+    "mission": {
+      "title": "Mission",
+      "body": "To help newcomers in Canada and underserved communities navigate and understand Saskatchewan's healthcare system by providing them with the support, education, and resources they need to make informed decisions about their health and well-being."
+    },
+    "vision": {
+      "title": "Vision",
+      "body": "A Saskatchewan where every newcomer, regardless of language, culture, income, or immigration experience, can confidently access healthcare services, understand their options, and participate actively in decisions concerning their health."
+    },
+    "bilingualism": {
+      "title": "Commitment to bilingualism",
+      "paragraphs": [
+        "Bilingualism will be at the centre of the organization's identity, services, and operations. All major programs, educational materials, workshops, intake processes, and public communications will be offered in both French and English.",
+        "French-speaking newcomers may face additional barriers when trying to understand health information or communicate with service providers in Saskatchewan. Even individuals who can speak conversational English may have difficulty understanding medical terminology, consent forms, prescriptions, referral instructions, or information provided during stressful healthcare situations.",
+        "We will address these barriers by ensuring French-speaking newcomers can receive information and navigation assistance in the language in which they feel most comfortable, with English-speaking participants receiving the same level of accessible and respectful support. Bilingual educational resources will use plain, understandable language rather than complicated medical terminology, with key healthcare terms explained in both languages when necessary.",
+        "As the organization grows, it may also collaborate with interpreters and multilingual community partners, though French and English will remain its two primary service languages."
+      ],
+      "commitments": [
+        "Bilingual volunteers, staff members, healthcare professionals, community partners, and board members",
+        "Partnerships with Francophone organizations, newcomer-serving agencies, and educational institutions",
+        "Partnerships with community centres, healthcare providers, and organizations committed to language accessibility",
+        "Equal quality and depth of resources in both French and English, with no language treated as an afterthought"
+      ]
+    },
+    "longTerm": {
+      "title": "Long-term development",
+      "body": "Following the pilot, the organization will use participant feedback and evaluation results to improve its services. The long-term goal is to expand the program throughout Saskatchewan and introduce additional initiatives related to health education, prevention, community wellness, healthcare accessibility, and support for underserved populations.",
+      "futureTitle": "Future programs may include",
+      "future": [
+        "Bilingual community health workshops",
+        "Newcomer maternal-health education",
+        "Senior health navigation",
+        "Mental wellness programs",
+        "Youth health education",
+        "Caregiver support",
+        "Healthcare-career mentorship",
+        "Multilingual health-resource development"
+      ],
+      "closing": "Through bilingual services, community partnerships, trained volunteers, and culturally respectful education, Health Beyond Hurdles / Santé sans obstacles will work to ensure that newcomers are not left to navigate Saskatchewan's healthcare system alone."
+    }
+  },
+  "program": {
+    "hero": {
+      "eyebrow": "Our first program",
+      "title": "The Newcomer Health Navigation Project",
+      "subtitle": "A bilingual health education and navigation initiative for newcomers who have lived in Saskatchewan for less than five years and currently reside in Saskatchewan."
+    },
+    "challenge": {
+      "title": "The problem it responds to",
+      "body": "Newcomers often arrive in Canada with limited knowledge of how the provincial healthcare system operates. They may be unfamiliar with the process of applying for a Saskatchewan health card, finding a family doctor or nurse practitioner, accessing walk-in clinics, using pharmacy services, obtaining referrals, calling HealthLine 811, or determining when emergency care is required. Language barriers, unfamiliar terminology, cultural differences, transportation challenges, and limited knowledge of available services can make the healthcare system difficult to understand, sometimes preventing people from seeking care altogether, or pushing them toward emergency services when another option would have been more appropriate."
+    },
+    "overview": {
+      "title": "How the program works",
+      "paragraphs": [
+        "The program will primarily operate by creating bilingual educational resources in French and English, available as downloadable PDF guides and printed booklets, distributed throughout the community in locations newcomers already visit: newcomer and settlement agencies, community centres, libraries, schools, post-secondary institutions, places of worship, and other community partner locations.",
+        "Guides use simple language, clear explanations, visual elements, and step-by-step instructions, with French and English content given equal importance. Resources provide general, non-clinical information only: they do not diagnose conditions, recommend treatments, interpret test results, or replace advice from licensed healthcare professionals. All health-related content will be reviewed by qualified healthcare professionals before publication whenever possible.",
+        "The first major resource will be a bilingual newcomer healthcare guide: a general introduction to the provincial healthcare system that directs readers to trusted organizations and service providers for individualized assistance. The PDF will be shared electronically through partner organizations, social media, email newsletters, community websites, and QR codes in public locations; printed copies will be distributed at newcomer events, orientation sessions, workshops, health fairs, and community gatherings.",
+        "The program's role is to provide education and orientation, not individualized medical advice. Readers are always encouraged to contact an appropriate healthcare professional, HealthLine 811, emergency services, or a trusted community organization for assistance specific to their personal situation."
+      ]
+    },
+    "topics": {
+      "title": "What the guides cover",
+      "intro": "The bilingual guides and booklets may cover topics such as:",
+      "items": [
+        "How Saskatchewan's healthcare system works",
+        "How to apply for, renew, or update a Saskatchewan health card",
+        "Differences between family doctors, nurse practitioners, pharmacists, public health nurses, specialists, walk-in clinics, urgent care centres, and emergency departments",
+        "Where to go for different types of healthcare needs",
+        "How to find healthcare and community services in Saskatchewan",
+        "How to book, prepare for, and attend a healthcare appointment",
+        "How medical referrals, laboratory testing, diagnostic imaging, and prescriptions generally work",
+        "When to contact HealthLine 811, call 911, visit an emergency department, or speak with another healthcare provider",
+        "Questions newcomers may want to ask during a healthcare appointment",
+        "Common healthcare and medical terminology in both French and English",
+        "How to access mental health, dental, reproductive health, maternal health, public health, vaccination, and pharmacy services",
+        "How to locate services offered in French or English",
+        "Patient rights, informed consent, privacy, and confidentiality",
+        "How to access interpretation or language-support services",
+        "How to connect with settlement agencies, transportation assistance, food programs, housing supports, and other resources affecting health and well-being",
+        "A list of trusted provincial and community healthcare resources",
+        "Shorter fact sheets, checklists, posters, infographics, appointment-preparation worksheets, healthcare vocabulary lists, and emergency-information cards"
+      ]
+    },
+    "education": {
+      "title": "Bilingual health education",
+      "intro": "Education is a core part of the program. We will develop practical French and English resources on topics such as:",
+      "items": [
+        "How to access healthcare in Saskatchewan",
+        "The difference between primary, urgent, and emergency care",
+        "How to prepare for a medical appointment",
+        "How pharmacy services work",
+        "How to understand prescriptions and medication instructions",
+        "Preventive healthcare and routine screening",
+        "Mental health and community support services",
+        "Patient rights, consent, privacy, and confidentiality",
+        "Maternal, child, and family health services",
+        "Health services for seniors and people living with disabilities",
+        "How to communicate health concerns clearly and confidently"
+      ],
+      "note": "Educational workshops will be designed in collaboration with healthcare professionals and community organizations, and reviewed regularly to remain accurate, current, and appropriate for Saskatchewan residents."
+    },
+    "quality": {
+      "title": "How we keep information accurate",
+      "items": [
+        "Consult newcomers about the questions and challenges they experience",
+        "Work with healthcare professionals to review health-related information",
+        "Collaborate with settlement workers and community organizations",
+        "Use reliable Saskatchewan and Canadian healthcare sources",
+        "Include the date of publication or last update on each resource",
+        "Review links, phone numbers, addresses, and eligibility requirements regularly",
+        "Collect feedback from readers and partner organizations, and update or reprint guides as information changes"
+      ]
+    },
+    "distribution": {
+      "title": "Where you'll find the guides",
+      "body": "The PDF version will be available online and shared electronically through partner organizations, social media, email newsletters, community websites, and QR codes displayed in public locations. Printed copies will be placed in accessible community spaces and distributed during newcomer events, orientation sessions, workshops, health fairs, and community gatherings.",
+      "channels": [
+        "Newcomer and settlement agencies",
+        "Community centres and libraries",
+        "Schools and post-secondary institutions",
+        "Places of worship",
+        "Public-service organizations",
+        "Newcomer events, orientation sessions & health fairs"
+      ]
+    },
+    "evaluation": {
+      "title": "How we'll evaluate the pilot",
+      "body": "We will track and evaluate the pilot through:",
+      "metrics": [
+        "Number of participants served",
+        "Languages requested",
+        "Types of support provided",
+        "Referrals completed",
+        "Workshops delivered",
+        "Participant satisfaction",
+        "Volunteer participation",
+        "Change in participants' confidence navigating the healthcare system"
+      ]
+    },
+    "whoWeServe": {
+      "title": "Who we serve",
+      "body": "The pilot program will serve newcomers who:",
+      "criteria": [
+        "Lived in Saskatchewan less than 5 years",
+        "Currently reside in Saskatchewan",
+        "Need healthcare navigation support",
+        "Prefer French or English"
+      ],
+      "groupsTitle": "Open to",
+      "groups": [
+        "Immigrants",
+        "Refugees",
+        "International students",
+        "Temporary residents",
+        "Permanent residents",
+        "Newcomer families",
+        "Other eligible individuals who meet program criteria"
+      ],
+      "pilotTitle": "Regina first, Saskatchewan next",
+      "pilotBody": "The pilot will initially focus on newcomers living in Regina and surrounding communities. This limited geographic focus allows us to test services, build strong community partnerships, train volunteers, evaluate outcomes, and improve the program before expanding to other areas of Saskatchewan.",
+      "priorityTitle": "Priority may be given to individuals experiencing",
+      "priority": [
+        "Language barriers",
+        "Limited access to transportation",
+        "Financial challenges",
+        "Social isolation",
+        "Difficulty connecting with appropriate healthcare and community services"
+      ]
+    },
+    "cta": {
+      "title": "Help this program reach Regina newcomers",
+      "body": "Whether through volunteering, partnership, or funding, every contribution moves this program from proposal to reality.",
+      "primary": "Get involved",
+      "secondary": "Become a partner"
+    }
+  },
+  "getInvolved": {
+    "hero": {
+      "eyebrow": "Volunteer with us",
+      "title": "This program is only possible with bilingual volunteers",
+      "subtitle": "We are recruiting and training bilingual volunteers to deliver healthcare-system navigation with confidentiality, professional boundaries, cultural humility, and trauma-informed, respectful communication across languages and cultures."
+    },
+    "roles": {
+      "title": "Who we're looking for",
+      "items": [
+        {
+          "title": "Nursing students",
+          "body": "Apply your growing clinical knowledge to help newcomers understand the system in plain language."
+        },
+        {
+          "title": "Healthcare students",
+          "body": "Medical, pharmacy, public health, and allied health students bring valuable, current knowledge."
+        },
+        {
+          "title": "Retired healthcare professionals",
+          "body": "Your years of experience are exactly what newcomers need to understand a new system with confidence."
+        },
+        {
+          "title": "Settlement workers",
+          "body": "Your knowledge of the newcomer journey helps connect healthcare navigation to the bigger picture."
+        },
+        {
+          "title": "Experienced newcomers",
+          "body": "Having navigated the system yourself, you can guide others with empathy and firsthand insight."
+        },
+        {
+          "title": "Translators & interpreters",
+          "body": "Help ensure information is accurate, natural, and culturally appropriate in both languages."
+        },
+        {
+          "title": "Educators",
+          "body": "Support the design and delivery of clear, accessible bilingual educational materials and workshops."
+        },
+        {
+          "title": "Community members",
+          "body": "No specific background required, just a commitment to bilingual, respectful, judgment-free support."
+        }
+      ]
+    },
+    "training": {
+      "title": "Volunteer training",
+      "body": "Every volunteer receives training before supporting participants, covering:",
+      "items": [
+        "Healthcare-system navigation",
+        "Confidentiality",
+        "Professional boundaries",
+        "Cultural humility",
+        "Trauma-informed communication",
+        "Referral procedures",
+        "Emergency escalation",
+        "Respectful communication across languages and cultures"
+      ]
+    },
+    "pathways": {
+      "title": "More ways to contribute",
+      "advisorTitle": "Healthcare-professional advisors",
+      "advisorBody": "Healthcare professionals may volunteer as advisors or content reviewers, helping ensure educational information is accurate and that program activities remain within appropriate non-clinical boundaries.",
+      "peerTitle": "Peer navigators & ambassadors",
+      "peerBody": "Former program participants may eventually be invited to become peer navigators, volunteers, advisors, or community ambassadors, their lived experience helping the organization remain responsive to the actual needs of newcomers."
+    },
+    "cta": {
+      "title": "Ready to volunteer?",
+      "body": "Tell us about your background and how you'd like to help, in French, English, or both.",
+      "button": "Apply to volunteer"
+    }
+  },
+  "partners": {
+    "hero": {
+      "eyebrow": "Partnerships",
+      "title": "Built through collaboration, not duplication",
+      "subtitle": "The success of this program depends on working with organizations already serving newcomers and Saskatchewan communities, not competing with them."
+    },
+    "categories": {
+      "title": "Who we're seeking to partner with",
+      "items": [
+        {
+          "title": "Newcomer & settlement agencies",
+          "body": "Frontline organizations already supporting newly arrived individuals and families."
+        },
+        {
+          "title": "Francophone community organizations",
+          "body": "Partners who help us reach and serve French-speaking newcomers well."
+        },
+        {
+          "title": "Saskatchewan healthcare organizations & providers",
+          "body": "Clinical partners who can guide accuracy and provide referral pathways."
+        },
+        {
+          "title": "Pharmacies & community clinics",
+          "body": "Accessible, trusted points of contact in every neighbourhood."
+        },
+        {
+          "title": "Universities & colleges",
+          "body": "Sources of student volunteers, research support, and health expertise."
+        },
+        {
+          "title": "Libraries & community centres",
+          "body": "High-traffic, welcoming spaces to distribute guides and host sessions."
+        },
+        {
+          "title": "Municipal & provincial programs",
+          "body": "Alignment with existing public services and settlement infrastructure."
+        },
+        {
+          "title": "Mental health & social-service organizations",
+          "body": "Partners supporting the fuller picture of newcomer well-being."
+        },
+        {
+          "title": "Cultural & faith-based organizations",
+          "body": "Trusted community anchors with deep relationships and reach."
+        },
+        {
+          "title": "Community funders, sponsors & foundations",
+          "body": "Partners who make the program's growth and sustainability possible."
+        }
+      ]
+    },
+    "contributions": {
+      "title": "What partnership can look like",
+      "items": [
+        "Referrals",
+        "Meeting space",
+        "Volunteer recruitment",
+        "Professional expertise",
+        "Educational presentations",
+        "Translated resources",
+        "Financial support",
+        "In-kind contributions"
+      ]
+    },
+    "cta": {
+      "title": "Let's build this together",
+      "body": "If your organization shares this goal, we'd love to explore how we can work together.",
+      "button": "Start a conversation"
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "title": "Let's talk",
+      "subtitle": "Questions about the program, interested in volunteering, or exploring a partnership? Reach out in French or English, and we'll respond in whichever you prefer."
+    },
+    "form": {
+      "name": "Full name",
+      "email": "Email address",
+      "interest": "I'm interested in…",
+      "interestOptions": {
+        "general": "General inquiry",
+        "volunteer": "Volunteering",
+        "partner": "Partnership",
+        "funder": "Funding / grants",
+        "participant": "Program information"
+      },
+      "message": "Message",
+      "send": "Send message",
+      "sending": "Sending…",
+      "error": "Something went wrong. Please try again or email us directly.",
+      "successTitle": "Message sent",
+      "successBody": "Thank you for reaching out. We'll get back to you as soon as possible.",
+      "sendAnother": "Send another message"
+    },
+    "info": {
+      "title": "Based in Regina, Saskatchewan",
+      "body": "Health Beyond Hurdles / Santé sans obstacles is a proposed nonprofit currently seeking funding to launch its Regina pilot."
+    },
+    "donateTeaser": {
+      "title": "Funding page coming soon",
+      "body": "We're building the infrastructure to accept donations and grants. Join the newsletter to be notified the moment it's live.",
+      "cta": "View funding page"
+    }
+  },
+  "donate": {
+    "hero": {
+      "eyebrow": "Support the program",
+      "title": "Fund the Newcomer Health Navigation Project",
+      "subtitle": "This funding page is coming soon."
+    },
+    "comingSoon": {
+      "title": "We're not quite ready to accept donations yet",
+      "body": "Health Beyond Hurdles / Santé sans obstacles is a proposed nonprofit, currently seeking founding funding to launch its Regina pilot. Once the organization is formally established, this page will offer secure ways to give: one-time gifts, monthly support, and grant partnerships.",
+      "alternative": "In the meantime, the most valuable support is spreading the word, volunteering, or connecting us with potential funders and partners."
+    },
+    "notify": {
+      "title": "Be the first to know",
+      "body": "Join the newsletter and we'll let you know the moment giving options go live."
+    }
+  }
+}

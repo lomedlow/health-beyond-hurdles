@@ -1,0 +1,198 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-display: var(--font-fraunces), "Georgia", serif;
+  --font-sans: var(--font-inter), "Helvetica Neue", Arial, sans-serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-brand-50: var(--brand-50);
+  --color-brand-100: var(--brand-100);
+  --color-brand-200: var(--brand-200);
+  --color-brand-300: var(--brand-300);
+  --color-brand-400: var(--brand-400);
+  --color-brand-500: var(--brand-500);
+  --color-brand-600: var(--brand-600);
+  --color-brand-700: var(--brand-700);
+  --color-brand-800: var(--brand-800);
+  --color-brand-900: var(--brand-900);
+  --color-brand-950: var(--brand-950);
+  --color-brand-ink: var(--brand-ink);
+  --color-brand-ink-accent: var(--brand-ink-accent);
+
+  --color-accent-coral: var(--accent-coral);
+  --color-accent-coral-soft: var(--accent-coral-soft);
+  --color-accent-peach: var(--accent-peach);
+  --color-accent-peach-soft: var(--accent-peach-soft);
+  --color-accent-butter: var(--accent-butter);
+  --color-accent-butter-soft: var(--accent-butter-soft);
+  --color-accent-mint: var(--accent-mint);
+  --color-accent-mint-soft: var(--accent-mint-soft);
+  --color-accent-sky: var(--accent-sky);
+  --color-accent-sky-soft: var(--accent-sky-soft);
+  --color-accent-lavender: var(--accent-lavender);
+  --color-accent-lavender-soft: var(--accent-lavender-soft);
+
+  --animate-fade-up: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  --animate-fade-in: fade-in 0.6s ease both;
+  --animate-accordion-down: accordion-down 0.25s ease both;
+  --animate-accordion-up: accordion-up 0.25s ease both;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+}
+
+:root {
+  --background: #faf8f4;
+  --foreground: #142523;
+  --surface: #ffffff;
+  --surface-muted: #f2efe9;
+  --border: #e3ddd1;
+  --muted: #ece7dc;
+  --muted-foreground: #5c6b67;
+
+  --brand-50: #eff9f6;
+  --brand-100: #d9f0e8;
+  --brand-200: #b3e1d3;
+  --brand-300: #82cbb6;
+  --brand-400: #4fac95;
+  --brand-500: #2c8b76;
+  --brand-600: #197a6a;
+  --brand-700: #146157;
+  --brand-800: #114e47;
+  --brand-900: #0e3f3a;
+  --brand-950: #082826;
+
+  /* Fixed (non-inverting) deep-teal banner tokens: always dark bg + light text, in both themes */
+  --brand-ink: #0a211f;
+  --brand-ink-accent: #8fd0bd;
+
+  /* Deeper "ink" tones for icon strokes, borders, and text-safe accents */
+  --accent-coral: #c96b6b;
+  --accent-peach: #c98a4a;
+  --accent-butter: #a99a2e;
+  --accent-mint: #5f9484;
+  --accent-sky: #5f8ba8;
+  --accent-lavender: #8474b3;
+
+  /* Exact palette from brand reference, used as light section/badge backgrounds */
+  --accent-coral-soft: #ffadad;
+  --accent-peach-soft: #ffd6a5;
+  --accent-butter-soft: #fdffb6;
+  --accent-mint-soft: #e4f1ee;
+  --accent-sky-soft: #d9edf8;
+  --accent-lavender-soft: #dedaf4;
+}
+
+.dark {
+  --background: #0a1615;
+  --foreground: #eef4f2;
+  --surface: #0f201e;
+  --surface-muted: #132725;
+  --border: #1e3532;
+  --muted: #14302c;
+  --muted-foreground: #9db3ae;
+
+  --brand-50: #082826;
+  --brand-100: #0e3f3a;
+  --brand-200: #114e47;
+  --brand-300: #146157;
+  --brand-400: #197a6a;
+  --brand-500: #2c8b76;
+  --brand-600: #4fac95;
+  --brand-700: #82cbb6;
+  --brand-800: #b3e1d3;
+  --brand-900: #d9f0e8;
+  --brand-950: #eff9f6;
+
+  /* Fixed regardless of theme, see :root */
+  --brand-ink: #0a211f;
+  --brand-ink-accent: #8fd0bd;
+
+  /* Lightened for legibility on dark backgrounds */
+  --accent-coral: #e59a9a;
+  --accent-peach: #d9a96f;
+  --accent-butter: #cabb55;
+  --accent-mint: #7fb0a0;
+  --accent-sky: #7ba9c6;
+  --accent-lavender: #a297ca;
+
+  /* Desaturated, darkened tints so pastels stay premium (not neon) in dark mode */
+  --accent-coral-soft: #241a1a;
+  --accent-peach-soft: #241d14;
+  --accent-butter-soft: #23230f;
+  --accent-mint-soft: #16241f;
+  --accent-sky-soft: #14222a;
+  --accent-lavender-soft: #1e1c2a;
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background: var(--color-brand-200);
+  color: var(--color-brand-950);
+}
