@@ -23,6 +23,8 @@
   --color-brand-800: var(--brand-800);
   --color-brand-900: var(--brand-900);
   --color-brand-950: var(--brand-950);
+  --color-brand-ink: var(--brand-ink);
+  --color-brand-ink-accent: var(--brand-ink-accent);
 
   --color-accent-coral: var(--accent-coral);
   --color-accent-coral-soft: var(--accent-coral-soft);
@@ -81,6 +83,10 @@
   --brand-900: #0e3f3a;
   --brand-950: #082826;
 
+  /* Fixed (non-inverting) deep-teal banner tokens — always dark bg + light text, in both themes */
+  --brand-ink: #0a211f;
+  --brand-ink-accent: #8fd0bd;
+
   /* Deeper "ink" tones for icon strokes, borders, and text-safe accents */
   --accent-coral: #c96b6b;
   --accent-peach: #c98a4a;
@@ -118,6 +124,10 @@
   --brand-800: #b3e1d3;
   --brand-900: #d9f0e8;
   --brand-950: #eff9f6;
+
+  /* Fixed regardless of theme — see :root */
+  --brand-ink: #0a211f;
+  --brand-ink-accent: #8fd0bd;
 
   /* Lightened for legibility on dark backgrounds */
   --accent-coral: #e59a9a;

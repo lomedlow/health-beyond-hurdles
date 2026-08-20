@@ -11,7 +11,7 @@ const tintClasses: Record<Tint, string> = {
   mint: "bg-accent-mint-soft",
   sky: "bg-accent-sky-soft",
   lavender: "bg-accent-lavender-soft",
-  brand: "bg-brand-950 text-white",
+  brand: "bg-brand-ink text-white",
 };
 
 export function Section({
