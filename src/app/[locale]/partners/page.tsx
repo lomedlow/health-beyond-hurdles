@@ -23,7 +23,6 @@ import {
 import { Section, Eyebrow } from "@/components/ui/section";
 import { Card } from "@/components/ui/card";
 import { IconTile, ACCENT_CYCLE } from "@/components/ui/icon-tile";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/reveal";
 import { siteConfig } from "@/config/site";
@@ -79,11 +78,11 @@ function PartnersBody() {
 
   return (
     <>
-      <section className="relative overflow-hidden border-b border-border bg-gradient-to-b from-brand-50 to-background dark:from-brand-950/30">
-        <div className="mx-auto max-w-4xl px-6 py-20 text-center sm:py-28 lg:px-8">
+      <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 to-background dark:from-brand-950/30">
+        <div className="mx-auto max-w-4xl px-6 py-24 text-center sm:py-32 lg:px-8">
           <Reveal>
             <Eyebrow className="justify-center">{t("hero.eyebrow")}</Eyebrow>
-            <h1 className="font-display text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
+            <h1 className="font-display text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
               {t("hero.title")}
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
@@ -123,15 +122,15 @@ function PartnersBody() {
             </h2>
           </Reveal>
         </div>
-        <RevealGroup className="mx-auto mt-10 flex max-w-4xl flex-wrap justify-center gap-3">
+        <RevealGroup className="mx-auto mt-14 grid max-w-3xl grid-cols-2 gap-x-8 gap-y-8 sm:grid-cols-4">
           {contributions.map((c, i) => {
             const Icon = contributionIcons[i % contributionIcons.length];
             return (
               <RevealItem key={c}>
-                <Badge accent={ACCENT_CYCLE[i % ACCENT_CYCLE.length]} className="gap-1.5 py-2">
-                  <Icon className="h-3.5 w-3.5" aria-hidden="true" />
-                  {c}
-                </Badge>
+                <div className="flex flex-col items-center text-center">
+                  <Icon className="h-5 w-5 text-brand-600" aria-hidden="true" strokeWidth={1.5} />
+                  <p className="mt-2 text-xs font-medium leading-snug text-foreground">{c}</p>
+                </div>
               </RevealItem>
             );
           })}

@@ -15,10 +15,12 @@ import {
   Clock,
   MapPin,
   Compass,
+  Sparkles,
+  Eye,
+  HandCoins,
+  Handshake,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Card } from "@/components/ui/card";
 import { Section, Eyebrow } from "@/components/ui/section";
 import { IconTile } from "@/components/ui/icon-tile";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/reveal";
@@ -67,40 +69,43 @@ function HomeBody() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-brand-50 via-background to-background dark:from-brand-950/40" />
         <HeroIllustration />
-        <div className="mx-auto max-w-7xl px-6 pb-20 pt-16 sm:pb-28 sm:pt-24 lg:px-8">
+        <div className="mx-auto max-w-7xl px-6 pb-24 pt-20 sm:pb-32 sm:pt-28 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <Reveal>
-              <Badge accent="mint">{tc("proposedBadge")}</Badge>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-600">
+                {tc("proposedBadge")}
+              </p>
             </Reveal>
             <Reveal delay={0.05}>
-              <h1 className="mt-6 font-display text-4xl font-semibold leading-[1.08] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+              <h1 className="mt-7 font-display text-[2.75rem] font-semibold leading-[1.08] tracking-tight text-foreground sm:text-6xl lg:text-7xl">
                 {t("hero.title")}
               </h1>
             </Reveal>
             <Reveal delay={0.1}>
-              <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+              <p className="mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-muted-foreground">
                 {t("hero.subtitle")}
               </p>
             </Reveal>
             <Reveal delay={0.15}>
-              <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
+              <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
                 <Button href="/program" size="lg">
                   {t("hero.ctaPrimary")}
                   <ArrowRight className="h-4 w-4" />
                 </Button>
-                <Button href="/get-involved" size="lg" variant="outline">
+                <Button href="/get-involved" size="lg" variant="ghost">
                   {t("hero.ctaSecondary")}
                 </Button>
               </div>
             </Reveal>
             <Reveal delay={0.2}>
-              <div className="mt-10 flex flex-wrap items-center justify-center gap-2">
-                {heroBadges.map((b) => (
-                  <Badge key={b} accent="brand">
+              <p className="mt-14 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-sm text-muted-foreground">
+                {heroBadges.map((b, i) => (
+                  <span key={b} className="flex items-center gap-3">
+                    {i > 0 && <span className="text-border" aria-hidden="true">·</span>}
                     {b}
-                  </Badge>
+                  </span>
                 ))}
-              </div>
+              </p>
             </Reveal>
           </div>
         </div>
@@ -108,28 +113,22 @@ function HomeBody() {
 
       {/* Mission & Vision */}
       <Section>
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-14 lg:grid-cols-2">
           <Reveal>
-            <Card className="h-full bg-accent-mint-soft">
-              <Eyebrow>{t("mission.eyebrow")}</Eyebrow>
-              <h2 className="font-display text-2xl font-semibold sm:text-3xl">
-                {t("mission.title")}
-              </h2>
-              <p className="mt-4 text-base leading-relaxed text-foreground/80">
-                {t("mission.body")}
-              </p>
-            </Card>
+            <Sparkles className="h-6 w-6 text-brand-600" aria-hidden="true" strokeWidth={1.5} />
+            <Eyebrow className="mt-5">{t("mission.eyebrow")}</Eyebrow>
+            <h2 className="font-display text-3xl font-semibold">{t("mission.title")}</h2>
+            <p className="mt-4 max-w-md text-base leading-relaxed text-muted-foreground">
+              {t("mission.body")}
+            </p>
           </Reveal>
           <Reveal delay={0.08}>
-            <Card className="h-full bg-accent-sky-soft">
-              <Eyebrow>{t("vision.eyebrow")}</Eyebrow>
-              <h2 className="font-display text-2xl font-semibold sm:text-3xl">
-                {t("vision.title")}
-              </h2>
-              <p className="mt-4 text-base leading-relaxed text-foreground/80">
-                {t("vision.body")}
-              </p>
-            </Card>
+            <Eye className="h-6 w-6 text-brand-600" aria-hidden="true" strokeWidth={1.5} />
+            <Eyebrow className="mt-5">{t("vision.eyebrow")}</Eyebrow>
+            <h2 className="font-display text-3xl font-semibold">{t("vision.title")}</h2>
+            <p className="mt-4 max-w-md text-base leading-relaxed text-muted-foreground">
+              {t("vision.body")}
+            </p>
           </Reveal>
         </div>
       </Section>
@@ -146,32 +145,30 @@ function HomeBody() {
           </div>
         </Reveal>
 
-        <RevealGroup className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <RevealGroup className="mt-16 grid grid-cols-1 gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
           {challengeItems.map((item, i) => {
             const Icon = challengeIcons[i % challengeIcons.length];
             return (
               <RevealItem key={item.title}>
-                <Card className="h-full">
-                  <IconTile icon={Icon} accent={challengeAccents[i % challengeAccents.length]} />
-                  <h3 className="mt-4 font-display text-lg font-semibold">{item.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    {item.body}
-                  </p>
-                </Card>
+                <IconTile icon={Icon} accent={challengeAccents[i % challengeAccents.length]} />
+                <h3 className="mt-4 font-display text-lg font-semibold">{item.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.body}</p>
               </RevealItem>
             );
           })}
           <RevealItem>
-            <Card className="flex h-full flex-col justify-center bg-brand-600 text-white">
-              <p className="text-base font-medium leading-relaxed">{t("challenge.consequence")}</p>
-            </Card>
+            <div className="flex h-full flex-col justify-center border-l-2 border-brand-600 pl-6">
+              <p className="text-base font-medium leading-relaxed text-foreground">
+                {t("challenge.consequence")}
+              </p>
+            </div>
           </RevealItem>
         </RevealGroup>
       </Section>
 
       {/* Program teaser */}
       <Section>
-        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+        <div className="grid grid-cols-1 items-start gap-14 lg:grid-cols-2">
           <Reveal>
             <Eyebrow>{t("programTeaser.eyebrow")}</Eyebrow>
             <h2 className="font-display text-3xl font-semibold sm:text-4xl">
@@ -185,14 +182,11 @@ function HomeBody() {
               <ArrowRight className="h-4 w-4" />
             </Button>
           </Reveal>
-          <RevealGroup className="grid grid-cols-1 gap-4 sm:grid-cols-2" stagger={0.06}>
-            {programBullets.map((bullet, i) => (
+          <RevealGroup className="flex flex-col divide-y divide-border border-t border-border">
+            {programBullets.map((bullet) => (
               <RevealItem key={bullet}>
-                <div
-                  className={`h-full rounded-2xl border border-border p-5 text-sm font-medium leading-snug ${
-                    ["bg-accent-coral-soft", "bg-accent-peach-soft", "bg-accent-mint-soft", "bg-accent-sky-soft"][i % 4]
-                  }`}
-                >
+                <div className="flex items-start gap-3 py-4 text-sm leading-relaxed text-foreground">
+                  <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-brand-600" aria-hidden="true" />
                   {bullet}
                 </div>
               </RevealItem>
@@ -203,22 +197,22 @@ function HomeBody() {
 
       {/* Bilingualism */}
       <Section tint="brand">
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1fr_1.1fr] lg:items-start">
+        <div className="grid grid-cols-1 gap-14 lg:grid-cols-[1fr_1.1fr] lg:items-start">
           <Reveal>
             <Eyebrow className="text-brand-ink-accent">{t("bilingual.eyebrow")}</Eyebrow>
             <h2 className="font-display text-3xl font-semibold sm:text-4xl">
               {t("bilingual.title")}
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-white/80">{t("bilingual.body")}</p>
+            <p className="mt-4 text-base leading-relaxed text-white/70">{t("bilingual.body")}</p>
           </Reveal>
-          <RevealGroup className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <RevealGroup className="flex flex-col divide-y divide-white/10 border-t border-white/10">
             {bilingualPoints.map((point, i) => {
               const Icon = bilingualIcons[i % bilingualIcons.length];
               return (
                 <RevealItem key={point}>
-                  <div className="flex h-full items-start gap-3 rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
-                    <Icon className="mt-0.5 h-5 w-5 shrink-0 text-brand-ink-accent" aria-hidden="true" />
-                    <p className="text-sm leading-relaxed text-white/90">{point}</p>
+                  <div className="flex items-start gap-4 py-5">
+                    <Icon className="mt-0.5 h-5 w-5 shrink-0 text-brand-ink-accent" aria-hidden="true" strokeWidth={1.5} />
+                    <p className="text-sm leading-relaxed text-white/85">{point}</p>
                   </div>
                 </RevealItem>
               );
@@ -229,7 +223,7 @@ function HomeBody() {
 
       {/* Who we serve */}
       <Section tint="surface">
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center">
+        <div className="grid grid-cols-1 gap-14 lg:grid-cols-2 lg:items-center">
           <Reveal>
             <Eyebrow>{t("whoWeServe.eyebrow")}</Eyebrow>
             <h2 className="font-display text-3xl font-semibold sm:text-4xl">
@@ -243,15 +237,13 @@ function HomeBody() {
               <ArrowRight className="h-4 w-4" />
             </Button>
           </Reveal>
-          <RevealGroup className="grid grid-cols-2 gap-4">
+          <RevealGroup className="grid grid-cols-2 gap-x-8 gap-y-8">
             {criteria.map((c, i) => {
               const Icon = criteriaIcons[i % criteriaIcons.length];
               return (
                 <RevealItem key={c}>
-                  <Card className="h-full">
-                    <Icon className="h-5 w-5 text-brand-600" aria-hidden="true" />
-                    <p className="mt-3 text-sm font-semibold leading-snug">{c}</p>
-                  </Card>
+                  <Icon className="h-5 w-5 text-brand-600" aria-hidden="true" strokeWidth={1.5} />
+                  <p className="mt-3 text-sm font-medium leading-snug text-foreground">{c}</p>
                 </RevealItem>
               );
             })}
@@ -269,12 +261,12 @@ function HomeBody() {
             </h2>
           </div>
         </Reveal>
-        <RevealGroup className="mx-auto mt-12 grid max-w-4xl grid-cols-1 gap-4 sm:grid-cols-2">
+        <RevealGroup className="mx-auto mt-14 grid max-w-4xl grid-cols-1 gap-x-10 gap-y-5 sm:grid-cols-2">
           {outcomes.map((item) => (
             <RevealItem key={item}>
-              <div className="flex items-start gap-3 rounded-2xl border border-border bg-surface p-5">
-                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-brand-600" aria-hidden="true" />
-                <p className="text-sm font-medium leading-relaxed">{item}</p>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-brand-600" aria-hidden="true" />
+                <p className="text-sm leading-relaxed text-foreground">{item}</p>
               </div>
             </RevealItem>
           ))}
@@ -283,34 +275,32 @@ function HomeBody() {
 
       {/* Get involved + partners teasers */}
       <Section tint="surface">
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-14 sm:grid-cols-2">
           <Reveal>
-            <Card className="h-full bg-accent-coral-soft">
-              <Eyebrow>{t("getInvolvedTeaser.eyebrow")}</Eyebrow>
-              <h3 className="font-display text-2xl font-semibold">
-                {t("getInvolvedTeaser.title")}
-              </h3>
-              <p className="mt-3 text-sm leading-relaxed text-foreground/80">
-                {t("getInvolvedTeaser.body")}
-              </p>
-              <Button href="/get-involved" variant="outline" size="sm" className="mt-6 bg-surface">
-                {t("getInvolvedTeaser.cta")}
-                <ArrowRight className="h-4 w-4" />
-              </Button>
-            </Card>
+            <IconTile icon={HandHeart} accent="coral" />
+            <Eyebrow className="mt-5">{t("getInvolvedTeaser.eyebrow")}</Eyebrow>
+            <h3 className="font-display text-2xl font-semibold">
+              {t("getInvolvedTeaser.title")}
+            </h3>
+            <p className="mt-3 max-w-sm text-sm leading-relaxed text-muted-foreground">
+              {t("getInvolvedTeaser.body")}
+            </p>
+            <Button href="/get-involved" variant="ghost" size="sm" className="-ml-4 mt-4">
+              {t("getInvolvedTeaser.cta")}
+              <ArrowRight className="h-4 w-4" />
+            </Button>
           </Reveal>
           <Reveal delay={0.08}>
-            <Card className="h-full bg-accent-lavender-soft">
-              <Eyebrow>{t("partnersTeaser.eyebrow")}</Eyebrow>
-              <h3 className="font-display text-2xl font-semibold">{t("partnersTeaser.title")}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-foreground/80">
-                {t("partnersTeaser.body")}
-              </p>
-              <Button href="/partners" variant="outline" size="sm" className="mt-6 bg-surface">
-                {t("partnersTeaser.cta")}
-                <ArrowRight className="h-4 w-4" />
-              </Button>
-            </Card>
+            <IconTile icon={Handshake} accent="lavender" />
+            <Eyebrow className="mt-5">{t("partnersTeaser.eyebrow")}</Eyebrow>
+            <h3 className="font-display text-2xl font-semibold">{t("partnersTeaser.title")}</h3>
+            <p className="mt-3 max-w-sm text-sm leading-relaxed text-muted-foreground">
+              {t("partnersTeaser.body")}
+            </p>
+            <Button href="/partners" variant="ghost" size="sm" className="-ml-4 mt-4">
+              {t("partnersTeaser.cta")}
+              <ArrowRight className="h-4 w-4" />
+            </Button>
           </Reveal>
         </div>
       </Section>
@@ -318,8 +308,9 @@ function HomeBody() {
       {/* Newsletter CTA */}
       <Section>
         <Reveal>
-          <div className="mx-auto flex max-w-3xl flex-col items-center rounded-[2.5rem] border border-border bg-surface px-8 py-14 text-center sm:px-16">
-            <Eyebrow className="justify-center">{t("newsletterCta.eyebrow")}</Eyebrow>
+          <div className="mx-auto flex max-w-2xl flex-col items-center text-center">
+            <HandCoins className="h-7 w-7 text-brand-600" aria-hidden="true" strokeWidth={1.5} />
+            <Eyebrow className="mt-5 justify-center">{t("newsletterCta.eyebrow")}</Eyebrow>
             <h2 className="font-display text-3xl font-semibold sm:text-4xl">
               {t("newsletterCta.title")}
             </h2>

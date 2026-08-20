@@ -1,8 +1,8 @@
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Sparkles, Globe2, Users2, ArrowRight } from "lucide-react";
+import { Sparkles, Eye, Users2, ArrowRight, Quote } from "lucide-react";
 import { Section, Eyebrow } from "@/components/ui/section";
-import { Card } from "@/components/ui/card";
+import { Tag } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/reveal";
 
@@ -36,11 +36,11 @@ function AboutBody() {
 
   return (
     <>
-      <section className="relative overflow-hidden border-b border-border bg-gradient-to-b from-brand-50 to-background dark:from-brand-950/30">
-        <div className="mx-auto max-w-4xl px-6 py-20 text-center sm:py-28 lg:px-8">
+      <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 to-background dark:from-brand-950/30">
+        <div className="mx-auto max-w-4xl px-6 py-24 text-center sm:py-32 lg:px-8">
           <Reveal>
             <Eyebrow className="justify-center">{t("hero.eyebrow")}</Eyebrow>
-            <h1 className="font-display text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
+            <h1 className="font-display text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
               {t("hero.title")}
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
@@ -68,48 +68,44 @@ function AboutBody() {
       </Section>
 
       <Section tint="surface">
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-14 lg:grid-cols-2">
           <Reveal>
-            <Card className="h-full bg-accent-mint-soft">
-              <Sparkles className="h-6 w-6 text-brand-600" aria-hidden="true" />
-              <h2 className="mt-4 font-display text-2xl font-semibold">{t("mission.title")}</h2>
-              <p className="mt-3 text-base leading-relaxed text-foreground/80">
-                {t("mission.body")}
-              </p>
-            </Card>
+            <Sparkles className="h-6 w-6 text-brand-600" aria-hidden="true" strokeWidth={1.5} />
+            <h2 className="mt-5 font-display text-2xl font-semibold">{t("mission.title")}</h2>
+            <p className="mt-3 max-w-md text-base leading-relaxed text-muted-foreground">
+              {t("mission.body")}
+            </p>
           </Reveal>
           <Reveal delay={0.08}>
-            <Card className="h-full bg-accent-sky-soft">
-              <Globe2 className="h-6 w-6 text-brand-600" aria-hidden="true" />
-              <h2 className="mt-4 font-display text-2xl font-semibold">{t("vision.title")}</h2>
-              <p className="mt-3 text-base leading-relaxed text-foreground/80">
-                {t("vision.body")}
-              </p>
-            </Card>
+            <Eye className="h-6 w-6 text-brand-600" aria-hidden="true" strokeWidth={1.5} />
+            <h2 className="mt-5 font-display text-2xl font-semibold">{t("vision.title")}</h2>
+            <p className="mt-3 max-w-md text-base leading-relaxed text-muted-foreground">
+              {t("vision.body")}
+            </p>
           </Reveal>
         </div>
       </Section>
 
       <Section tint="brand">
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1.1fr_1fr]">
+        <div className="grid grid-cols-1 gap-14 lg:grid-cols-[1.1fr_1fr]">
           <Reveal>
             <h2 className="font-display text-3xl font-semibold sm:text-4xl">
               {t("bilingualism.title")}
             </h2>
             <div className="mt-6 space-y-4">
               {bilingualParagraphs.map((p, i) => (
-                <p key={i} className="text-sm leading-relaxed text-white/80">
+                <p key={i} className="text-sm leading-relaxed text-white/70">
                   {p}
                 </p>
               ))}
             </div>
           </Reveal>
-          <RevealGroup className="grid grid-cols-1 gap-4">
+          <RevealGroup className="flex flex-col divide-y divide-white/10 border-t border-white/10">
             {commitments.map((c) => (
               <RevealItem key={c}>
-                <div className="flex items-start gap-3 rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
-                  <Users2 className="mt-0.5 h-5 w-5 shrink-0 text-brand-ink-accent" aria-hidden="true" />
-                  <p className="text-sm leading-relaxed text-white/90">{c}</p>
+                <div className="flex items-start gap-4 py-5">
+                  <Users2 className="mt-0.5 h-5 w-5 shrink-0 text-brand-ink-accent" aria-hidden="true" strokeWidth={1.5} />
+                  <p className="text-sm leading-relaxed text-white/85">{c}</p>
                 </div>
               </RevealItem>
             ))}
@@ -130,32 +126,25 @@ function AboutBody() {
         </div>
 
         <Reveal>
-          <h3 className="mt-14 text-center font-display text-lg font-semibold">
+          <h3 className="mt-16 text-center font-display text-lg font-semibold">
             {t("longTerm.futureTitle")}
           </h3>
         </Reveal>
-        <RevealGroup className="mx-auto mt-6 flex max-w-4xl flex-wrap justify-center gap-3">
-          {future.map((f, i) => (
+        <RevealGroup className="mx-auto mt-8 flex max-w-3xl flex-wrap justify-center gap-x-8 gap-y-3">
+          {future.map((f) => (
             <RevealItem key={f}>
-              <span
-                className={`inline-flex rounded-full border border-border px-4 py-2 text-sm font-medium ${
-                  ["bg-accent-coral-soft", "bg-accent-peach-soft", "bg-accent-butter-soft", "bg-accent-mint-soft", "bg-accent-sky-soft", "bg-accent-lavender-soft"][
-                    i % 6
-                  ]
-                }`}
-              >
-                {f}
-              </span>
+              <Tag>{f}</Tag>
             </RevealItem>
           ))}
         </RevealGroup>
 
         <Reveal>
-          <div className="mx-auto mt-14 max-w-2xl rounded-3xl border border-border bg-surface p-8 text-center">
-            <p className="font-display text-lg font-medium leading-relaxed">
+          <div className="mx-auto mt-20 flex max-w-2xl flex-col items-center text-center">
+            <Quote className="h-7 w-7 text-brand-300" aria-hidden="true" strokeWidth={1.5} />
+            <p className="mt-4 font-display text-xl font-medium leading-relaxed sm:text-2xl">
               {t("longTerm.closing")}
             </p>
-            <Button href="/program" className="mt-6">
+            <Button href="/program" className="mt-8">
               {tHome("programTeaser.cta")}
               <ArrowRight className="h-4 w-4" />
             </Button>

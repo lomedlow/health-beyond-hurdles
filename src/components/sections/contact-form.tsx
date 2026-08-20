@@ -36,7 +36,7 @@ export function ContactForm() {
 
   if (status === "success") {
     return (
-      <div className="flex flex-col items-center gap-3 rounded-3xl border border-border bg-surface p-10 text-center">
+      <div className="flex flex-col items-center gap-3 rounded-2xl bg-surface-muted p-10 text-center">
         <CheckCircle2 className="h-10 w-10 text-brand-600" />
         <p className="font-display text-xl font-semibold">{t("successTitle")}</p>
         <p className="max-w-sm text-sm text-muted-foreground">{t("successBody")}</p>
@@ -48,7 +48,7 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} className="space-y-5 rounded-3xl border border-border bg-surface p-6 sm:p-8">
+    <form onSubmit={onSubmit} className="space-y-5 rounded-2xl bg-surface-muted p-6 sm:p-8">
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
           <label htmlFor="name" className="mb-1.5 block text-sm font-medium text-foreground">

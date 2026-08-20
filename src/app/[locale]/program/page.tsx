@@ -14,8 +14,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import { Section, Eyebrow } from "@/components/ui/section";
-import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Tag } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionItem } from "@/components/ui/accordion";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/reveal";
@@ -57,11 +56,11 @@ function ProgramBody() {
 
   return (
     <>
-      <section className="relative overflow-hidden border-b border-border bg-gradient-to-b from-brand-50 to-background dark:from-brand-950/30">
-        <div className="mx-auto max-w-4xl px-6 py-20 text-center sm:py-28 lg:px-8">
+      <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 to-background dark:from-brand-950/30">
+        <div className="mx-auto max-w-4xl px-6 py-24 text-center sm:py-32 lg:px-8">
           <Reveal>
             <Eyebrow className="justify-center">{t("hero.eyebrow")}</Eyebrow>
-            <h1 className="font-display text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
+            <h1 className="font-display text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
               {t("hero.title")}
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
@@ -166,46 +165,40 @@ function ProgramBody() {
 
       {/* Distribution + evaluation */}
       <Section tint="surface">
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-14 lg:grid-cols-2">
           <Reveal>
-            <Card className="h-full">
-              <MapPinned className="h-6 w-6 text-brand-600" aria-hidden="true" />
-              <h3 className="mt-4 font-display text-xl font-semibold">
-                {t("distribution.title")}
-              </h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                {t("distribution.body")}
-              </p>
-              <div className="mt-5 flex flex-wrap gap-2">
-                {channels.map((c) => (
-                  <Badge key={c} accent="mint">
-                    {c}
-                  </Badge>
-                ))}
-              </div>
-            </Card>
+            <MapPinned className="h-6 w-6 text-brand-600" aria-hidden="true" strokeWidth={1.5} />
+            <h3 className="mt-4 font-display text-xl font-semibold">
+              {t("distribution.title")}
+            </h3>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              {t("distribution.body")}
+            </p>
+            <div className="mt-6 flex flex-col gap-2.5">
+              {channels.map((c) => (
+                <Tag key={c}>{c}</Tag>
+              ))}
+            </div>
           </Reveal>
           <Reveal delay={0.08}>
-            <Card className="h-full">
-              <BarChart3 className="h-6 w-6 text-brand-600" aria-hidden="true" />
-              <h3 className="mt-4 font-display text-xl font-semibold">
-                {t("evaluation.title")}
-              </h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                {t("evaluation.body")}
-              </p>
-              <ul className="mt-5 space-y-2.5">
-                {metrics.map((m) => (
-                  <li key={m} className="flex items-start gap-2.5 text-sm">
-                    <CheckCircle2
-                      className="mt-0.5 h-4 w-4 shrink-0 text-brand-600"
-                      aria-hidden="true"
-                    />
-                    {m}
-                  </li>
-                ))}
-              </ul>
-            </Card>
+            <BarChart3 className="h-6 w-6 text-brand-600" aria-hidden="true" strokeWidth={1.5} />
+            <h3 className="mt-4 font-display text-xl font-semibold">
+              {t("evaluation.title")}
+            </h3>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              {t("evaluation.body")}
+            </p>
+            <ul className="mt-6 space-y-2.5">
+              {metrics.map((m) => (
+                <li key={m} className="flex items-start gap-2.5 text-sm text-foreground">
+                  <CheckCircle2
+                    className="mt-0.5 h-4 w-4 shrink-0 text-brand-600"
+                    aria-hidden="true"
+                  />
+                  {m}
+                </li>
+              ))}
+            </ul>
           </Reveal>
         </div>
       </Section>
@@ -221,28 +214,26 @@ function ProgramBody() {
           </div>
         </Reveal>
 
-        <RevealGroup className="mx-auto mt-10 grid max-w-3xl grid-cols-2 gap-4 sm:grid-cols-4">
+        <RevealGroup className="mx-auto mt-14 grid max-w-3xl grid-cols-2 gap-x-8 gap-y-8 sm:grid-cols-4">
           {criteria.map((c, i) => {
             const Icon = criteriaIcons[i % criteriaIcons.length];
             return (
               <RevealItem key={c}>
-                <div className="flex h-full flex-col items-center rounded-2xl border border-border bg-surface p-4 text-center">
-                  <Icon className="h-5 w-5 text-brand-600" aria-hidden="true" />
-                  <p className="mt-2 text-xs font-semibold leading-snug">{c}</p>
+                <div className="flex flex-col items-center text-center">
+                  <Icon className="h-5 w-5 text-brand-600" aria-hidden="true" strokeWidth={1.5} />
+                  <p className="mt-2 text-xs font-medium leading-snug text-foreground">{c}</p>
                 </div>
               </RevealItem>
             );
           })}
         </RevealGroup>
 
-        <div className="mx-auto mt-14 grid max-w-5xl grid-cols-1 gap-8 lg:grid-cols-2">
+        <div className="mx-auto mt-20 grid max-w-5xl grid-cols-1 gap-12 lg:grid-cols-2">
           <Reveal>
             <h3 className="font-display text-lg font-semibold">{t("whoWeServe.groupsTitle")}</h3>
-            <div className="mt-4 flex flex-wrap gap-2">
+            <div className="mt-4 flex flex-col gap-2">
               {groups.map((g) => (
-                <Badge key={g} accent="sky">
-                  {g}
-                </Badge>
+                <Tag key={g}>{g}</Tag>
               ))}
             </div>
           </Reveal>
@@ -250,23 +241,21 @@ function ProgramBody() {
             <h3 className="font-display text-lg font-semibold">
               {t("whoWeServe.priorityTitle")}
             </h3>
-            <div className="mt-4 flex flex-wrap gap-2">
+            <div className="mt-4 flex flex-col gap-2">
               {priority.map((p) => (
-                <Badge key={p} accent="coral">
-                  {p}
-                </Badge>
+                <Tag key={p}>{p}</Tag>
               ))}
             </div>
           </Reveal>
         </div>
 
         <Reveal>
-          <Card className="mx-auto mt-14 max-w-4xl bg-accent-mint-soft text-center">
+          <div className="mx-auto mt-20 max-w-2xl border-l-2 border-brand-600 pl-6 text-left sm:mx-auto sm:max-w-3xl">
             <h3 className="font-display text-xl font-semibold">{t("whoWeServe.pilotTitle")}</h3>
-            <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-foreground/80">
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
               {t("whoWeServe.pilotBody")}
             </p>
-          </Card>
+          </div>
         </Reveal>
       </Section>
 

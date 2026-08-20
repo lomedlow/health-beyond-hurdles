@@ -12,6 +12,7 @@ const accentClasses: Record<Accent, string> = {
   brand: "bg-brand-100 text-brand-800 dark:bg-brand-100 dark:text-brand-900",
 };
 
+/** A filled pill. Reserve for one or two genuine highlights per screen; overuse reads as clutter. */
 export function Badge({
   children,
   accent = "brand",
@@ -26,6 +27,26 @@ export function Badge({
       className={cn(
         "inline-flex items-center rounded-full px-3.5 py-1.5 text-xs font-semibold tracking-wide",
         accentClasses[accent],
+        className,
+      )}
+    >
+      {children}
+    </span>
+  );
+}
+
+/** A quiet, borderless label for lists of tags/criteria — no fill, just refined type. */
+export function Tag({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return (
+    <span
+      className={cn(
+        "inline-flex items-center text-sm text-muted-foreground before:mr-2.5 before:inline-block before:h-1 before:w-1 before:rounded-full before:bg-brand-400 before:content-['']",
         className,
       )}
     >

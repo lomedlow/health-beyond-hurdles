@@ -76,11 +76,11 @@ function GetInvolvedBody() {
 
   return (
     <>
-      <section className="relative overflow-hidden border-b border-border bg-gradient-to-b from-brand-50 to-background dark:from-brand-950/30">
-        <div className="mx-auto max-w-4xl px-6 py-20 text-center sm:py-28 lg:px-8">
+      <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 to-background dark:from-brand-950/30">
+        <div className="mx-auto max-w-4xl px-6 py-24 text-center sm:py-32 lg:px-8">
           <Reveal>
             <Eyebrow className="justify-center">{t("hero.eyebrow")}</Eyebrow>
-            <h1 className="font-display text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
+            <h1 className="font-display text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
               {t("hero.title")}
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
@@ -126,14 +126,14 @@ function GetInvolvedBody() {
               </p>
             </div>
           </Reveal>
-          <RevealGroup className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <RevealGroup className="mt-12 grid grid-cols-1 gap-x-10 gap-y-6 border-t border-border pt-2 sm:grid-cols-2">
             {training.map((item, i) => {
               const Icon = trainingIcons[i % trainingIcons.length];
               return (
                 <RevealItem key={item}>
-                  <div className="flex items-center gap-3 rounded-2xl border border-border bg-surface p-4">
-                    <IconTile icon={Icon} accent={ACCENT_CYCLE[i % ACCENT_CYCLE.length]} className="h-10 w-10" />
-                    <p className="text-sm font-medium leading-snug">{item}</p>
+                  <div className="flex items-center gap-4 border-b border-border py-4">
+                    <Icon className="h-5 w-5 shrink-0 text-brand-600" aria-hidden="true" strokeWidth={1.5} />
+                    <p className="text-sm font-medium leading-snug text-foreground">{item}</p>
                   </div>
                 </RevealItem>
               );
@@ -143,28 +143,24 @@ function GetInvolvedBody() {
       </Section>
 
       <Section>
-        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 lg:grid-cols-2">
+        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-14 lg:grid-cols-2">
           <Reveal>
-            <Card className="h-full bg-accent-peach-soft">
-              <Award className="h-6 w-6 text-brand-700" aria-hidden="true" />
-              <h3 className="mt-4 font-display text-xl font-semibold">
-                {t("pathways.advisorTitle")}
-              </h3>
-              <p className="mt-3 text-sm leading-relaxed text-foreground/80">
-                {t("pathways.advisorBody")}
-              </p>
-            </Card>
+            <Award className="h-6 w-6 text-brand-600" aria-hidden="true" strokeWidth={1.5} />
+            <h3 className="mt-4 font-display text-xl font-semibold">
+              {t("pathways.advisorTitle")}
+            </h3>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              {t("pathways.advisorBody")}
+            </p>
           </Reveal>
           <Reveal delay={0.08}>
-            <Card className="h-full bg-accent-lavender-soft">
-              <Users className="h-6 w-6 text-brand-700" aria-hidden="true" />
-              <h3 className="mt-4 font-display text-xl font-semibold">
-                {t("pathways.peerTitle")}
-              </h3>
-              <p className="mt-3 text-sm leading-relaxed text-foreground/80">
-                {t("pathways.peerBody")}
-              </p>
-            </Card>
+            <Users className="h-6 w-6 text-brand-600" aria-hidden="true" strokeWidth={1.5} />
+            <h3 className="mt-4 font-display text-xl font-semibold">
+              {t("pathways.peerTitle")}
+            </h3>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              {t("pathways.peerBody")}
+            </p>
           </Reveal>
         </div>
       </Section>
