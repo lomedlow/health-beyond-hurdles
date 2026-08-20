@@ -16,13 +16,11 @@ import {
   MapPin,
   Compass,
 } from "lucide-react";
-import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { Section, Eyebrow } from "@/components/ui/section";
 import { IconTile } from "@/components/ui/icon-tile";
-import { StatTile } from "@/components/ui/stat-tile";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/reveal";
 import { NewsletterForm } from "@/components/sections/newsletter-form";
 import { HeroIllustration } from "@/components/sections/hero-illustration";
