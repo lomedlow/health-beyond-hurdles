@@ -358,7 +358,7 @@ export function GuideDocument({
   return (
     <Document
       title={labels.title}
-      author="Health Beyond Hurdles / Santé sans obstacles"
+      author="Health Beyond Hurdles / Santé Sans Obstacles"
       subject={labels.subtitle}
     >
       <CoverPage meta={meta} labels={labels} />
