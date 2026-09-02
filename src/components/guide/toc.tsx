@@ -110,7 +110,7 @@ export function MobileToc({
   const activeEntry = entries.find((e) => e.id === activeId);
 
   return (
-    <div className="sticky top-20 z-30 -mx-6 border-b border-border bg-background/95 px-6 py-3 backdrop-blur-md lg:hidden">
+    <div className="sticky top-20 z-30 border-b border-border bg-background/95 px-6 py-3 backdrop-blur-md lg:hidden">
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
