@@ -24,7 +24,7 @@ export const pdfLabels: Record<
     disclaimer:
       "General information only, not medical advice. In a life-threatening emergency, call 911.",
     toc: "Contents",
-    footerOrg: "Health Beyond Hurdles / Santé sans obstacles",
+    footerOrg: "Health Beyond Hurdles / Santé Sans Obstacles",
     calloutWarning: "Important",
     calloutInfo: "Good to know",
     calloutTip: "Tip",
@@ -39,7 +39,7 @@ export const pdfLabels: Record<
     disclaimer:
       "Information générale seulement, pas un avis médical. En cas d'urgence potentiellement mortelle, composez le 911.",
     toc: "Table des matières",
-    footerOrg: "Health Beyond Hurdles / Santé sans obstacles",
+    footerOrg: "Health Beyond Hurdles / Santé Sans Obstacles",
     calloutWarning: "Important",
     calloutInfo: "À savoir",
     calloutTip: "Astuce",

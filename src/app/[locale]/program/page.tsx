@@ -70,32 +70,18 @@ function ProgramBody() {
         </div>
       </section>
 
-      {/* The problem */}
+      {/* How it works */}
       <Section>
         <div className="mx-auto max-w-3xl">
           <Reveal>
-            <h2 className="font-display text-2xl font-semibold sm:text-3xl">
-              {t("challenge.title")}
-            </h2>
-            <p className="mt-5 text-base leading-relaxed text-foreground/80">
-              {t("challenge.body")}
-            </p>
-          </Reveal>
-        </div>
-      </Section>
-
-      {/* How it works */}
-      <Section tint="surface">
-        <div className="mx-auto max-w-3xl">
-          <Reveal>
-            <h2 className="font-display text-2xl font-semibold sm:text-3xl">
+            <h2 className="font-display text-3xl font-semibold sm:text-4xl">
               {t("overview.title")}
             </h2>
           </Reveal>
-          <div className="mt-6 space-y-5">
+          <div className="mt-8 space-y-6">
             {overviewParagraphs.map((p, i) => (
               <Reveal key={i} delay={i * 0.04}>
-                <p className="text-base leading-relaxed text-foreground/80">{p}</p>
+                <p className="text-lg leading-relaxed text-foreground/85">{p}</p>
               </Reveal>
             ))}
           </div>

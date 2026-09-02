@@ -27,7 +27,7 @@ export const guideSections: GuideSection[] = [
         type: "callout",
         tone: "info",
         title: "À propos de cette version",
-        text: "Cette édition a été préparée pour accompagner la demande de financement de Health Beyond Hurdles / Santé sans obstacles, comme exemple de travail de la première ressource que le Projet de navigation en santé pour nouveaux arrivants publierait. Avant une diffusion officielle, elle serait révisée par des professionnels de la santé et des travailleurs en établissement, vérifiée auprès de sources à jour, et datée à chaque mise à jour, exactement comme le décrivent nos engagements d'assurance qualité ci-dessous.",
+        text: "Cette édition a été préparée pour accompagner la demande de financement de Health Beyond Hurdles / Santé Sans Obstacles, comme exemple de travail de la première ressource que le Projet de navigation en santé pour nouveaux arrivants publierait. Avant une diffusion officielle, elle serait révisée par des professionnels de la santé et des travailleurs en établissement, vérifiée auprès de sources à jour, et datée à chaque mise à jour, exactement comme le décrivent nos engagements d'assurance qualité ci-dessous.",
       },
       {
         type: "p",
@@ -306,6 +306,22 @@ export const guideSections: GuideSection[] = [
         text: "Les prises de sang, radiographies, échographies et tests semblables sont prescrits par votre fournisseur de soins et effectués habituellement dans un laboratoire ou un hôpital. Les résultats sont généralement renvoyés au fournisseur qui les a demandés : demandez quand et comment vous recevrez vos résultats, car ce n'est pas toujours automatique.",
       },
       {
+        type: "callout",
+        tone: "tip",
+        title: "Consultez vos résultats plus tôt avec MySaskHealthRecord",
+        text: "eHealth Saskatchewan offre un service en ligne gratuit appelé MySaskHealthRecord, qui vous permet de consulter vous-même vos résultats de laboratoire, vos rapports d'imagerie médicale, votre historique de vaccination et vos visites cliniques, souvent avant qu'on ne vous appelle à ce sujet. L'inscription exige une carte-santé de la Saskatchewan et une pièce d'identité avec photo valide. Consultez ehealthsask.ca pour les conditions d'admissibilité actuelles et la marche à suivre.",
+      },
+      {
+        type: "contacts",
+        items: [
+          {
+            name: "MySaskHealthRecord",
+            detail: "Consultez en ligne vos résultats de laboratoire, rapports d'imagerie et vaccins",
+            url: "ehealthsask.ca/residents/mysaskhealthrecord",
+          },
+        ],
+      },
+      {
         type: "subheading",
         text: "Ordonnances",
       },
@@ -408,23 +424,33 @@ export const guideSections: GuideSection[] = [
       },
       {
         type: "p",
-        text: "Les nouveaux arrivants francophones peuvent aussi joindre le Service d'accompagnateur en santé, qui offre un soutien à l'interprétation spécifiquement pour les rendez-vous à l'hôpital à Regina et à Saskatoon.",
+        text: "Le Réseau Santé en français de la Saskatchewan (RSFS) tient un répertoire des professionnels de la santé de la province qui parlent français. Vous pouvez y chercher un fournisseur de soins à qui parler directement, sans interprète entre vous deux.",
       },
       {
         type: "p",
-        text: "L'Assemblée communautaire fransaskoise (ACF) accompagne les nouveaux arrivants francophones grâce à des services d'établissement à Regina et à Saskatoon, en complément de la navigation en santé.",
+        text: "Le RSFS coordonne aussi un service d'accompagnement en santé : une personne qui vous accompagne à un rendez-vous à l'hôpital et vous aide à communiquer avec un fournisseur de soins anglophone.",
+      },
+      {
+        type: "p",
+        text: "Pour le soutien à l'établissement en français, le SAIF-SK (Services d'accueil et d'inclusion francophone) accueille et accompagne les nouveaux arrivants francophones partout en Saskatchewan, de l'arrivée jusqu'aux étapes concrètes de l'installation.",
       },
       {
         type: "contacts",
         items: [
           {
-            name: "Service d'accompagnateur en santé",
-            detail: "Soutien à l'interprétation pour les rendez-vous à l'hôpital, Regina et Saskatoon",
+            name: "Réseau Santé en français de la Saskatchewan (RSFS)",
+            detail: "Répertoire des professionnels de la santé francophones en Saskatchewan",
+            url: "rsfs.ca/Ma-sante/Repertoire-des-professionnels",
+          },
+          {
+            name: "Service d'accompagnement en santé",
+            detail: "Une personne qui vous accompagne et interprète lors des rendez-vous à l'hôpital, Regina et Saskatoon",
             phone: "1-844-437-0373",
           },
           {
-            name: "Assemblée communautaire fransaskoise (ACF)",
-            detail: "Services d'établissement francophones, Regina et Saskatoon",
+            name: "SAIF-SK, Services d'accueil et d'inclusion francophone",
+            detail: "Services d'accueil et d'établissement en français, partout en Saskatchewan",
+            url: "saif-sk.ca",
           },
         ],
       },
@@ -446,6 +472,10 @@ export const guideSections: GuideSection[] = [
         text: "Le 211 Saskatchewan est un service gratuit et confidentiel qui vous met en contact avec des ressources sociales, communautaires et de santé non clinique partout dans la province, y compris de l'aide au transport, des programmes alimentaires et du soutien au logement, en plusieurs langues.",
       },
       {
+        type: "p",
+        text: "Si c'est le déplacement qui pose problème, l'Autorité sanitaire de la Saskatchewan met aussi en circulation des autobus de mieux-être communautaire à Regina, Saskatoon et Prince Albert : des cliniques mobiles avec une infirmière praticienne, une infirmière auxiliaire autorisée et un intervenant en santé mentale, pour les personnes qui ont de la difficulté à se rendre dans une clinique ordinaire. Consultez le site de l'Autorité sanitaire pour l'horaire et les arrêts en vigueur.",
+      },
+      {
         type: "contacts",
         items: [
           {
@@ -453,6 +483,16 @@ export const guideSections: GuideSection[] = [
             detail: "2314, 11e Avenue, Regina, SK",
             phone: "306-352-3500",
             url: "rods.sk.ca",
+          },
+          {
+            name: "SAIF-SK, Services d'accueil et d'inclusion francophone",
+            detail: "Services d'accueil et d'inclusion en français, partout en Saskatchewan",
+            url: "saif-sk.ca",
+          },
+          {
+            name: "Autobus de mieux-être communautaire (Autorité sanitaire de la Saskatchewan)",
+            detail: "Soins de première ligne et soutien en santé mentale mobiles à Regina, Saskatoon et Prince Albert",
+            url: "saskhealthauthority.ca/your-health/conditions-diseases-services/health-bus",
           },
           {
             name: "211 Saskatchewan",
@@ -554,6 +594,11 @@ export const guideSections: GuideSection[] = [
             detail: "24 h/24, gratuit, par appel ou texto, bilingue",
             phone: "988",
           },
+          {
+            name: "Autobus de mieux-être communautaire",
+            detail: "Clinique mobile à Regina, Saskatoon et Prince Albert pour les personnes ayant de la difficulté à accéder aux soins habituels",
+            url: "saskhealthauthority.ca/your-health/conditions-diseases-services/health-bus",
+          },
         ],
       },
       {
@@ -584,13 +629,46 @@ export const guideSections: GuideSection[] = [
         type: "contacts",
         items: [
           {
-            name: "Service d'accompagnateur en santé",
-            detail: "Interprétation à l'hôpital, Regina et Saskatoon",
+            name: "Réseau Santé en français de la Saskatchewan (RSFS)",
+            detail: "Répertoire des professionnels de la santé francophones",
+            url: "rsfs.ca/Ma-sante/Repertoire-des-professionnels",
+          },
+          {
+            name: "Service d'accompagnement en santé",
+            detail: "Interprétation et accompagnement aux rendez-vous à l'hôpital, Regina et Saskatoon",
             phone: "1-844-437-0373",
           },
           {
-            name: "Assemblée communautaire fransaskoise (ACF)",
-            detail: "Services d'établissement francophones",
+            name: "SAIF-SK, Services d'accueil et d'inclusion francophone",
+            detail: "Services d'établissement en français dans toute la province",
+            url: "saif-sk.ca",
+          },
+        ],
+      },
+      {
+        type: "subheading",
+        text: "Se faire accompagner",
+      },
+      {
+        type: "p",
+        text: "Vous n'êtes pas obligé d'affronter seul un rendez-vous difficile. Ces services peuvent organiser une personne pour interpréter ou vous accompagner.",
+      },
+      {
+        type: "contacts",
+        items: [
+          {
+            name: "Services d'interprétation de l'Autorité sanitaire de la Saskatchewan",
+            detail: "Interprétation téléphonique dans les hôpitaux, en plus de 100 langues. Demandez-la à votre inscription",
+            url: "saskhealthauthority.ca/your-health/conditions-diseases-services/interpretation-and-translation-services",
+          },
+          {
+            name: "Accompagnement en santé en français (RSFS)",
+            detail: "Un accompagnateur présent avec vous à votre rendez-vous à l'hôpital",
+            phone: "1-844-437-0373",
+          },
+          {
+            name: "Accompagnement par un travailleur en établissement",
+            detail: "Demandez à votre organisme d'établissement, comme RODS ou le SAIF-SK, si un travailleur peut vous accompagner",
           },
         ],
       },
@@ -614,7 +692,7 @@ export const guideSections: GuideSection[] = [
             url: "sk.211.ca",
           },
           {
-            name: "Health Beyond Hurdles / Santé sans obstacles",
+            name: "Health Beyond Hurdles / Santé Sans Obstacles",
             detail: "Questions sur ce guide ou sur le Projet de navigation en santé pour nouveaux arrivants",
             url: "healthbeyondhurdles.org/contact",
           },

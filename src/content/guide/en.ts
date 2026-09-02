@@ -27,7 +27,7 @@ export const guideSections: GuideSection[] = [
         type: "callout",
         tone: "info",
         title: "About this draft",
-        text: "This edition was prepared to accompany Health Beyond Hurdles / Santé sans obstacles's funding proposal, as a working sample of the first resource the Newcomer Health Navigation Project would publish. Before an official release, it would be reviewed by healthcare professionals and settlement workers, checked against current sources, and dated at each update, exactly as described in our quality-assurance commitments below.",
+        text: "This edition was prepared to accompany Health Beyond Hurdles / Santé Sans Obstacles's funding proposal, as a working sample of the first resource the Newcomer Health Navigation Project would publish. Before an official release, it would be reviewed by healthcare professionals and settlement workers, checked against current sources, and dated at each update, exactly as described in our quality-assurance commitments below.",
       },
       {
         type: "p",
@@ -306,6 +306,22 @@ export const guideSections: GuideSection[] = [
         text: "Blood work, X-rays, ultrasounds, and similar tests are ordered by your provider and usually done at a lab or hospital. Results are generally sent back to the provider who ordered them. Ask when and how you'll find out your results, since it isn't always automatic.",
       },
       {
+        type: "callout",
+        tone: "tip",
+        title: "See your results sooner with MySaskHealthRecord",
+        text: "eHealth Saskatchewan runs a free online service called MySaskHealthRecord, where you can view your own lab results, medical imaging reports, immunization history, and clinical visits, often before anyone calls you about them. Registering requires a Saskatchewan health card and valid photo identification. Check ehealthsask.ca for current eligibility and how to sign up.",
+      },
+      {
+        type: "contacts",
+        items: [
+          {
+            name: "MySaskHealthRecord",
+            detail: "View your lab results, imaging reports, and immunization history online",
+            url: "ehealthsask.ca/residents/mysaskhealthrecord",
+          },
+        ],
+      },
+      {
         type: "subheading",
         text: "Prescriptions",
       },
@@ -408,23 +424,33 @@ export const guideSections: GuideSection[] = [
       },
       {
         type: "p",
-        text: "French-speaking newcomers can also reach the Health Accompagnateur Service, which provides interpretation support specifically for hospital appointments in Regina and Saskatoon.",
+        text: "The Réseau Santé en français de la Saskatchewan (RSFS) keeps a directory of health professionals in the province who speak French, so you can look for a provider you can talk to directly, without an interpreter in the middle.",
       },
       {
         type: "p",
-        text: "The Assemblée communautaire fransaskoise (ACF) supports Francophone newcomers with settlement services in Regina and Saskatoon, alongside healthcare navigation.",
+        text: "RSFS also coordinates health accompaniment: a person who comes with you to a hospital appointment and helps you communicate with an English-speaking provider.",
+      },
+      {
+        type: "p",
+        text: "For settlement support in French, SAIF-SK (Services d'accueil et d'inclusion francophone) welcomes and accompanies French-speaking newcomers across Saskatchewan, from arrival through the practical steps of building a life here.",
       },
       {
         type: "contacts",
         items: [
           {
-            name: "Health Accompagnateur Service",
-            detail: "Interpretation support for hospital appointments in Regina and Saskatoon",
+            name: "Réseau Santé en français de la Saskatchewan (RSFS)",
+            detail: "Directory of French-speaking health professionals in Saskatchewan",
+            url: "rsfs.ca/Ma-sante/Repertoire-des-professionnels",
+          },
+          {
+            name: "Health accompaniment service",
+            detail: "Someone to accompany and interpret for you at hospital appointments in Regina and Saskatoon",
             phone: "1-844-437-0373",
           },
           {
-            name: "Assemblée communautaire fransaskoise (ACF)",
-            detail: "Francophone settlement services, Regina and Saskatoon",
+            name: "SAIF-SK, Services d'accueil et d'inclusion francophone",
+            detail: "French-language settlement and inclusion services across Saskatchewan",
+            url: "saif-sk.ca",
           },
         ],
       },
@@ -446,6 +472,10 @@ export const guideSections: GuideSection[] = [
         text: "211 Saskatchewan is a free, confidential service that connects you to social, community, and non-clinical health resources across the province, including transportation assistance, food programs, and housing supports, in multiple languages.",
       },
       {
+        type: "p",
+        text: "If getting to a clinic is the hard part, the Saskatchewan Health Authority also runs Community Wellness Buses in Regina, Saskatoon, and Prince Albert: mobile clinics staffed by a nurse practitioner, a licensed practical nurse, and a mental health worker, for people who face barriers reaching care in a regular clinic. Check the Saskatchewan Health Authority website for the current schedule and stops.",
+      },
+      {
         type: "contacts",
         items: [
           {
@@ -453,6 +483,16 @@ export const guideSections: GuideSection[] = [
             detail: "2314 11th Avenue, Regina, SK",
             phone: "306-352-3500",
             url: "rods.sk.ca",
+          },
+          {
+            name: "SAIF-SK, Services d'accueil et d'inclusion francophone",
+            detail: "Settlement and inclusion services in French, across Saskatchewan",
+            url: "saif-sk.ca",
+          },
+          {
+            name: "Community Wellness Bus (Saskatchewan Health Authority)",
+            detail: "Mobile primary care and mental health support in Regina, Saskatoon, and Prince Albert",
+            url: "saskhealthauthority.ca/your-health/conditions-diseases-services/health-bus",
           },
           {
             name: "211 Saskatchewan",
@@ -555,6 +595,11 @@ export const guideSections: GuideSection[] = [
             detail: "24/7, free, call or text, bilingual",
             phone: "988",
           },
+          {
+            name: "Community Wellness Bus",
+            detail: "Mobile clinic in Regina, Saskatoon, and Prince Albert for people facing barriers to regular care",
+            url: "saskhealthauthority.ca/your-health/conditions-diseases-services/health-bus",
+          },
         ],
       },
       {
@@ -585,13 +630,46 @@ export const guideSections: GuideSection[] = [
         type: "contacts",
         items: [
           {
-            name: "Health Accompagnateur Service",
-            detail: "Hospital interpretation, Regina and Saskatoon",
+            name: "Réseau Santé en français de la Saskatchewan (RSFS)",
+            detail: "Directory of French-speaking health professionals",
+            url: "rsfs.ca/Ma-sante/Repertoire-des-professionnels",
+          },
+          {
+            name: "Health accompaniment service",
+            detail: "Interpretation and accompaniment at hospital appointments, Regina and Saskatoon",
             phone: "1-844-437-0373",
           },
           {
-            name: "Assemblée communautaire fransaskoise (ACF)",
-            detail: "Francophone settlement services",
+            name: "SAIF-SK, Services d'accueil et d'inclusion francophone",
+            detail: "French-language settlement services across the province",
+            url: "saif-sk.ca",
+          },
+        ],
+      },
+      {
+        type: "subheading",
+        text: "Someone to come with you",
+      },
+      {
+        type: "p",
+        text: "You do not have to attend a difficult appointment alone. These services can arrange for someone to interpret or accompany you.",
+      },
+      {
+        type: "contacts",
+        items: [
+          {
+            name: "Saskatchewan Health Authority interpretation services",
+            detail: "Phone interpretation at hospitals in over 100 languages. Ask for it when you register",
+            url: "saskhealthauthority.ca/your-health/conditions-diseases-services/interpretation-and-translation-services",
+          },
+          {
+            name: "Health accompaniment in French (RSFS)",
+            detail: "An accompanist who attends your hospital appointment with you",
+            phone: "1-844-437-0373",
+          },
+          {
+            name: "Settlement worker accompaniment",
+            detail: "Ask your settlement agency, such as RODS or SAIF-SK, whether a worker can attend with you",
           },
         ],
       },
@@ -615,7 +693,7 @@ export const guideSections: GuideSection[] = [
             url: "sk.211.ca",
           },
           {
-            name: "Health Beyond Hurdles / Santé sans obstacles",
+            name: "Health Beyond Hurdles / Santé Sans Obstacles",
             detail: "Questions about this guide or the Newcomer Health Navigation Project",
             url: "healthbeyondhurdles.org/contact",
           },

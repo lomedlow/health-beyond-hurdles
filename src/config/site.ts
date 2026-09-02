@@ -6,7 +6,7 @@
  */
 export const siteConfig = {
   name: "Health Beyond Hurdles",
-  nameFr: "Santé sans obstacles",
+  nameFr: "Santé Sans Obstacles",
   shortName: "HBH",
   url: "https://healthbeyondhurdles.org", // TODO: replace with real domain once registered
   // TODO: replace with a real monitored inbox before launch

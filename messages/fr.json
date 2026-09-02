@@ -1,6 +1,6 @@
 {
   "meta": {
-    "defaultTitle": "Santé sans obstacles : Navigation bilingue en santé pour les nouveaux arrivants en Saskatchewan",
+    "defaultTitle": "Santé Sans Obstacles : Navigation bilingue en santé pour les nouveaux arrivants en Saskatchewan",
     "description": "Un organisme à but non lucratif bilingue (français et anglais) proposé pour aider les nouveaux arrivants en Saskatchewan à comprendre et à accéder au système de santé grâce au Projet de navigation en santé pour nouveaux arrivants."
   },
   "common": {
@@ -30,7 +30,7 @@
     "newsletterTitle": "Restez informé·e",
     "newsletterBody": "Recevez les mises à jour au lancement du Projet de navigation en santé pour nouveaux arrivants à Regina.",
     "rights": "Tous droits réservés.",
-    "proposedNotice": "Health Beyond Hurdles / Santé sans obstacles est un organisme à but non lucratif proposé, actuellement à la recherche de financement pour lancer son projet pilote."
+    "proposedNotice": "Health Beyond Hurdles / Santé Sans Obstacles est un organisme à but non lucratif proposé, actuellement à la recherche de financement pour lancer son projet pilote."
   },
   "newsletter": {
     "emailLabel": "Adresse courriel",
@@ -42,12 +42,97 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Un organisme bilingue proposé · Saskatchewan",
-      "title": "Le système de santé en Saskatchewan peut sembler complexe. Personne ne devrait y faire face seul, dans aucune des deux langues.",
-      "subtitle": "Health Beyond Hurdles / Santé sans obstacles aidera les nouveaux arrivants à comprendre et à naviguer le système de santé de la Saskatchewan grâce à de l'éducation bilingue, des guides en langage clair et un accompagnement respectueux, sans jugement, en français et en anglais, également.",
-      "ctaPrimary": "Découvrir le programme",
-      "ctaSecondary": "S'impliquer",
-      "badges": ["Bilingue, FR / EN", "Projet pilote à Regina", "Pour les nouveaux arrivants depuis < 5 ans en SK"]
+      "eyebrow": "Organisme proposé · Regina, Saskatchewan",
+      "title": "Le système de santé en Saskatchewan peut sembler complexe. Personne ne devrait y faire face seul.",
+      "subtitle": "Nous aidons les nouveaux arrivants à comprendre le système de santé et à trouver les soins dont ils ont besoin, en français et en anglais.",
+      "ctaPrimary": "Explorer le programme",
+      "ctaSecondary": "Lire le guide"
+    },
+    "programTeaser": {
+      "eyebrow": "Notre premier programme",
+      "title": "Le Projet de navigation en santé pour nouveaux arrivants",
+      "body": "Une initiative d'éducation et de navigation en santé pour les nouveaux arrivants dans leurs cinq premières années en Saskatchewan. Nous transformons un système déroutant en étapes claires : ce que fait chaque type de fournisseur de soins, où aller selon le besoin, et qui appeler quand quelque chose ne va pas.",
+      "bullets": [
+        "Des guides en langage clair, en ligne et en version imprimée",
+        "Révisés par des professionnels de la santé",
+        "Distribués là où les nouveaux arrivants vont déjà",
+        "Gratuits à lire, à télécharger et à partager"
+      ],
+      "cta": "Explorer le programme",
+      "ctaSecondary": "Lire le guide"
+    },
+    "whoWeServe": {
+      "eyebrow": "À qui s'adresse le programme",
+      "title": "Conçu pour les nouveaux arrivants, piloté à Regina",
+      "body": "Le projet pilote s'adresse aux immigrants, réfugiés, étudiants internationaux, résidents temporaires et permanents, et familles de nouveaux arrivants qui répondent aux critères du programme.",
+      "criteria": [
+        "Vivent en Saskatchewan depuis moins de cinq ans",
+        "Résident actuellement en Saskatchewan",
+        "Ont besoin de soutien en navigation santé",
+        "Préfèrent le français ou l'anglais"
+      ],
+      "cta": "Voir le portrait complet"
+    },
+    "bilingual": {
+      "eyebrow": "Bilingues par conception",
+      "title": "Français et anglais, à égalité",
+      "body": "Nous comprenons la difficulté d'affronter un système de santé dans une langue que l'on apprend encore. L'accès linguistique n'est pas un ajout à notre travail, c'est notre travail. Chaque guide, atelier et conversation existe dans les deux langues, avec le même soin apporté à chacune.",
+      "points": [
+        "Une qualité égale dans les deux langues, jamais une traduction faite à la hâte",
+        "Un langage clair plutôt que du jargon médical, avec les termes clés expliqués dans les deux langues",
+        "Des bénévoles, conseillers et partenaires bilingues dans toute l'organisation"
+      ],
+      "cta": "Notre façon de travailler"
+    },
+    "outcomes": {
+      "eyebrow": "À quoi ressemble le succès",
+      "title": "Résultats attendus",
+      "items": [
+        "Comprendre le fonctionnement du système de santé de la Saskatchewan",
+        "Savoir où aller selon le type de soins nécessaire",
+        "Se sentir à l'aise de communiquer avec les fournisseurs de soins",
+        "Trouver de l'information fiable et réellement compréhensible",
+        "Se connecter aux services de santé et communautaires",
+        "Prendre des décisions éclairées concernant sa santé"
+      ]
+    },
+    "guideTeaser": {
+      "eyebrow": "Pour les nouveaux arrivants",
+      "title": "Commencez par le guide",
+      "body": "Un parcours en langage clair : carte-santé, fournisseurs de soins, rendez-vous, et qui appeler selon la situation. Gratuit à lire en ligne ou à télécharger.",
+      "cta": "Lire le guide"
+    },
+    "getInvolvedTeaser": {
+      "eyebrow": "Joignez-vous à nous",
+      "title": "Ce programme n'existe que grâce aux bénévoles bilingues",
+      "body": "Professionnels et étudiants en santé, travailleurs en établissement, nouveaux arrivants d'expérience, traducteurs et enseignants : vos compétences linguistiques et votre vécu sont exactement ce dont ce programme a besoin.",
+      "cta": "Voir les rôles bénévoles"
+    },
+    "partnersTeaser": {
+      "eyebrow": "Bâti ensemble",
+      "title": "Nous réussissons par le partenariat, pas par la duplication",
+      "body": "Nous travaillons avec les organismes d'établissement, les organisations francophones, les fournisseurs de soins, les pharmacies, les bibliothèques et les programmes publics qui servent déjà ces communautés.",
+      "cta": "Voir les possibilités de partenariat"
+    },
+    "newsletterCta": {
+      "eyebrow": "Restons en contact",
+      "title": "Suivez le lancement du projet pilote à Regina",
+      "body": "Soyez les premiers informés de la publication des guides, de l'ouverture des candidatures bénévoles et du lancement du programme."
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "À propos",
+      "title": "Health Beyond Hurdles / Santé Sans Obstacles",
+      "subtitle": "Voué à améliorer l'accès à l'information en santé, aux services de santé non cliniques et au soutien communautaire pour les nouveaux arrivants et les communautés mal desservies en Saskatchewan."
+    },
+    "overview": {
+      "title": "Qui nous sommes",
+      "paragraphs": [
+        "Nous sommes un organisme bilingue à but non lucratif proposé, basé à Regina, créé pour combler une lacune précise : les nouveaux arrivants arrivent en Saskatchewan avec le droit aux soins de santé, mais sans la carte pour s'y rendre.",
+        "Notre travail est non clinique. Nous ne posons pas de diagnostic, ne traitons personne et ne remplaçons pas les professionnels de la santé. Nous expliquons le fonctionnement du système en langage clair, et nous dirigeons les gens vers les services, organismes et professionnels déjà outillés pour les aider.",
+        "Le Projet de navigation en santé pour nouveaux arrivants est notre premier programme, en projet pilote à Regina avant son expansion dans la province."
+      ]
     },
     "mission": {
       "eyebrow": "Notre mission",
@@ -57,11 +142,11 @@
     "vision": {
       "eyebrow": "Notre vision",
       "title": "Vision",
-      "body": "Une Saskatchewan où chaque nouvel arrivant, peu importe sa langue, sa culture, son revenu ou son parcours migratoire, peut accéder aux services de santé en toute confiance, comprendre ses options et participer activement aux décisions concernant sa santé."
+      "body": "Une Saskatchewan où chaque personne, peu importe sa langue, sa culture, son revenu ou son parcours migratoire, peut accéder aux services de santé en toute confiance, comprendre ses options et participer activement aux décisions concernant sa santé."
     },
     "challenge": {
       "eyebrow": "Le défi",
-      "title": "Pourquoi les nouveaux arrivants sont laissés pour compte",
+      "title": "Ce qui fait obstacle",
       "subtitle": "Les nouveaux arrivants arrivent souvent avec peu de connaissances sur le fonctionnement du système de santé de la Saskatchewan. La combinaison de plusieurs obstacles du quotidien peut transformer un besoin de santé courant en crise.",
       "items": [
         {
@@ -87,127 +172,48 @@
       ],
       "consequence": "Ensemble, ces obstacles peuvent empêcher les gens de consulter, retarder un traitement, ou les pousser vers l'urgence alors qu'une autre option aurait mieux répondu à leurs besoins."
     },
-    "programTeaser": {
-      "eyebrow": "Notre premier programme",
-      "title": "Le Projet de navigation en santé pour nouveaux arrivants",
-      "body": "Une initiative bilingue d'éducation et de navigation en santé pour les nouveaux arrivants vivant en Saskatchewan depuis moins de cinq ans. Un accompagnement clair, accessible et culturellement respectueux, en français et en anglais, également.",
-      "bullets": [
-        "Guides PDF téléchargeables et livrets imprimés",
-        "Langage clair, pas de jargon médical",
-        "Révisé par des professionnels de la santé",
-        "Distribué là où se trouvent déjà les nouveaux arrivants"
-      ],
-      "cta": "Explorer le programme"
-    },
-    "bilingual": {
-      "eyebrow": "Le bilinguisme au cœur de notre mission",
-      "title": "Français et anglais, également, partout",
-      "body": "Le bilinguisme est au centre de notre identité, et non un ajout. Chaque programme majeur, ressource éducative, atelier, processus d'accueil et communication publique sera offert en français et en anglais, sans qu'aucune langue ne soit traitée comme secondaire.",
-      "points": [
-        "Des ressources de qualité égale dans les deux langues, pas une traduction après coup",
-        "Un langage clair plutôt qu'une terminologie médicale complexe, avec les termes clés expliqués dans les deux langues",
-        "Des bénévoles, du personnel, des membres du conseil et des conseillers professionnels bilingues",
-        "Des partenariats avec des organismes francophones et des agences au service des nouveaux arrivants"
-      ]
-    },
-    "whoWeServe": {
-      "eyebrow": "À qui s'adresse le programme",
-      "title": "Conçu pour les nouveaux arrivants, piloté à Regina",
-      "body": "Le projet pilote s'adresse aux immigrants, réfugiés, étudiants internationaux, résidents temporaires et permanents, et familles de nouveaux arrivants qui répondent aux critères du programme.",
-      "criteria": [
-        "Vivent en Saskatchewan depuis < 5 ans",
-        "Résident actuellement en Saskatchewan",
-        "Ont besoin de soutien en navigation santé",
-        "Préfèrent le français ou l'anglais"
-      ],
-      "cta": "Voir le portrait complet"
-    },
-    "outcomes": {
-      "eyebrow": "À quoi ressemble le succès",
-      "title": "Résultats attendus",
-      "items": [
-        "Mieux comprendre le système de santé de la Saskatchewan",
-        "Savoir où obtenir les soins appropriés",
-        "Se sentir plus confiant·e pour communiquer avec les fournisseurs de soins",
-        "Accéder à de l'information fiable en français ou en anglais",
-        "Se connecter aux services de santé et communautaires",
-        "Réduire la confusion entourant les rendez-vous et références",
-        "Devenir plus autonome dans la navigation du système",
-        "Prendre des décisions éclairées concernant sa santé et son bien-être"
-      ]
-    },
-    "getInvolvedTeaser": {
-      "eyebrow": "Joignez-vous à nous",
-      "title": "Ce projet ne peut réussir sans bénévoles bilingues",
-      "body": "Étudiant·e·s en soins infirmiers et en santé, professionnel·le·s de la santé retraité·e·s, travailleur·euse·s en établissement, nouveaux arrivants expérimentés, traducteur·rice·s et éducateur·rice·s : vos compétences linguistiques et votre expérience vécue sont exactement ce dont ce programme a besoin.",
-      "cta": "Voir les rôles bénévoles"
-    },
-    "partnersTeaser": {
-      "eyebrow": "Construit ensemble",
-      "title": "Nous réussissons par le partenariat, pas la duplication",
-      "body": "Nous recherchons des partenariats avec des agences d'établissement, des organismes francophones, des fournisseurs de soins de santé de la Saskatchewan, des pharmacies, des universités, des bibliothèques et des programmes municipaux et provinciaux.",
-      "cta": "Voir les occasions de partenariat"
-    },
-    "newsletterCta": {
-      "eyebrow": "Restons en contact",
-      "title": "Suivez le lancement du projet pilote à Regina",
-      "body": "Soyez parmi les premiers informés de la publication des guides, de l'ouverture des candidatures bénévoles et du lancement du programme."
-    }
-  },
-  "about": {
-    "hero": {
-      "eyebrow": "À propos de nous",
-      "title": "Un organisme proposé fondé sur une conviction : la langue ne devrait jamais être un obstacle à la santé",
-      "subtitle": "Health Beyond Hurdles / Santé sans obstacles se consacre à améliorer l'accès à l'information en santé, aux services de santé et au soutien communautaire pour les nouveaux arrivants et les communautés mal desservies en Saskatchewan."
-    },
-    "overview": {
-      "title": "Aperçu de l'organisme",
-      "paragraphs": [
-        "Health Beyond Hurdles / Santé sans obstacles est un organisme à but non lucratif bilingue proposé, dédié à améliorer l'accès à l'information en santé, aux services de santé et au soutien communautaire pour les nouveaux arrivants et les communautés mal desservies en Saskatchewan.",
-        "L'organisme aidera les individus à mieux comprendre le système de santé de la Saskatchewan et les mettra en lien avec les services, ressources et professionnels appropriés.",
-        "Les nouveaux arrivants arrivent souvent au Canada avec une connaissance limitée du fonctionnement du système de santé provincial : comment faire une demande de carte santé de la Saskatchewan, trouver un médecin de famille ou une infirmière praticienne, accéder à une clinique sans rendez-vous, utiliser les services de pharmacie, obtenir une référence, appeler HealthLine 811, ou déterminer quand des soins d'urgence sont nécessaires.",
-        "Les barrières linguistiques, la terminologie inconnue, les différences culturelles, les défis de transport et la connaissance limitée des services disponibles peuvent rendre le système de santé difficile à comprendre. Ces obstacles peuvent empêcher les nouveaux arrivants de consulter, retarder un traitement, ou les amener à utiliser les services d'urgence alors qu'une autre option de soins aurait pu être plus appropriée.",
-        "Le Projet de navigation en santé pour nouveaux arrivants répond à ces défis en offrant un soutien clair, accessible, culturellement respectueux et bilingue, en français comme en anglais."
-      ]
-    },
-    "mission": {
-      "title": "Mission",
-      "body": "Aider les nouveaux arrivants au Canada et les communautés mal desservies à naviguer et à comprendre le système de santé de la Saskatchewan, en leur offrant le soutien, l'éducation et les ressources nécessaires pour prendre des décisions éclairées concernant leur santé et leur bien-être."
-    },
-    "vision": {
-      "title": "Vision",
-      "body": "Une Saskatchewan où chaque nouvel arrivant, peu importe sa langue, sa culture, son revenu ou son parcours migratoire, peut accéder aux services de santé en toute confiance, comprendre ses options et participer activement aux décisions concernant sa santé."
-    },
     "bilingualism": {
-      "title": "Engagement envers le bilinguisme",
+      "eyebrow": "Notre identité",
+      "title": "Le bilinguisme est ce que nous sommes, pas une option ajoutée",
       "paragraphs": [
-        "Le bilinguisme sera au centre de l'identité, des services et des opérations de l'organisme. Tous les programmes majeurs, le matériel éducatif, les ateliers, les processus d'accueil et les communications publiques seront offerts en français et en anglais.",
-        "Les nouveaux arrivants francophones peuvent faire face à des obstacles additionnels lorsqu'ils tentent de comprendre l'information en santé ou de communiquer avec les fournisseurs de services en Saskatchewan. Même les personnes capables de parler un anglais courant peuvent avoir de la difficulté à comprendre la terminologie médicale, les formulaires de consentement, les ordonnances, les instructions de référence ou l'information transmise lors de situations de santé stressantes.",
-        "Nous répondrons à ces obstacles en veillant à ce que les nouveaux arrivants francophones puissent recevoir de l'information et de l'aide à la navigation dans la langue où ils se sentent le plus à l'aise, tandis que les participants anglophones recevront le même niveau de soutien accessible et respectueux. Les ressources éducatives bilingues utiliseront un langage clair et compréhensible plutôt qu'une terminologie médicale complexe, avec les termes de santé clés expliqués dans les deux langues au besoin.",
-        "À mesure que l'organisme grandira, il pourra aussi collaborer avec des interprètes et des partenaires communautaires multilingues, bien que le français et l'anglais demeureront ses deux langues de service principales."
+        "Nous comprenons la difficulté d'affronter un système de santé dans une langue que l'on apprend encore. Parler l'anglais couramment ne veut pas dire comprendre un formulaire de consentement, une étiquette de médicament ou des instructions données dans un moment stressant.",
+        "Nous travaillons donc dans les deux langues dès le départ. Chaque guide, atelier, conversation d'accueil et communication publique existe en français et en anglais, avec le même soin apporté à chacun. Ni l'un ni l'autre n'est une traduction faite à la dernière minute.",
+        "Nous utilisons un langage clair plutôt que du jargon médical, et nous expliquons les termes clés dans les deux langues. Lorsqu'une personne a besoin d'une langue que nous ne parlons pas, nous la dirigeons vers des services d'interprétation plutôt que de la laisser se débrouiller seule."
       ],
       "commitments": [
-        "Des bénévoles, membres du personnel, professionnels de la santé, partenaires communautaires et membres du conseil bilingues",
-        "Des partenariats avec des organismes francophones, des agences au service des nouveaux arrivants et des établissements d'enseignement",
-        "Des partenariats avec des centres communautaires, des fournisseurs de soins de santé et des organismes engagés envers l'accessibilité linguistique",
-        "Une qualité et une profondeur égales des ressources en français et en anglais, sans qu'aucune langue ne soit traitée comme secondaire"
+        "Une qualité et une profondeur égales en français et en anglais, jamais après coup",
+        "Un langage clair plutôt qu'une terminologie médicale, avec les termes clés expliqués dans les deux langues",
+        "Des bénévoles, conseillers, membres du conseil et partenaires bilingues",
+        "Des liens directs avec les organismes francophones et les services d'interprétation"
       ]
     },
     "longTerm": {
-      "title": "Développement à long terme",
-      "body": "À la suite du projet pilote, l'organisme utilisera les commentaires des participants et les résultats d'évaluation pour améliorer ses services. L'objectif à long terme est d'étendre le programme à l'ensemble de la Saskatchewan et d'introduire de nouvelles initiatives liées à l'éducation en santé, à la prévention, au mieux-être communautaire, à l'accessibilité des soins de santé et au soutien des populations mal desservies.",
-      "futureTitle": "Les futurs programmes pourraient inclure",
-      "future": [
-        "Ateliers communautaires bilingues en santé",
-        "Éducation en santé maternelle pour nouvelles arrivantes",
-        "Navigation santé pour aînés",
-        "Programmes de mieux-être mental",
-        "Éducation en santé pour les jeunes",
-        "Soutien aux proches aidants",
-        "Mentorat de carrières en santé",
-        "Développement de ressources santé multilingues"
+      "eyebrow": "La suite",
+      "title": "Où nous allons",
+      "body": "La croissance suit les résultats, pas l'ambition. Chaque phase doit fonctionner avant que la suivante ne commence.",
+      "phases": [
+        {
+          "label": "Phase 1",
+          "title": "Projet pilote à Regina",
+          "body": "Publier le guide santé bilingue pour nouveaux arrivants, bâtir des partenariats avec les organismes d'établissement, et former la première cohorte de bénévoles bilingues."
+        },
+        {
+          "label": "Phase 2",
+          "title": "Mesurer et ajuster",
+          "body": "Suivre le nombre de participants servis, les langues demandées, les références complétées et l'évolution de la confiance à naviguer le système. Réviser les guides selon ce que les gens demandent réellement."
+        },
+        {
+          "label": "Phase 3",
+          "title": "À l'échelle de la Saskatchewan",
+          "body": "Étendre la distribution à Saskatoon, Prince Albert, Moose Jaw et aux communautés rurales par l'entremise de nos partenaires, en ajoutant des ressources thématiques selon les besoins."
+        },
+        {
+          "label": "Phase 4",
+          "title": "Au-delà de la navigation",
+          "body": "Ajouter des ateliers communautaires en santé, de l'éducation en santé maternelle pour les nouvelles arrivantes, de la navigation en santé pour aînés et de l'éducation en santé pour les jeunes."
+        }
       ],
-      "closing": "Grâce à des services bilingues, des partenariats communautaires, des bénévoles formés et une éducation culturellement respectueuse, Health Beyond Hurdles / Santé sans obstacles s'efforcera de veiller à ce qu'aucun nouvel arrivant n'ait à naviguer seul le système de santé de la Saskatchewan."
+      "closing": "Grâce aux partenariats communautaires, à des bénévoles formés et à une éducation culturellement respectueuse, nous travaillons à ce que personne n'ait à naviguer seul le système de santé de la Saskatchewan."
     }
   },
   "program": {
@@ -215,10 +221,6 @@
       "eyebrow": "Notre premier programme",
       "title": "Le Projet de navigation en santé pour nouveaux arrivants",
       "subtitle": "Une initiative bilingue d'éducation et de navigation en santé pour les nouveaux arrivants vivant en Saskatchewan depuis moins de cinq ans et y résidant actuellement."
-    },
-    "challenge": {
-      "title": "Le problème auquel il répond",
-      "body": "Les nouveaux arrivants arrivent souvent au Canada avec une connaissance limitée du fonctionnement du système de santé provincial. Ils peuvent ne pas connaître le processus de demande d'une carte santé de la Saskatchewan, la façon de trouver un médecin de famille ou une infirmière praticienne, d'accéder à une clinique sans rendez-vous, d'utiliser les services de pharmacie, d'obtenir des références, d'appeler HealthLine 811, ou de déterminer quand des soins d'urgence sont nécessaires. Les barrières linguistiques, la terminologie inconnue, les différences culturelles, les défis de transport et la connaissance limitée des services disponibles peuvent rendre le système de santé difficile à comprendre, empêchant parfois les gens de consulter, ou les poussant vers les services d'urgence alors qu'une autre option aurait été plus appropriée."
     },
     "overview": {
       "title": "Comment fonctionne le programme",
@@ -313,7 +315,7 @@
       "title": "À qui s'adresse le programme",
       "body": "Le projet pilote s'adresse aux nouveaux arrivants qui :",
       "criteria": [
-        "Vivent en Saskatchewan depuis moins de 5 ans",
+        "Vivent en Saskatchewan depuis moins de cinq ans",
         "Résident actuellement en Saskatchewan",
         "Ont besoin de soutien en navigation santé",
         "Préfèrent le français ou l'anglais"
@@ -356,12 +358,12 @@
       "title": "Qui nous recherchons",
       "items": [
         {
-          "title": "Étudiant·e·s en soins infirmiers",
-          "body": "Mettez à profit vos connaissances cliniques grandissantes pour aider les nouveaux arrivants à comprendre le système en langage clair."
+          "title": "Professionnel·le·s de la santé",
+          "body": "Infirmières, pharmaciens, médecins et professionnels paramédicaux : vos connaissances cliniques nous aident à expliquer le système avec exactitude et en langage clair."
         },
         {
           "title": "Étudiant·e·s en santé",
-          "body": "Les étudiant·e·s en médecine, pharmacie, santé publique et professions de la santé apportent des connaissances précieuses et à jour."
+          "body": "Les étudiants en médecine, sciences infirmières, pharmacie, santé publique et professions paramédicales apportent des connaissances à jour et précieuses."
         },
         {
           "title": "Professionnel·le·s de la santé retraité·e·s",
@@ -512,7 +514,7 @@
     },
     "info": {
       "title": "Basé à Regina, en Saskatchewan",
-      "body": "Health Beyond Hurdles / Santé sans obstacles est un organisme proposé, actuellement à la recherche de financement pour lancer son projet pilote à Regina."
+      "body": "Health Beyond Hurdles / Santé Sans Obstacles est un organisme proposé, actuellement à la recherche de financement pour lancer son projet pilote à Regina."
     },
     "donateTeaser": {
       "title": "Page de financement à venir",
@@ -528,7 +530,7 @@
     },
     "comingSoon": {
       "title": "Nous ne sommes pas encore prêts à accepter des dons",
-      "body": "Health Beyond Hurdles / Santé sans obstacles est un organisme proposé, actuellement à la recherche de financement de démarrage pour lancer son projet pilote à Regina. Une fois l'organisme officiellement établi, cette page offrira des façons sécuritaires de donner : dons ponctuels, soutien mensuel et partenariats de subvention.",
+      "body": "Health Beyond Hurdles / Santé Sans Obstacles est un organisme proposé, actuellement à la recherche de financement de démarrage pour lancer son projet pilote à Regina. Une fois l'organisme officiellement établi, cette page offrira des façons sécuritaires de donner : dons ponctuels, soutien mensuel et partenariats de subvention.",
       "alternative": "Entre-temps, le soutien le plus précieux consiste à faire connaître le projet, à devenir bénévole, ou à nous mettre en contact avec des bailleurs de fonds et partenaires potentiels."
     },
     "notify": {
