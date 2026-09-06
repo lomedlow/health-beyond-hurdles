@@ -32,7 +32,10 @@
     "newsletterTitle": "Stay informed",
     "newsletterBody": "Get updates as the Newcomer Health Navigation Project launches in Regina.",
     "rights": "All rights reserved.",
-    "proposedNotice": "Health Beyond Hurdles / Santé Sans Obstacles is a proposed nonprofit organization currently seeking funding to launch its pilot program."
+    "proposedNotice": "Health Beyond Hurdles / Santé Sans Obstacles is a proposed nonprofit organization currently seeking funding to launch its pilot program.",
+    "legal": "Legal",
+    "privacy": "Privacy policy",
+    "terms": "Terms of use"
   },
   "newsletter": {
     "emailLabel": "Email address",
@@ -567,6 +570,137 @@
       "title": "Have a question this guide didn't answer?",
       "body": "Reach out and we'll help directly, or point you to the right organization.",
       "button": "Contact us"
+    }
+  },
+  "legal": {
+    "eyebrow": "Legal",
+    "lastUpdated": "Last updated: September 2026",
+    "backHome": "Back to home",
+    "privacy": {
+      "title": "Privacy policy",
+      "subtitle": "What we collect, why we collect it, and what we will never do with it.",
+      "sections": [
+        {
+          "title": "Who we are",
+          "body": "Health Beyond Hurdles / Santé Sans Obstacles is a proposed nonprofit based in Regina, Saskatchewan. Our first program, the Newcomer Health Navigation Project, helps newcomers understand and use Saskatchewan's healthcare system in French and English. The organization is still in formation. Once it is incorporated, this policy will be updated with our registered name and address."
+        },
+        {
+          "title": "What we collect",
+          "body": "Only what you type into a form on this site:",
+          "items": [
+            "Contact form: your name, your email address, the reason you are writing, and your message.",
+            "Newsletter signup: your email address.",
+            "Nothing else. There are no accounts, no logins, and no payment information on this site."
+          ]
+        },
+        {
+          "title": "Why we collect it",
+          "body": "To answer you, to send you the updates you asked for, and to understand what kind of support newcomers in Saskatchewan are looking for so we can build the right program. That is all."
+        },
+        {
+          "title": "What we will never do",
+          "items": [
+            "We never sell, rent, or trade your information.",
+            "We never share it with advertisers or data brokers.",
+            "We never share your information with an employer, a landlord, a school, or any immigration or government body, unless the law requires it of us.",
+            "We never use your contact with us as a condition for receiving help."
+          ]
+        },
+        {
+          "title": "Health and immigration information",
+          "body": "We are not a healthcare provider. We have no access to your health record, and we do not ask for your health card number, your diagnosis, or your immigration file. Please do not send medical or immigration documents through the forms on this site. If you need to share something sensitive, contact us first and we will tell you the safe way to do it."
+        },
+        {
+          "title": "Cookies and tracking",
+          "body": "This site runs no advertising cookies and no third party analytics. Your browser stores two preferences on your own device: the theme you chose, light or dark, and your language. Those stay on your device and are never sent to us."
+        },
+        {
+          "title": "How long we keep it",
+          "items": [
+            "Newsletter emails: until you unsubscribe. Every email we send includes an unsubscribe link.",
+            "Contact messages: only as long as we need them to answer you and follow up, then they are deleted."
+          ]
+        },
+        {
+          "title": "Your rights",
+          "body": "You can ask us at any time to show you what we hold about you, to correct it, or to delete it. Write to info@healthbeyondhurdles.com and we will respond. Canadian privacy law, including PIPEDA, gives you these rights and we intend to respect them fully."
+        },
+        {
+          "title": "Where your information is stored",
+          "body": "This site is hosted by a third party hosting provider, and form submissions may be processed on servers located outside Canada. We will name our hosting and email providers here once they are final."
+        },
+        {
+          "title": "Children",
+          "body": "This site is written for adults. We do not knowingly collect information from children under 13. If you believe a child has sent us information, write to us and we will delete it."
+        },
+        {
+          "title": "Changes to this policy",
+          "body": "If we change this policy we will post the new version on this page and update the date at the top. Significant changes will also be mentioned in our newsletter."
+        },
+        {
+          "title": "Questions",
+          "body": "Write to info@healthbeyondhurdles.com. A real person reads that inbox."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Terms of use",
+      "subtitle": "The rules for using this site and the Newcomer Healthcare Guide.",
+      "sections": [
+        {
+          "title": "About this site",
+          "body": "This is the informational website of Health Beyond Hurdles / Santé Sans Obstacles, a proposed nonprofit in Regina, Saskatchewan. By using the site you agree to these terms. If you do not agree with them, please do not use the site."
+        },
+        {
+          "title": "This is information, not advice",
+          "body": "Everything on this site, including the Newcomer Healthcare Guide, explains how Saskatchewan's healthcare system works. It is general information. It is not medical advice, legal advice, or immigration advice, and it does not replace a conversation with a licensed professional.",
+          "items": [
+            "In a life-threatening emergency, call 911.",
+            "For health advice from a registered nurse, 24 hours a day, call HealthLine 811.",
+            "For a medical decision, speak to a doctor, a nurse practitioner, or a pharmacist."
+          ]
+        },
+        {
+          "title": "The guide is a working draft",
+          "body": "The Newcomer Healthcare Guide is published as a working draft. It is pending review by healthcare professionals and settlement workers before it is treated as final. We say so openly because we would rather be honest than look finished."
+        },
+        {
+          "title": "Accuracy and change",
+          "body": "Programs, phone numbers, eligibility rules, and clinic hours in Saskatchewan change. We check our information regularly and date our pages, but we cannot guarantee that every detail is current at the moment you read it. Before you rely on something important, confirm it directly with the organization named."
+        },
+        {
+          "title": "Links to other organizations",
+          "body": "We link to the Saskatchewan Health Authority, 211 Saskatchewan, settlement agencies, and other services. We do not control those sites, their content, or their privacy practices, and a link is not an endorsement of everything they publish."
+        },
+        {
+          "title": "Using our content",
+          "body": "You may read, print, and share the guide free of charge for personal, family, classroom, or community use, as long as you credit Health Beyond Hurdles / Santé Sans Obstacles and do not charge for it. Please write to us before republishing a modified version or using our content in a commercial product. Our name, our logo, and our wordmark remain ours."
+        },
+        {
+          "title": "Forms and inquiries",
+          "body": "Sending a volunteer, partnership, or contact form does not create an agreement between us, and it does not guarantee a volunteer role, a partnership, or a service. We will reply, and we will tell you honestly where things stand."
+        },
+        {
+          "title": "Donations",
+          "body": "We are not accepting donations yet. When a donation page opens, it will have its own terms covering payment processing, receipting, and refunds, and those terms will apply to donations instead of this page."
+        },
+        {
+          "title": "No warranty and limits on liability",
+          "body": "This site is provided as it is, without warranties of any kind. To the fullest extent permitted by law, Health Beyond Hurdles / Santé Sans Obstacles and its volunteers are not liable for any loss or harm resulting from decisions made on the basis of this site. Nothing here limits liability where the law does not allow it to be limited."
+        },
+        {
+          "title": "Governing law",
+          "body": "These terms are governed by the laws of the Province of Saskatchewan and the laws of Canada that apply in it."
+        },
+        {
+          "title": "Changes to these terms",
+          "body": "We may update these terms. The current version always lives on this page, with its date at the top."
+        },
+        {
+          "title": "Questions",
+          "body": "Write to info@healthbeyondhurdles.com."
+        }
+      ]
     }
   }
 }

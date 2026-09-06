@@ -37,5 +37,13 @@ export const routing = defineRouting({
       en: "/donate",
       fr: "/faire-un-don",
     },
+    "/privacy": {
+      en: "/privacy",
+      fr: "/confidentialite",
+    },
+    "/terms": {
+      en: "/terms",
+      fr: "/conditions",
+    },
   },
 });

@@ -32,7 +32,10 @@
     "newsletterTitle": "Restez informé·e",
     "newsletterBody": "Recevez les mises à jour au lancement du Projet de navigation en santé pour nouveaux arrivants à Regina.",
     "rights": "Tous droits réservés.",
-    "proposedNotice": "Health Beyond Hurdles / Santé Sans Obstacles est un organisme à but non lucratif proposé, actuellement à la recherche de financement pour lancer son projet pilote."
+    "proposedNotice": "Health Beyond Hurdles / Santé Sans Obstacles est un organisme à but non lucratif proposé, actuellement à la recherche de financement pour lancer son projet pilote.",
+    "legal": "Mentions légales",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation"
   },
   "newsletter": {
     "emailLabel": "Adresse courriel",
@@ -567,6 +570,137 @@
       "title": "Une question sans réponse dans ce guide?",
       "body": "Écrivez-nous et nous vous aiderons directement, ou vous dirigerons vers le bon organisme.",
       "button": "Nous contacter"
+    }
+  },
+  "legal": {
+    "eyebrow": "Mentions légales",
+    "lastUpdated": "Dernière mise à jour : septembre 2026",
+    "backHome": "Retour à l'accueil",
+    "privacy": {
+      "title": "Politique de confidentialité",
+      "subtitle": "Ce que nous recueillons, pourquoi, et ce que nous ne ferons jamais avec.",
+      "sections": [
+        {
+          "title": "Qui nous sommes",
+          "body": "Health Beyond Hurdles / Santé Sans Obstacles est un organisme à but non lucratif proposé, basé à Regina, en Saskatchewan. Notre premier programme, le Projet de navigation en santé pour nouveaux arrivants, aide les nouveaux arrivants à comprendre et à utiliser le système de santé de la Saskatchewan, en français et en anglais. L'organisme est encore en formation. Dès qu'il sera constitué, cette politique sera mise à jour avec notre nom et notre adresse enregistrés."
+        },
+        {
+          "title": "Ce que nous recueillons",
+          "body": "Uniquement ce que vous inscrivez dans un formulaire de ce site :",
+          "items": [
+            "Formulaire de contact : votre nom, votre adresse courriel, la raison de votre message et votre message.",
+            "Inscription à l'infolettre : votre adresse courriel.",
+            "Rien d'autre. Il n'y a ni compte, ni connexion, ni information de paiement sur ce site."
+          ]
+        },
+        {
+          "title": "Pourquoi nous le recueillons",
+          "body": "Pour vous répondre, pour vous envoyer les mises à jour que vous avez demandées, et pour comprendre quel type de soutien les nouveaux arrivants de la Saskatchewan recherchent afin de bâtir le bon programme. C'est tout."
+        },
+        {
+          "title": "Ce que nous ne ferons jamais",
+          "items": [
+            "Nous ne vendons, ne louons et n'échangeons jamais vos renseignements.",
+            "Nous ne les partageons jamais avec des annonceurs ou des courtiers de données.",
+            "Nous ne partageons jamais vos renseignements avec un employeur, un propriétaire, une école ou un organisme gouvernemental ou d'immigration, sauf si la loi nous y oblige.",
+            "Nous ne faisons jamais de votre prise de contact une condition pour recevoir de l'aide."
+          ]
+        },
+        {
+          "title": "Renseignements de santé et d'immigration",
+          "body": "Nous ne sommes pas un fournisseur de soins. Nous n'avons aucun accès à votre dossier de santé et nous ne demandons ni votre numéro de carte santé, ni votre diagnostic, ni votre dossier d'immigration. N'envoyez pas de documents médicaux ou d'immigration par les formulaires de ce site. Si vous devez nous transmettre quelque chose de sensible, écrivez-nous d'abord et nous vous indiquerons la façon sécuritaire de le faire."
+        },
+        {
+          "title": "Témoins et suivi",
+          "body": "Ce site n'utilise aucun témoin publicitaire ni aucun outil d'analyse tiers. Votre navigateur conserve deux préférences sur votre propre appareil : le thème que vous avez choisi, clair ou sombre, et votre langue. Elles restent sur votre appareil et ne nous sont jamais transmises."
+        },
+        {
+          "title": "Combien de temps nous les conservons",
+          "items": [
+            "Courriels de l'infolettre : jusqu'à ce que vous vous désabonniez. Chaque envoi contient un lien de désabonnement.",
+            "Messages de contact : seulement le temps nécessaire pour vous répondre et faire le suivi, puis ils sont supprimés."
+          ]
+        },
+        {
+          "title": "Vos droits",
+          "body": "Vous pouvez nous demander en tout temps de vous montrer ce que nous détenons à votre sujet, de le corriger ou de le supprimer. Écrivez à info@healthbeyondhurdles.com et nous vous répondrons. La loi canadienne sur la protection des renseignements personnels, dont la LPRPDE, vous accorde ces droits et nous entendons les respecter pleinement."
+        },
+        {
+          "title": "Où vos renseignements sont conservés",
+          "body": "Ce site est hébergé par un fournisseur tiers et les envois de formulaires peuvent être traités sur des serveurs situés à l'extérieur du Canada. Nous nommerons ici nos fournisseurs d'hébergement et de courriel dès qu'ils seront confirmés."
+        },
+        {
+          "title": "Enfants",
+          "body": "Ce site s'adresse à des adultes. Nous ne recueillons pas sciemment de renseignements auprès d'enfants de moins de 13 ans. Si vous croyez qu'un enfant nous a transmis des renseignements, écrivez-nous et nous les supprimerons."
+        },
+        {
+          "title": "Modifications de cette politique",
+          "body": "Si nous modifions cette politique, nous publierons la nouvelle version sur cette page et mettrons la date à jour en haut. Les changements importants seront aussi annoncés dans notre infolettre."
+        },
+        {
+          "title": "Questions",
+          "body": "Écrivez à info@healthbeyondhurdles.com. Une vraie personne lit cette boîte de réception."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Conditions d'utilisation",
+      "subtitle": "Les règles d'utilisation de ce site et du Guide santé pour nouveaux arrivants.",
+      "sections": [
+        {
+          "title": "À propos de ce site",
+          "body": "Ceci est le site d'information de Health Beyond Hurdles / Santé Sans Obstacles, un organisme à but non lucratif proposé à Regina, en Saskatchewan. En utilisant le site, vous acceptez ces conditions. Si vous ne les acceptez pas, veuillez ne pas utiliser le site."
+        },
+        {
+          "title": "De l'information, pas un avis professionnel",
+          "body": "Tout ce qui se trouve sur ce site, y compris le Guide santé pour nouveaux arrivants, explique le fonctionnement du système de santé de la Saskatchewan. C'est de l'information générale. Ce n'est pas un avis médical, juridique ou en immigration, et cela ne remplace pas une conversation avec un professionnel autorisé.",
+          "items": [
+            "En cas d'urgence potentiellement mortelle, composez le 911.",
+            "Pour des conseils de santé d'une infirmière autorisée, 24 heures sur 24, composez HealthLine 811.",
+            "Pour une décision médicale, parlez à un médecin, à une infirmière praticienne ou à un pharmacien."
+          ]
+        },
+        {
+          "title": "Le guide est une version préliminaire",
+          "body": "Le Guide santé pour nouveaux arrivants est publié comme version de travail. Il doit encore être révisé par des professionnels de la santé et des intervenants en établissement avant d'être considéré comme final. Nous le disons ouvertement, parce que nous préférons être honnêtes plutôt que d'avoir l'air terminés."
+        },
+        {
+          "title": "Exactitude et changements",
+          "body": "Les programmes, les numéros de téléphone, les critères d'admissibilité et les heures d'ouverture changent en Saskatchewan. Nous vérifions notre information régulièrement et nous datons nos pages, mais nous ne pouvons pas garantir que chaque détail est à jour au moment où vous le lisez. Avant de vous fier à un élément important, confirmez-le directement auprès de l'organisme nommé."
+        },
+        {
+          "title": "Liens vers d'autres organismes",
+          "body": "Nous renvoyons à la Saskatchewan Health Authority, à 211 Saskatchewan, aux agences d'établissement et à d'autres services. Nous ne contrôlons ni ces sites, ni leur contenu, ni leurs pratiques de confidentialité, et un lien ne constitue pas une approbation de tout ce qu'ils publient."
+        },
+        {
+          "title": "Utilisation de notre contenu",
+          "body": "Vous pouvez lire, imprimer et partager le guide gratuitement pour un usage personnel, familial, scolaire ou communautaire, à condition de créditer Health Beyond Hurdles / Santé Sans Obstacles et de ne pas le facturer. Écrivez-nous avant de republier une version modifiée ou d'utiliser notre contenu dans un produit commercial. Notre nom, notre logo et notre signature graphique nous appartiennent."
+        },
+        {
+          "title": "Formulaires et demandes",
+          "body": "L'envoi d'un formulaire de bénévolat, de partenariat ou de contact ne crée pas d'entente entre nous et ne garantit ni un rôle de bénévole, ni un partenariat, ni un service. Nous vous répondrons et nous vous dirons honnêtement où en sont les choses."
+        },
+        {
+          "title": "Dons",
+          "body": "Nous n'acceptons pas encore de dons. Lorsqu'une page de dons ouvrira, elle aura ses propres conditions couvrant le traitement des paiements, les reçus et les remboursements, et ces conditions s'appliqueront aux dons à la place de cette page."
+        },
+        {
+          "title": "Aucune garantie et limites de responsabilité",
+          "body": "Ce site est fourni tel quel, sans garantie d'aucune sorte. Dans toute la mesure permise par la loi, Health Beyond Hurdles / Santé Sans Obstacles et ses bénévoles ne sont pas responsables des pertes ou des préjudices découlant de décisions prises sur la base de ce site. Rien ici ne limite la responsabilité là où la loi ne permet pas de la limiter."
+        },
+        {
+          "title": "Droit applicable",
+          "body": "Ces conditions sont régies par les lois de la province de la Saskatchewan et par les lois du Canada qui s'y appliquent."
+        },
+        {
+          "title": "Modifications de ces conditions",
+          "body": "Nous pouvons mettre ces conditions à jour. La version en vigueur se trouve toujours sur cette page, avec sa date en haut."
+        },
+        {
+          "title": "Questions",
+          "body": "Écrivez à info@healthbeyondhurdles.com."
+        }
+      ]
     }
   }
 }
