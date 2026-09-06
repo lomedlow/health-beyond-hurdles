@@ -78,6 +78,30 @@
       ],
       "cta": "See the full picture"
     },
+    "evidence": {
+      "eyebrow": "The evidence",
+      "title": "The gap is measured, not assumed",
+      "body": "Statistics Canada surveyed French-speaking adults outside Quebec about access to healthcare in French. Among those who said it mattered to them, immigrants reported a harder experience than non-immigrants on every measure.",
+      "stats": [
+        {
+          "value": "53%",
+          "label": "find it difficult to get care in French",
+          "note": "30% among non-immigrants"
+        },
+        {
+          "value": "23%",
+          "label": "always or often receive care in French",
+          "note": "46% among non-immigrants"
+        },
+        {
+          "value": "50%",
+          "label": "are not comfortable asking for it",
+          "note": "34% among non-immigrants"
+        }
+      ],
+      "source": "Statistics Canada, Survey on the Official Language Minority Population, 2022. Published June 2026.",
+      "cta": "See the full picture"
+    },
     "bilingual": {
       "eyebrow": "Bilingual by design",
       "title": "French and English, equally",
@@ -235,6 +259,78 @@
         "The first major resource will be a bilingual newcomer healthcare guide: a general introduction to the provincial healthcare system that directs readers to trusted organizations and service providers for individualized assistance. The PDF will be shared electronically through partner organizations, social media, email newsletters, community websites, and QR codes in public locations; printed copies will be distributed at newcomer events, orientation sessions, workshops, health fairs, and community gatherings.",
         "The program's role is to provide education and orientation, not individualized medical advice. Readers are always encouraged to contact an appropriate healthcare professional, HealthLine 811, emergency services, or a trusted community organization for assistance specific to their personal situation."
       ]
+    },
+    "evidence": {
+      "eyebrow": "The evidence",
+      "title": "What the data says",
+      "intro": "In June 2026, Statistics Canada published an analysis of access to French-language healthcare among French-speaking adults outside Quebec. Two findings run through it, and both shape how this program is built. French-speaking immigrants face the widest gap of any group. And most of that gap comes from what is offered, not from what people want.",
+      "statsLead": "Among French-speaking adults who said it mattered to them to receive care in French, immigrants reported a harder experience than non-immigrants on every measure.",
+      "stats": [
+        {
+          "value": "53%",
+          "label": "find it difficult, very difficult, or impossible to get care in French where they live",
+          "note": "30% among non-immigrants"
+        },
+        {
+          "value": "23%",
+          "label": "always or often receive care in French",
+          "note": "46% among non-immigrants"
+        },
+        {
+          "value": "59%",
+          "label": "rarely or never ask for care in French",
+          "note": "47% among non-immigrants"
+        },
+        {
+          "value": "50%",
+          "label": "are not comfortable asking for care in French",
+          "note": "34% among non-immigrants"
+        },
+        {
+          "value": "39%",
+          "label": "feel care is actively offered in the language of their choice",
+          "note": "60% among non-immigrants"
+        }
+      ],
+      "reasonsTitle": "Why people do not ask",
+      "reasonsIntro": "Across all French-speaking adults who did not ask for care in French, the reasons given were mostly about the service, not about preference.",
+      "reasons": [
+        "43% assumed the professional did not speak French.",
+        "32% said the service was not actively offered in French.",
+        "23% wanted to avoid delays in getting care.",
+        "36% held back only for reasons tied to the absence of service or of an active offer.",
+        "Among those who were not comfortable asking, 81% explained that discomfort by a lack of service or of an active offer."
+      ],
+      "trendNote": "Discomfort is growing, not shrinking. One French-speaking adult in three (36%) is uncomfortable asking for care in French in a public health facility, up from 23% in 2006.",
+      "regionTitle": "In the West, the gap is wider still",
+      "regionIntro": "The survey groups Saskatchewan with Alberta, British Columbia, and the territorial capitals. Among French-speaking adults in that group who said French-language care mattered to them:",
+      "regionStats": [
+        {
+          "value": "78%",
+          "label": "find it difficult to get care in French where they live"
+        },
+        {
+          "value": "7%",
+          "label": "always or often ask for it"
+        },
+        {
+          "value": "6%",
+          "label": "always or often receive it"
+        },
+        {
+          "value": "77%",
+          "label": "are not comfortable asking"
+        },
+        {
+          "value": "21%",
+          "label": "feel care is actively offered in the language of their choice"
+        }
+      ],
+      "hingeTitle": "And yet asking works",
+      "hingeBody": "Among the French-speaking adults who did always or often ask for care in French, 81% always or often received it. The service exists more often than people expect, and it goes unused because no one asks. That gap between what is available and what is requested is exactly what a navigation program can close: knowing the service exists, knowing how to ask for it, and not having to ask alone.",
+      "sourceLabel": "Source",
+      "source": "Daphne Fernandes and Louis Cornelissen, \"Accès aux soins et services de santé en français parmi les adultes de langue française au Canada hors Québec, 2022\", Statistics Canada, Language Statistics Program, June 2026. Based on the 2022 Survey on the Official Language Minority Population.",
+      "scopeNote": "These figures describe all French-speaking adults outside Quebec, not newcomers alone. The immigrant and non-immigrant comparisons are drawn from within that population."
     },
     "topics": {
       "title": "What the guides cover",

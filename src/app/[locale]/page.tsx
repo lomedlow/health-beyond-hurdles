@@ -20,6 +20,7 @@ import { IconTile } from "@/components/ui/icon-tile";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/reveal";
 import { NewsletterForm } from "@/components/sections/newsletter-form";
 import { HeroIllustration } from "@/components/sections/hero-illustration";
+import { StatTile } from "@/components/ui/stat-tile";
 
 export async function generateMetadata({
   params,
@@ -52,6 +53,11 @@ function HomeBody() {
   const criteria = t.raw("whoWeServe.criteria") as string[];
   const outcomes = t.raw("outcomes.items") as string[];
   const programBullets = t.raw("programTeaser.bullets") as string[];
+  const evidenceStats = t.raw("evidence.stats") as {
+    value: string;
+    label: string;
+    note: string;
+  }[];
 
   return (
     <>
@@ -152,6 +158,40 @@ function HomeBody() {
               );
             })}
           </RevealGroup>
+        </div>
+      </Section>
+
+      {/* Evidence, measured elsewhere and cited */}
+      <Section tint="surface">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start lg:gap-20">
+          <Reveal>
+            <Eyebrow>{t("evidence.eyebrow")}</Eyebrow>
+            <h2 className="font-display text-3xl font-semibold sm:text-4xl">
+              {t("evidence.title")}
+            </h2>
+            <p className="mt-4 max-w-md text-base leading-relaxed text-muted-foreground">
+              {t("evidence.body")}
+            </p>
+            <Button href="/program" variant="outline" className="mt-7">
+              {t("evidence.cta")}
+              <ArrowRight className="h-4 w-4" />
+            </Button>
+          </Reveal>
+
+          <div>
+            <RevealGroup className="grid grid-cols-1 gap-x-10 gap-y-10 sm:grid-cols-3">
+              {evidenceStats.map((stat) => (
+                <RevealItem key={stat.value + stat.label}>
+                  <StatTile value={stat.value} label={stat.label} note={stat.note} />
+                </RevealItem>
+              ))}
+            </RevealGroup>
+            <Reveal>
+              <p className="mt-10 border-t border-border pt-5 text-xs leading-relaxed text-muted-foreground">
+                {t("evidence.source")}
+              </p>
+            </Reveal>
+          </div>
         </div>
       </Section>
 

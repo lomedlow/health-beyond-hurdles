@@ -40,17 +40,24 @@ export function BrandLockup({
 
   const [top, bottom] = locale === "fr" ? [names.fr, names.en] : [names.en, names.fr];
 
-  const iconSize = size === "header" ? "h-10 w-10 sm:h-11 sm:w-11" : "h-12 w-12";
+  // The header lockup steps down on the narrowest phones (320px), where the
+  // wordmark, the theme toggle and the menu button share one row.
+  const iconSize =
+    size === "header" ? "h-9 w-9 min-[360px]:h-10 min-[360px]:w-10 sm:h-11 sm:w-11" : "h-12 w-12";
   const topText =
-    size === "header" ? "text-[0.78rem] sm:text-[0.86rem]" : "text-base";
+    size === "header"
+      ? "text-[0.66rem] min-[360px]:text-[0.78rem] sm:text-[0.86rem]"
+      : "text-base";
   const bottomText =
-    size === "header" ? "text-[0.62rem] sm:text-[0.68rem]" : "text-[0.78rem]";
+    size === "header"
+      ? "text-[0.54rem] min-[360px]:text-[0.62rem] sm:text-[0.68rem]"
+      : "text-[0.78rem]";
 
   const line =
     "block whitespace-nowrap font-display font-semibold uppercase leading-tight tracking-[0.01em] transition-colors";
 
   return (
-    <div className={cn("flex items-center gap-3", className)}>
+    <div className={cn("flex items-center gap-2.5 min-[360px]:gap-3", className)}>
       <Logo className={iconSize} />
       <div className="flex flex-col">
         <Link
