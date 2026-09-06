@@ -70,10 +70,15 @@ All copy lives in `messages/en.json` and `messages/fr.json`, organized by page. 
 
 ## Before going live
 
-A few things are intentionally left as clearly-marked placeholders, since the organization is still proposed and this information wasn't available yet:
+**See [`LANCEMENT.md`](./LANCEMENT.md)** for the full pre-launch checklist, split into what the
+organization has to configure (domain, inbox, email provider, newsletter tool, donation
+platform, legal review) and what still has to be coded.
+
+In short, a few things are intentionally left as clearly-marked placeholders, since the organization is still proposed and this information wasn't available yet:
 
 - **`src/config/site.ts`**: real domain, monitored email inbox, and social links (each marked `TODO`).
 - **Contact & newsletter forms** (`src/app/api/contact/route.ts`, `src/app/api/newsletter/route.ts`): currently validate input and return success so the UI is fully demoable, but don't send anywhere yet. Wire them up to a real email/CRM provider (e.g. Resend, Mailchimp) before launch.
+- **Legal pages** (`/privacy`, `/terms`): written in plain language and honest about the organization's pre-launch status, but not reviewed by a lawyer. Have them reviewed before launch.
 - **Donate page**: intentionally a "coming soon" page with a newsletter opt-in, since the organization can't yet accept donations. Replace with real payment/donation infrastructure once the nonprofit is formally established.
 
 ## Notes on Next.js 16

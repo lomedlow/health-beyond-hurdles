@@ -8,9 +8,9 @@ export const siteConfig = {
   name: "Health Beyond Hurdles",
   nameFr: "Santé Sans Obstacles",
   shortName: "HBH",
-  url: "https://healthbeyondhurdles.org", // TODO: replace with real domain once registered
-  // TODO: replace with a real monitored inbox before launch
-  email: "info@healthbeyondhurdles.org",
+  // TODO: confirm the live domain before launch (the inbox below is on .com)
+  url: "https://healthbeyondhurdles.com",
+  email: "info@healthbeyondhurdles.com",
   location: {
     city: "Regina",
     province: "Saskatchewan",

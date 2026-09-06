@@ -3,6 +3,8 @@ import type { Locale } from "@/i18n/routing";
 export const pdfLabels: Record<
   Locale,
   {
+    nameTop: string;
+    nameBottom: string;
     kicker: string;
     title: string;
     subtitle: string;
@@ -17,6 +19,8 @@ export const pdfLabels: Record<
   }
 > = {
   en: {
+    nameTop: "HEALTH BEYOND HURDLES",
+    nameBottom: "SANTÉ SANS OBSTACLES",
     kicker: "Newcomer Health Navigation Project",
     title: "The Newcomer Healthcare Guide",
     subtitle: "A plain-language introduction to Saskatchewan's healthcare system",
@@ -31,6 +35,8 @@ export const pdfLabels: Record<
     phoneLabel: "Phone",
   },
   fr: {
+    nameTop: "SANTÉ SANS OBSTACLES",
+    nameBottom: "HEALTH BEYOND HURDLES",
     kicker: "Projet de navigation en santé pour nouveaux arrivants",
     title: "Le guide santé pour nouveaux arrivants",
     subtitle: "Une introduction en langage clair au système de santé de la Saskatchewan",

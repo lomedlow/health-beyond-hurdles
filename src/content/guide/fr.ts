@@ -694,7 +694,7 @@ export const guideSections: GuideSection[] = [
           {
             name: "Health Beyond Hurdles / Santé Sans Obstacles",
             detail: "Questions sur ce guide ou sur le Projet de navigation en santé pour nouveaux arrivants",
-            url: "healthbeyondhurdles.org/contact",
+            url: "healthbeyondhurdles.com/contact",
           },
         ],
       },

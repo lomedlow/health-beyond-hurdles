@@ -12,6 +12,7 @@ export const pdfColors = {
   brand700: "#146157",
   brand900: "#0e3f3a",
   brand950: "#082826",
+  brandInkAccent: "#8fd0bd",
 
   coral: "#c96b6b",
   coralSoft: "#fdeeee",

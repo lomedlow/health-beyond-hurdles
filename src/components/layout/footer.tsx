@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { Logo } from "@/components/icons/logo";
+import { BrandLockup } from "@/components/layout/brand-lockup";
 import { siteConfig } from "@/config/site";
 import { Mail, MapPin } from "lucide-react";
 import { NewsletterForm } from "@/components/sections/newsletter-form";
@@ -34,12 +34,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1.3fr_0.7fr_0.7fr_1fr]">
           <div>
-            <Link href="/" className="flex items-center gap-3">
-              <Logo className="h-10 w-10" />
-              <span className="font-display text-lg font-semibold">
-                Health Beyond Hurdles
-              </span>
-            </Link>
+            <BrandLockup size="footer" />
             <p className="mt-3 max-w-xs text-sm text-muted-foreground">
               {tf("tagline")}
             </p>
@@ -86,12 +81,22 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col gap-4 border-t border-border pt-8 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-          <p>
-            © {new Date().getFullYear()} Health Beyond Hurdles / Santé Sans Obstacles.{" "}
-            {tf("rights")}
-          </p>
-          <p className="max-w-2xl">{tf("proposedNotice")}</p>
+        <div className="mt-14 border-t border-border pt-8 text-xs text-muted-foreground">
+          <p className="max-w-3xl">{tf("proposedNotice")}</p>
+          <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <p>
+              © {new Date().getFullYear()} Health Beyond Hurdles / Santé Sans Obstacles.{" "}
+              {tf("rights")}
+            </p>
+            <nav className="flex items-center gap-5" aria-label={tf("legal")}>
+              <Link href="/privacy" className="transition-colors hover:text-foreground">
+                {tf("privacy")}
+              </Link>
+              <Link href="/terms" className="transition-colors hover:text-foreground">
+                {tf("terms")}
+              </Link>
+            </nav>
+          </div>
         </div>
       </div>
     </footer>

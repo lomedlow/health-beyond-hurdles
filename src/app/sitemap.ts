@@ -3,7 +3,18 @@ import { routing } from "@/i18n/routing";
 import { getPathname } from "@/i18n/navigation";
 import { siteConfig } from "@/config/site";
 
-const pages = ["/", "/about", "/program", "/get-involved", "/partners", "/contact", "/donate"] as const;
+const pages = [
+  "/",
+  "/about",
+  "/program",
+  "/guide",
+  "/get-involved",
+  "/partners",
+  "/contact",
+  "/donate",
+  "/privacy",
+  "/terms",
+] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return pages.map((page) => ({
