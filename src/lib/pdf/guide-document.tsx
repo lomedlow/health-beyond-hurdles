@@ -51,27 +51,52 @@ function Footer({ orgLabel }: { orgLabel: string }) {
 }
 
 /**
- * The globe mark on a white chip, so the dark artwork reads against the
- * cover's deep teal ground.
+ * The globe on a white chip, so the dark artwork reads against the cover's
+ * deep teal ground, beside the two-line wordmark. The document's own
+ * language sits on top, matching the site header.
  */
-function Monogram({ size = 64 }: { size?: number }) {
+function Wordmark({
+  labels,
+  size = 56,
+}: {
+  labels: (typeof pdfLabels)[Locale];
+  size?: number;
+}) {
   return (
-    <View
-      style={{
-        width: size,
-        height: size,
-        borderRadius: size / 2,
-        backgroundColor: "#ffffff",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
-      {/* eslint-disable-next-line jsx-a11y/alt-text -- react-pdf Image, not an HTML img */}
-      <Image
-        src={path.join(process.cwd(), "public/brand/logo-globe.png")}
-        style={{ width: size * 0.74, height: size * 0.74 }}
-      />
+    <View style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 14 }}>
+      <View
+        style={{
+          width: size,
+          height: size,
+          borderRadius: size / 2,
+          backgroundColor: "#ffffff",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        {/* eslint-disable-next-line jsx-a11y/alt-text -- react-pdf Image, not an HTML img */}
+        <Image
+          src={path.join(process.cwd(), "public/brand/logo-globe.png")}
+          style={{ width: size * 0.74, height: size * 0.74 }}
+        />
+      </View>
+      <View style={{ display: "flex", flexDirection: "column" }}>
+        <Text style={{ fontSize: 13, fontWeight: 700, letterSpacing: 0.4, color: "#ffffff" }}>
+          {labels.nameTop}
+        </Text>
+        <View
+          style={{
+            height: 0.75,
+            backgroundColor: "rgba(255,255,255,0.3)",
+            marginTop: 5,
+            marginBottom: 5,
+          }}
+        />
+        <Text style={{ fontSize: 9.5, letterSpacing: 1.1, color: c.brandInkAccent }}>
+          {labels.nameBottom}
+        </Text>
+      </View>
     </View>
   );
 }
@@ -85,7 +110,7 @@ function CoverPage({
 }) {
   return (
     <Page size="A4" style={styles.coverPage}>
-      <Monogram size={56} />
+      <Wordmark labels={labels} size={56} />
       <View style={{ marginTop: 28 }}>
         <Text style={{ fontSize: 9, fontWeight: 600, letterSpacing: 1.5, color: c.brand100, textTransform: "uppercase" }}>
           {labels.kicker}
