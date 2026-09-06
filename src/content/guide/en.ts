@@ -435,6 +435,32 @@ export const guideSections: GuideSection[] = [
         text: "For settlement support in French, SAIF-SK (Services d'accueil et d'inclusion francophone) welcomes and accompanies French-speaking newcomers across Saskatchewan, from arrival through the practical steps of building a life here.",
       },
       {
+        type: "subheading",
+        text: "Ask, even when you expect the answer to be no",
+      },
+      {
+        type: "p",
+        text: "Most people never ask. In a Statistics Canada analysis published in 2026, using 2022 survey data, half of the French-speaking adults outside Quebec who said care in French mattered to them rarely or never asked for it. The most common reason was an assumption rather than an experience: 43 percent believed the professional did not speak French. In most cases nobody had checked.",
+      },
+      {
+        type: "p",
+        text: "Asking changes the result. Among the people who did ask, always or often, 81 percent received care in French always or often. The service exists more often than people expect, and it goes unused because it is not requested.",
+      },
+      {
+        type: "callout",
+        tone: "tip",
+        title: "If you are not comfortable asking",
+        text: "You are not unusual. One French-speaking adult in three is uncomfortable asking, and among immigrants it is one in two. You do not have to ask face to face: call ahead, write it on the registration form, or bring someone with you. The accompaniment service below exists for exactly this.",
+      },
+      {
+        type: "p",
+        text: "If you only push in one place, push where the stakes are highest for you. French-speaking adults most often said language mattered with family doctors (80 percent), psychologists (79 percent), and social workers (79 percent): the appointments where being misunderstood costs the most.",
+      },
+      {
+        type: "p",
+        text: "A French-speaking provider does not have to be in your city. Ask whether an appointment by phone or video in French is possible, especially outside Regina and Saskatoon. Asked to choose, 28 percent of French-speaking adults outside Quebec said they would rather have a remote appointment in French than an in-person one in English.",
+      },
+      {
         type: "contacts",
         items: [
           {

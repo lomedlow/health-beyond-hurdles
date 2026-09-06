@@ -435,6 +435,32 @@ export const guideSections: GuideSection[] = [
         text: "Pour le soutien à l'établissement en français, le SAIF-SK (Services d'accueil et d'inclusion francophone) accueille et accompagne les nouveaux arrivants francophones partout en Saskatchewan, de l'arrivée jusqu'aux étapes concrètes de l'installation.",
       },
       {
+        type: "subheading",
+        text: "Demandez, même si vous pensez que la réponse sera non",
+      },
+      {
+        type: "p",
+        text: "La plupart des gens ne demandent jamais. Dans une analyse de Statistique Canada publiée en 2026, à partir de données de 2022, la moitié des adultes de langue française du Canada hors Québec pour qui les soins en français comptaient n'en demandaient que rarement ou jamais. La raison la plus fréquente était une supposition, pas une expérience : 43 % croyaient que le professionnel ne parlait pas français. La plupart du temps, personne n'avait vérifié.",
+      },
+      {
+        type: "p",
+        text: "Demander change le résultat. Parmi les personnes qui demandaient toujours ou souvent, 81 % obtenaient toujours ou souvent des soins en français. Le service existe plus souvent qu'on ne le croit, et il reste inutilisé parce qu'on ne le demande pas.",
+      },
+      {
+        type: "callout",
+        tone: "tip",
+        title: "Si vous n'êtes pas à l'aise de demander",
+        text: "Vous n'êtes pas une exception. Un adulte de langue française sur trois n'est pas à l'aise de demander, et chez les immigrants, c'est un sur deux. Vous n'avez pas à le demander face à face : téléphonez avant, écrivez-le sur le formulaire d'inscription, ou faites-vous accompagner. Le service d'accompagnement ci-dessous existe exactement pour ça.",
+      },
+      {
+        type: "p",
+        text: "Si vous n'insistez qu'à un seul endroit, insistez là où l'enjeu est le plus grand pour vous. Les adultes de langue française jugeaient le plus souvent la langue importante avec les médecins généralistes (80 %), les psychologues (79 %) et les travailleurs sociaux (79 %) : les rendez-vous où être mal compris coûte le plus cher.",
+      },
+      {
+        type: "p",
+        text: "Un professionnel francophone n'a pas besoin d'être dans votre ville. Demandez si un rendez-vous par téléphone ou par vidéo en français est possible, surtout à l'extérieur de Regina et de Saskatoon. Invités à choisir, 28 % des adultes de langue française du Canada hors Québec ont dit préférer un rendez-vous à distance en français plutôt qu'un rendez-vous en personne en anglais.",
+      },
+      {
         type: "contacts",
         items: [
           {

@@ -78,6 +78,30 @@
       ],
       "cta": "Voir le portrait complet"
     },
+    "evidence": {
+      "eyebrow": "Les données",
+      "title": "L'écart est mesuré, pas supposé",
+      "body": "Statistique Canada a interrogé les adultes de langue française du Canada hors Québec sur l'accès aux soins en français. Parmi ceux pour qui cela comptait, les immigrants rapportaient une expérience plus difficile que les non-immigrants sur chacune des mesures.",
+      "stats": [
+        {
+          "value": "53 %",
+          "label": "jugent difficile d'obtenir des soins en français",
+          "note": "30 % chez les non-immigrants"
+        },
+        {
+          "value": "23 %",
+          "label": "obtiennent toujours ou souvent des soins en français",
+          "note": "46 % chez les non-immigrants"
+        },
+        {
+          "value": "50 %",
+          "label": "ne sont pas à l'aise d'en demander",
+          "note": "34 % chez les non-immigrants"
+        }
+      ],
+      "source": "Statistique Canada, Enquête sur la population de langue officielle en situation minoritaire, 2022. Publié en juin 2026.",
+      "cta": "Voir le portrait complet"
+    },
     "bilingual": {
       "eyebrow": "Bilingues par conception",
       "title": "Français et anglais, à égalité",
@@ -235,6 +259,78 @@
         "La première ressource majeure sera un guide de santé bilingue pour nouveaux arrivants : une introduction générale au système de santé provincial qui dirige les lecteurs vers des organismes et fournisseurs de services de confiance pour de l'aide individualisée. La version PDF sera partagée électroniquement par l'entremise d'organismes partenaires, des réseaux sociaux, des infolettres, des sites web communautaires et de codes QR affichés dans les lieux publics; des copies imprimées seront distribuées lors d'événements pour nouveaux arrivants, de séances d'orientation, d'ateliers, de salons de la santé et de rassemblements communautaires.",
         "Le rôle du programme est d'offrir de l'éducation et de l'orientation, et non des conseils médicaux individualisés. Les lecteurs sont toujours encouragés à contacter un professionnel de la santé approprié, HealthLine 811, les services d'urgence, ou un organisme communautaire de confiance pour toute aide propre à leur situation personnelle."
       ]
+    },
+    "evidence": {
+      "eyebrow": "Les données",
+      "title": "Ce que disent les données",
+      "intro": "En juin 2026, Statistique Canada a publié une analyse de l'accès aux soins de santé en français chez les adultes de langue française au Canada hors Québec. Deux constats la traversent, et tous les deux façonnent la conception de ce programme. Les immigrants d'expression française vivent l'écart le plus grand de tous les groupes. Et cet écart tient surtout à ce qui est offert, pas à ce que les gens veulent.",
+      "statsLead": "Parmi les adultes de langue française pour qui il était important de recevoir des soins en français, les immigrants rapportaient une expérience plus difficile que les non-immigrants sur chacune des mesures.",
+      "stats": [
+        {
+          "value": "53 %",
+          "label": "jugent difficile, très difficile ou impossible d'obtenir des soins en français là où ils vivent",
+          "note": "30 % chez les non-immigrants"
+        },
+        {
+          "value": "23 %",
+          "label": "obtiennent toujours ou souvent des soins en français",
+          "note": "46 % chez les non-immigrants"
+        },
+        {
+          "value": "59 %",
+          "label": "ne demandent que rarement ou jamais des soins en français",
+          "note": "47 % chez les non-immigrants"
+        },
+        {
+          "value": "50 %",
+          "label": "ne sont pas à l'aise de demander des soins en français",
+          "note": "34 % chez les non-immigrants"
+        },
+        {
+          "value": "39 %",
+          "label": "estiment que les soins sont offerts activement dans la langue de leur choix",
+          "note": "60 % chez les non-immigrants"
+        }
+      ],
+      "reasonsTitle": "Pourquoi les gens ne demandent pas",
+      "reasonsIntro": "Chez l'ensemble des adultes de langue française qui n'avaient pas demandé de soins en français, les raisons invoquées tenaient surtout au service, pas à une préférence.",
+      "reasons": [
+        "43 % supposaient que le professionnel ne connaissait pas le français.",
+        "32 % indiquaient que le service n'était pas offert activement en français.",
+        "23 % voulaient éviter des retards dans l'obtention du service.",
+        "36 % s'en sont abstenus uniquement pour des raisons liées à l'absence d'offre ou d'offre active.",
+        "Chez celles et ceux qui n'étaient pas à l'aise de demander, 81 % expliquaient ce malaise par un manque d'offre ou d'offre active."
+      ],
+      "trendNote": "Le malaise augmente, il ne diminue pas. Un adulte de langue française sur trois (36 %) n'est pas à l'aise de demander des soins en français dans un établissement public de santé, contre 23 % en 2006.",
+      "regionTitle": "Dans l'Ouest, l'écart est encore plus large",
+      "regionIntro": "L'enquête regroupe la Saskatchewan avec l'Alberta, la Colombie-Britannique et les capitales territoriales. Dans ce groupe, parmi les adultes de langue française pour qui les soins en français comptaient :",
+      "regionStats": [
+        {
+          "value": "78 %",
+          "label": "jugent difficile d'obtenir des soins en français là où ils vivent"
+        },
+        {
+          "value": "7 %",
+          "label": "en demandent toujours ou souvent"
+        },
+        {
+          "value": "6 %",
+          "label": "en obtiennent toujours ou souvent"
+        },
+        {
+          "value": "77 %",
+          "label": "ne sont pas à l'aise d'en demander"
+        },
+        {
+          "value": "21 %",
+          "label": "estiment que les soins sont offerts activement dans la langue de leur choix"
+        }
+      ],
+      "hingeTitle": "Et pourtant, demander fonctionne",
+      "hingeBody": "Parmi les adultes de langue française qui demandaient toujours ou souvent des soins en français, 81 % les obtenaient toujours ou souvent. Le service existe plus souvent qu'on ne le croit, et il reste inutilisé parce que personne ne le demande. C'est exactement cet écart entre ce qui est disponible et ce qui est demandé qu'un programme de navigation peut combler : savoir que le service existe, savoir comment le demander, et ne pas avoir à le demander seul.",
+      "sourceLabel": "Source",
+      "source": "Daphne Fernandes et Louis Cornelissen, « Accès aux soins et services de santé en français parmi les adultes de langue française au Canada hors Québec, 2022 », Statistique Canada, Programme de la statistique linguistique, juin 2026. Données de l'Enquête sur la population de langue officielle en situation minoritaire de 2022.",
+      "scopeNote": "Ces chiffres portent sur l'ensemble des adultes de langue française au Canada hors Québec, pas uniquement sur les nouveaux arrivants. Les comparaisons entre immigrants et non-immigrants sont établies à l'intérieur de cette population."
     },
     "topics": {
       "title": "Ce que couvrent les guides",

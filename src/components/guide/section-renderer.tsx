@@ -127,10 +127,10 @@ export function SectionRenderer({
                           href={toHref(c.url)}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600 hover:underline"
+                          className="inline-flex min-w-0 items-baseline gap-1.5 text-sm font-semibold text-brand-600 hover:underline"
                         >
-                          {c.url.replace(/^https?:\/\//, "")}
-                          <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
+                          <span className="break-all">{c.url.replace(/^https?:\/\//, "")}</span>
+                          <ExternalLink className="h-3.5 w-3.5 shrink-0 self-center" aria-hidden="true" />
                         </a>
                       )}
                     </div>
