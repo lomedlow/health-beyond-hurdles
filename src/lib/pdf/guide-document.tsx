@@ -1,4 +1,5 @@
-import { Document, Page, Text, View, StyleSheet, Link, Svg, Circle, Path } from "@react-pdf/renderer";
+import { Document, Page, Text, View, StyleSheet, Link, Image } from "@react-pdf/renderer";
+import path from "node:path";
 import type { GuideBlock, GuideMeta, GuideSection } from "@/content/guide/types";
 import type { Locale } from "@/i18n/routing";
 import { pdfColors as c } from "./colors";
@@ -49,19 +50,29 @@ function Footer({ orgLabel }: { orgLabel: string }) {
   );
 }
 
+/**
+ * The globe mark on a white chip, so the dark artwork reads against the
+ * cover's deep teal ground.
+ */
 function Monogram({ size = 64 }: { size?: number }) {
   return (
-    <Svg width={size} height={size} viewBox="0 0 40 40">
-      <Circle cx={20} cy={20} r={19.5} fill={c.brand600} stroke={c.brand500} />
-      <Path
-        d="M11 27V13M11 20H16.5M16.5 13V27M23.5 27V13M23.5 20H29M29 13V27"
-        stroke="#ffffff"
-        strokeWidth={2.2}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        fill="none"
+    <View
+      style={{
+        width: size,
+        height: size,
+        borderRadius: size / 2,
+        backgroundColor: "#ffffff",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      {/* eslint-disable-next-line jsx-a11y/alt-text -- react-pdf Image, not an HTML img */}
+      <Image
+        src={path.join(process.cwd(), "public/brand/logo-globe.png")}
+        style={{ width: size * 0.74, height: size * 0.74 }}
       />
-    </Svg>
+    </View>
   );
 }
 
