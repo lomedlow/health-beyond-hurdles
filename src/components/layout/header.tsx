@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import * as Dialog from "@radix-ui/react-dialog";
 import { Menu, X, ArrowRight } from "lucide-react";
 import { Link, usePathname } from "@/i18n/navigation";
-import { Logo } from "@/components/icons/logo";
+import { BrandLockup } from "@/components/layout/brand-lockup";
 import { ThemeToggle } from "@/components/theme/theme-toggle";
 import { LocaleSwitcher } from "@/components/locale/locale-switcher";
 import { Button } from "@/components/ui/button";
@@ -29,13 +29,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur-md">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
-        <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <Logo className="h-10 w-10" />
-          <span className="font-display text-lg font-semibold leading-tight text-foreground">
-            Health Beyond
-            <br className="hidden sm:block" /> Hurdles
-          </span>
-        </Link>
+        <BrandLockup onNavigate={() => setOpen(false)} />
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">
           {navItems.map((item) => {
@@ -45,7 +39,7 @@ export function Header() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "rounded-full px-4 py-2 text-sm font-medium transition-colors hover:bg-surface-muted hover:text-foreground",
+                  "whitespace-nowrap rounded-full px-3 py-2 text-sm font-medium transition-colors hover:bg-surface-muted hover:text-foreground xl:px-4",
                   active ? "text-brand-600" : "text-muted-foreground",
                 )}
               >
@@ -55,7 +49,7 @@ export function Header() {
           })}
         </nav>
 
-        <div className="hidden items-center gap-3 lg:flex">
+        <div className="hidden items-center gap-2 lg:flex xl:gap-3">
           <LocaleSwitcher />
           <ThemeToggle />
           <Button href="/donate" size="sm" variant="accent">
@@ -79,15 +73,11 @@ export function Header() {
             <Dialog.Portal>
               <Dialog.Overlay className="fixed inset-0 z-50 bg-brand-950/40 backdrop-blur-sm data-[state=open]:animate-fade-in" />
               <Dialog.Content className="fixed inset-y-0 right-0 z-50 flex w-full max-w-sm flex-col gap-8 bg-background p-6 shadow-2xl focus:outline-none">
-                <div className="flex items-center justify-between">
-                  <Dialog.Title asChild>
-                    <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-                      <Logo className="h-9 w-9" />
-                      <span className="font-display text-base font-semibold">
-                        Health Beyond Hurdles
-                      </span>
-                    </Link>
+                <div className="flex items-start justify-between gap-4">
+                  <Dialog.Title className="sr-only">
+                    Health Beyond Hurdles / Santé Sans Obstacles
                   </Dialog.Title>
+                  <BrandLockup onNavigate={() => setOpen(false)} />
                   <Dialog.Close asChild>
                     <button
                       type="button"

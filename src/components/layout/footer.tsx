@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { Logo } from "@/components/icons/logo";
+import { BrandLockup } from "@/components/layout/brand-lockup";
 import { siteConfig } from "@/config/site";
 import { Mail, MapPin } from "lucide-react";
 import { NewsletterForm } from "@/components/sections/newsletter-form";
@@ -34,12 +34,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1.3fr_0.7fr_0.7fr_1fr]">
           <div>
-            <Link href="/" className="flex items-center gap-3">
-              <Logo className="h-10 w-10" />
-              <span className="font-display text-lg font-semibold">
-                Health Beyond Hurdles
-              </span>
-            </Link>
+            <BrandLockup size="footer" />
             <p className="mt-3 max-w-xs text-sm text-muted-foreground">
               {tf("tagline")}
             </p>

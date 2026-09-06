@@ -23,7 +23,9 @@
     "openMenu": "Ouvrir le menu",
     "closeMenu": "Fermer le menu",
     "organization": "Organisme",
-    "connect": "Nous joindre"
+    "connect": "Nous joindre",
+    "goHomeEnglish": "Health Beyond Hurdles, page d'accueil en anglais",
+    "goHomeFrench": "Santé Sans Obstacles, page d'accueil en français"
   },
   "footer": {
     "tagline": "Aider les nouveaux arrivants à naviguer le système de santé de la Saskatchewan, en français et en anglais, avec le même soin.",

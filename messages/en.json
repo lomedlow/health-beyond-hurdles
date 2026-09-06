@@ -23,7 +23,9 @@
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "organization": "Organization",
-    "connect": "Connect"
+    "connect": "Connect",
+    "goHomeEnglish": "Health Beyond Hurdles, home page in English",
+    "goHomeFrench": "Santé Sans Obstacles, home page in French"
   },
   "footer": {
     "tagline": "Helping newcomers navigate Saskatchewan's healthcare system, in French and in English, with equal care.",
