@@ -56,7 +56,7 @@
     "programTeaser": {
       "eyebrow": "Notre premier programme",
       "title": "Le Projet de navigation en santé pour nouveaux arrivants",
-      "body": "Une initiative d'éducation et de navigation en santé pour les nouveaux arrivants dans leurs cinq premières années en Saskatchewan. Nous transformons un système déroutant en étapes claires : ce que fait chaque type de fournisseur de soins, où aller selon le besoin, et qui appeler quand quelque chose ne va pas.",
+      "body": "Une initiative d'éducation et de navigation en santé pour les nouveaux arrivants dans leurs cinq premières années en Saskatchewan. Nous transformons un système difficile à comprendre en étapes claires : ce que fait chaque type de fournisseur de soins, où aller selon le besoin, et qui appeler quand quelque chose ne va pas.",
       "bullets": [
         "Des guides en langage clair, en ligne et en version imprimée",
         "Révisés par des professionnels de la santé",
@@ -80,7 +80,7 @@
     },
     "evidence": {
       "eyebrow": "Les données",
-      "title": "L'écart est mesuré, pas supposé",
+      "title": "L'écart est mesuré, pas présumé",
       "body": "Statistique Canada a interrogé les adultes de langue française du Canada hors Québec sur l'accès aux soins en français. Parmi ceux pour qui cela comptait, les immigrants rapportaient une expérience plus difficile que les non-immigrants sur chacune des mesures.",
       "stats": [
         {
@@ -152,8 +152,8 @@
   "about": {
     "hero": {
       "eyebrow": "À propos",
-      "title": "Health Beyond Hurdles / Santé Sans Obstacles",
-      "subtitle": "Voué à améliorer l'accès à l'information en santé, aux services de santé non cliniques et au soutien communautaire pour les nouveaux arrivants et les communautés mal desservies en Saskatchewan."
+      "title": "Santé Sans Obstacles",
+      "subtitle": "De l'information et du soutien en santé, en langage clair, en français et en anglais, pour les nouveaux arrivants qui bâtissent une nouvelle vie en Saskatchewan."
     },
     "overview": {
       "title": "Qui nous sommes",
@@ -719,7 +719,7 @@
         },
         {
           "title": "Vos droits",
-          "body": "Vous pouvez nous demander en tout temps de vous montrer ce que nous détenons à votre sujet, de le corriger ou de le supprimer. Écrivez à info@healthbeyondhurdles.com et nous vous répondrons. La loi canadienne sur la protection des renseignements personnels, dont la LPRPDE, vous accorde ces droits et nous entendons les respecter pleinement."
+          "body": "Vous pouvez nous demander en tout temps de vous montrer ce que nous détenons à votre sujet, de le corriger ou de le supprimer. Écrivez à info@healthbeyondhurdles.ca et nous vous répondrons. La loi canadienne sur la protection des renseignements personnels, dont la LPRPDE, vous accorde ces droits et nous entendons les respecter pleinement."
         },
         {
           "title": "Où vos renseignements sont conservés",
@@ -735,7 +735,7 @@
         },
         {
           "title": "Questions",
-          "body": "Écrivez à info@healthbeyondhurdles.com. Une vraie personne lit cette boîte de réception."
+          "body": "Écrivez à info@healthbeyondhurdles.ca. Une vraie personne lit cette boîte de réception."
         }
       ]
     },
@@ -794,7 +794,7 @@
         },
         {
           "title": "Questions",
-          "body": "Écrivez à info@healthbeyondhurdles.com."
+          "body": "Écrivez à info@healthbeyondhurdles.ca."
         }
       ]
     }

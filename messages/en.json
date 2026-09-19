@@ -152,8 +152,8 @@
   "about": {
     "hero": {
       "eyebrow": "About us",
-      "title": "Health Beyond Hurdles / Santé Sans Obstacles",
-      "subtitle": "Dedicated to improving access to health information, non-clinical healthcare services, and community support for newcomers and underserved communities in Saskatchewan."
+      "title": "Health Beyond Hurdles",
+      "subtitle": "Plain-language health information and support, in French and English, for newcomers building a new life in Saskatchewan."
     },
     "overview": {
       "title": "Who we are",
@@ -719,7 +719,7 @@
         },
         {
           "title": "Your rights",
-          "body": "You can ask us at any time to show you what we hold about you, to correct it, or to delete it. Write to info@healthbeyondhurdles.com and we will respond. Canadian privacy law, including PIPEDA, gives you these rights and we intend to respect them fully."
+          "body": "You can ask us at any time to show you what we hold about you, to correct it, or to delete it. Write to info@healthbeyondhurdles.ca and we will respond. Canadian privacy law, including PIPEDA, gives you these rights and we intend to respect them fully."
         },
         {
           "title": "Where your information is stored",
@@ -735,7 +735,7 @@
         },
         {
           "title": "Questions",
-          "body": "Write to info@healthbeyondhurdles.com. A real person reads that inbox."
+          "body": "Write to info@healthbeyondhurdles.ca. A real person reads that inbox."
         }
       ]
     },
@@ -794,7 +794,7 @@
         },
         {
           "title": "Questions",
-          "body": "Write to info@healthbeyondhurdles.com."
+          "body": "Write to info@healthbeyondhurdles.ca."
         }
       ]
     }
