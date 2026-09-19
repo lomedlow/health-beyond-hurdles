@@ -2,6 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import { useTranslations } from "next-intl";
+import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -37,10 +38,15 @@ export function NewsletterForm({
 
   if (status === "success") {
     return (
-      <div className={cn("flex items-center gap-2 text-sm font-medium text-brand-600", className)}>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.92 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+        className={cn("flex items-center gap-2 text-sm font-medium text-brand-600", className)}
+      >
         <CheckCircle2 className="h-5 w-5" />
         {t("success")}
-      </div>
+      </motion.div>
     );
   }
 
@@ -62,7 +68,7 @@ export function NewsletterForm({
         <button
           type="submit"
           disabled={status === "loading"}
-          className="inline-flex h-11 shrink-0 items-center justify-center gap-1.5 rounded-full bg-brand-600 px-5 text-sm font-semibold text-white transition-colors hover:bg-brand-700 disabled:opacity-60"
+          className="inline-flex h-11 shrink-0 items-center justify-center gap-1.5 whitespace-nowrap rounded-full bg-brand-600 px-5 text-sm font-semibold text-white transition-all duration-200 hover:scale-[1.03] hover:bg-brand-700 active:scale-[0.97] disabled:pointer-events-none disabled:opacity-60 disabled:hover:scale-100 [&>svg]:transition-transform [&>svg]:duration-300 hover:[&>svg]:translate-x-0.5"
         >
           {status === "loading" ? t("sending") : t("subscribe")}
           <ArrowRight className="h-4 w-4" />

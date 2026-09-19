@@ -111,11 +111,25 @@ export const guideSections: GuideSection[] = [
         text: "If you're waiting for your card, ask about temporary private health insurance to bridge any gap. If you are a refugee claimant or refugee, you may be eligible for coverage through the federal Interim Federal Health Program (IFHP), which can include hospital care, provider visits, and some prescription, vision, and dental costs, until your provincial coverage begins.",
       },
       {
+        type: "subheading",
+        text: "Updating your information or replacing a lost card",
+      },
+      {
+        type: "p",
+        text: "The same process covers an address change, a change to your family unit, and a lost, stolen, or damaged card. The easiest way is online: create a Saskatchewan Account (or sign in if you have one), go to My Services, select the health card option, and follow the prompts to request the change. You can also mail in the paper Change of Information / Replacement Card form, available at ehealthsask.ca.",
+      },
+      {
+        type: "callout",
+        tone: "info",
+        title: "Keep your address current",
+        text: "2026 is a renewal year for Saskatchewan health cards. Renewal stickers are being mailed to every household starting in September 2026, extending coverage to December 31, 2029. If you've moved, update your address with eHealth Saskatchewan first, so your sticker actually reaches you.",
+      },
+      {
         type: "contacts",
         items: [
           {
             name: "eHealth Saskatchewan: Health Card Services",
-            detail: "Applications, renewals, and address updates",
+            detail: "Applications, renewals, replacements, and address updates. Phone lines: 8 a.m. to 5 p.m., Monday to Friday. In person: 9 a.m. to 4 p.m., Monday to Friday.",
             phone: "1-800-667-7551",
             url: "ehealthsask.ca",
           },
@@ -721,7 +735,7 @@ export const guideSections: GuideSection[] = [
           {
             name: "Health Beyond Hurdles / Santé Sans Obstacles",
             detail: "Questions about this guide or the Newcomer Health Navigation Project",
-            url: "healthbeyondhurdles.com/contact",
+            url: "healthbeyondhurdles.ca/contact",
           },
         ],
       },

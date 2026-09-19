@@ -15,6 +15,7 @@ import { Section, Eyebrow } from "@/components/ui/section";
 import { IconTile } from "@/components/ui/icon-tile";
 import { Button } from "@/components/ui/button";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/reveal";
+import { RoadmapPhases } from "@/components/about/roadmap-phases";
 
 export async function generateMetadata({
   params,
@@ -180,27 +181,7 @@ function AboutBody() {
           </Reveal>
         </div>
 
-        <RevealGroup className="mx-auto mt-16 max-w-4xl">
-          {phases.map((phase) => (
-            <RevealItem key={phase.label}>
-              <div className="relative grid grid-cols-1 gap-2 border-l-2 border-border pb-16 pl-8 last:pb-0 sm:grid-cols-[8rem_1fr] sm:gap-10">
-                <span
-                  className="absolute -left-[7px] top-2 h-3 w-3 rounded-full border-2 border-background bg-brand-500"
-                  aria-hidden="true"
-                />
-                <p className="text-xs font-bold uppercase tracking-[0.14em] text-brand-600 sm:pt-1.5">
-                  {phase.label}
-                </p>
-                <div>
-                  <h3 className="font-display text-2xl font-semibold">{phase.title}</h3>
-                  <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-                    {phase.body}
-                  </p>
-                </div>
-              </div>
-            </RevealItem>
-          ))}
-        </RevealGroup>
+        <RoadmapPhases phases={phases} />
 
         <Reveal>
           <div className="mx-auto mt-16 flex max-w-2xl flex-col items-center text-center">

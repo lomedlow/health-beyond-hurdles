@@ -111,11 +111,25 @@ export const guideSections: GuideSection[] = [
         text: "En attendant votre carte, informez-vous sur une assurance santé privée temporaire pour combler l'écart. Si vous êtes demandeur d'asile ou réfugié, vous pourriez être admissible à une couverture par le Programme fédéral de santé intérimaire (PFSI), qui peut inclure les soins hospitaliers, les visites chez un fournisseur de soins et certains frais de médicaments, de soins de la vue et de soins dentaires, jusqu'à ce que votre couverture provinciale commence.",
       },
       {
+        type: "subheading",
+        text: "Mettre à jour vos renseignements ou remplacer une carte perdue",
+      },
+      {
+        type: "p",
+        text: "La même démarche s'applique à un changement d'adresse, un changement dans votre unité familiale, ou une carte perdue, volée ou endommagée. Le plus simple est en ligne : créez un compte Saskatchewan Account (ou connectez-vous si vous en avez déjà un), allez dans Mes services, choisissez l'option carte-santé, puis suivez les étapes pour demander le changement. Vous pouvez aussi envoyer par la poste le formulaire papier de changement de renseignements ou de remplacement de carte, offert sur ehealthsask.ca.",
+      },
+      {
+        type: "callout",
+        tone: "info",
+        title: "Gardez votre adresse à jour",
+        text: "2026 est une année de renouvellement pour les cartes-santé de la Saskatchewan. Des vignettes de renouvellement sont envoyées par la poste à chaque ménage à partir de septembre 2026, prolongeant la couverture jusqu'au 31 décembre 2029. Si vous avez déménagé, mettez d'abord votre adresse à jour auprès d'eHealth Saskatchewan, pour que votre vignette vous parvienne vraiment.",
+      },
+      {
         type: "contacts",
         items: [
           {
             name: "eHealth Saskatchewan : Services de la carte-santé",
-            detail: "Demandes, renouvellements et mises à jour d'adresse",
+            detail: "Demandes, renouvellements, remplacements et mises à jour d'adresse. Téléphone : de 8 h à 17 h, du lundi au vendredi. En personne : de 9 h à 16 h, du lundi au vendredi.",
             phone: "1-800-667-7551",
             url: "ehealthsask.ca",
           },
@@ -720,7 +734,7 @@ export const guideSections: GuideSection[] = [
           {
             name: "Health Beyond Hurdles / Santé Sans Obstacles",
             detail: "Questions sur ce guide ou sur le Projet de navigation en santé pour nouveaux arrivants",
-            url: "healthbeyondhurdles.com/contact",
+            url: "healthbeyondhurdles.ca/contact",
           },
         ],
       },

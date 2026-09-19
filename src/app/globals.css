@@ -196,3 +196,23 @@ body {
   background: var(--color-brand-200);
   color: var(--color-brand-950);
 }
+
+/*
+ * Theme toggle: a circle grows from the button that was clicked, revealing
+ * the new theme underneath, like a light switching on or off from that
+ * point. Chrome's default cross-fade is turned off here so only the
+ * clip-path circle (driven imperatively in theme-toggle.tsx) is visible;
+ * unsupported browsers never enter this state at all, since the toggle
+ * only calls startViewTransition when the API exists.
+ */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+::view-transition-old(root) {
+  z-index: 1;
+}
+::view-transition-new(root) {
+  z-index: 2;
+}

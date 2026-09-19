@@ -32,16 +32,14 @@ Ce qui est déjà fait et fonctionne :
 
 ## 1. Nom de domaine
 
-- [ ] **BLOQUANT** Confirmer le domaine final. Le courriel est `info@healthbeyondhurdles.com`,
-      donc le site devrait être `healthbeyondhurdles.com`. Pour l'instant j'ai mis le `.com`
-      dans le code, à confirmer.
+- [x] Domaine confirmé : `healthbeyondhurdles.ca`. Le courriel `info@healthbeyondhurdles.ca`
+      et l'adresse du site dans le code utilisent maintenant les deux le `.ca`.
 - [ ] Acheter ou renouveler le domaine et activer le renouvellement automatique
       (un domaine expiré = site hors ligne du jour au lendemain).
-- [ ] Décider si on achète aussi le `.org` et le `.ca` pour les rediriger vers le `.com`
+- [ ] Décider si on achète aussi le `.org` et le `.com` pour les rediriger vers le `.ca`
       (protège le nom, évite qu'un autre le prenne).
-- [ ] Me donner le domaine final confirmé, je l'inscris dans le code.
 
-## 2. Boîte courriel info@healthbeyondhurdles.com
+## 2. Boîte courriel info@healthbeyondhurdles.ca
 
 - [ ] **BLOQUANT** Créer la vraie boîte de réception. Options courantes :
       Google Workspace (programme pour organismes sans but lucratif, admissibilité à vérifier
@@ -184,7 +182,7 @@ tant qu'ils ne sont pas réels :
 
 ## Priorité 1, bloquant pour le lancement
 
-- [ ] **Brancher le formulaire de contact.** Envoi réel vers `info@healthbeyondhurdles.com`
+- [ ] **Brancher le formulaire de contact.** Envoi réel vers `info@healthbeyondhurdles.ca`
       via Resend, avec un accusé de réception automatique à la personne, rédigé dans
       sa langue. Gestion des erreurs si l'envoi échoue.
 - [ ] **Brancher le bouton « S'abonner ».** Connexion à l'outil d'infolettre choisi,
