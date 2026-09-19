@@ -19,6 +19,7 @@ import { Button } from "@/components/ui/button";
 import { Accordion, AccordionItem } from "@/components/ui/accordion";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/reveal";
 import { StatTile } from "@/components/ui/stat-tile";
+import { CountUpValue } from "@/components/ui/count-up-value";
 
 export async function generateMetadata({
   params,
@@ -149,9 +150,10 @@ function ProgramBody() {
             <ul className="mt-6 divide-y divide-border border-t border-border">
               {regionStats.map((stat) => (
                 <li key={stat.value + stat.label} className="flex items-baseline gap-5 py-4">
-                  <span className="w-14 shrink-0 font-display text-2xl font-semibold tabular-nums text-brand-600">
-                    {stat.value}
-                  </span>
+                  <CountUpValue
+                    value={stat.value}
+                    className="w-14 shrink-0 font-display text-2xl font-semibold tabular-nums text-brand-600"
+                  />
                   <span className="text-sm leading-relaxed text-foreground/80">{stat.label}</span>
                 </li>
               ))}

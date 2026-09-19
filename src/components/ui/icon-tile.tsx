@@ -26,7 +26,7 @@ export function IconTile({
   return (
     <div
       className={cn(
-        "inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl",
+        "inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl transition-transform duration-300 group-hover:scale-110",
         bgClasses[accent],
         className,
       )}
