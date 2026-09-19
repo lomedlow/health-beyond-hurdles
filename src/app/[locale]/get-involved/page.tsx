@@ -24,6 +24,7 @@ import { Section, Eyebrow } from "@/components/ui/section";
 import { Card } from "@/components/ui/card";
 import { IconTile, ACCENT_CYCLE } from "@/components/ui/icon-tile";
 import { Button } from "@/components/ui/button";
+import { AnimatedHeading } from "@/components/motion/animated-heading";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/reveal";
 import { siteConfig } from "@/config/site";
 
@@ -80,9 +81,11 @@ function GetInvolvedBody() {
         <div className="mx-auto max-w-4xl px-6 py-24 text-center sm:py-32 lg:px-8">
           <Reveal>
             <Eyebrow className="justify-center">{t("hero.eyebrow")}</Eyebrow>
-            <h1 className="font-display text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-              {t("hero.title")}
-            </h1>
+            <AnimatedHeading
+                as="h1"
+                className="font-display text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl"
+                text={t("hero.title")}
+              />
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
               {t("hero.subtitle")}
             </p>
@@ -92,9 +95,11 @@ function GetInvolvedBody() {
 
       <Section>
         <Reveal>
-          <h2 className="text-center font-display text-3xl font-semibold sm:text-4xl">
-            {t("roles.title")}
-          </h2>
+          <AnimatedHeading
+                as="h2"
+                className="text-center font-display text-3xl font-semibold sm:text-4xl"
+                text={t("roles.title")}
+              />
         </Reveal>
         <RevealGroup className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {roles.map((role, i) => {
@@ -118,9 +123,11 @@ function GetInvolvedBody() {
         <div className="mx-auto max-w-4xl">
           <Reveal>
             <div className="text-center">
-              <h2 className="font-display text-3xl font-semibold sm:text-4xl">
-                {t("training.title")}
-              </h2>
+              <AnimatedHeading
+                as="h2"
+                className="font-display text-3xl font-semibold sm:text-4xl"
+                text={t("training.title")}
+              />
               <p className="mx-auto mt-4 max-w-xl text-base text-muted-foreground">
                 {t("training.body")}
               </p>

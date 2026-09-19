@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import * as Dialog from "@radix-ui/react-dialog";
+import { motion } from "framer-motion";
 import { Menu, X, ArrowRight } from "lucide-react";
 import { Link, usePathname } from "@/i18n/navigation";
 import { BrandLockup } from "@/components/layout/brand-lockup";
@@ -39,11 +40,19 @@ export function Header() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "whitespace-nowrap rounded-full px-1.5 py-2 text-[13px] font-medium transition-colors hover:bg-surface-muted hover:text-foreground xl:px-3 xl:text-sm 2xl:px-4",
+                  "group relative whitespace-nowrap rounded-full px-1.5 py-2 text-[13px] font-medium transition-colors hover:bg-surface-muted hover:text-foreground xl:px-3 xl:text-sm 2xl:px-4",
                   active ? "text-brand-600" : "text-muted-foreground",
                 )}
               >
                 {t(item.key)}
+                {/* underline sweeps out from the middle on hover, and stays put on the current page */}
+                <span
+                  className={cn(
+                    "pointer-events-none absolute inset-x-1.5 bottom-1 h-[2px] origin-center rounded-full bg-brand-500 transition-transform duration-300 xl:inset-x-3 2xl:inset-x-4",
+                    active ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100",
+                  )}
+                  aria-hidden="true"
+                />
               </Link>
             );
           })}
@@ -72,7 +81,7 @@ export function Header() {
             </Dialog.Trigger>
             <Dialog.Portal>
               <Dialog.Overlay className="fixed inset-0 z-50 bg-brand-950/40 backdrop-blur-sm data-[state=open]:animate-fade-in" />
-              <Dialog.Content className="fixed inset-y-0 right-0 z-50 flex w-full max-w-sm flex-col gap-8 bg-background p-6 shadow-2xl focus:outline-none">
+              <Dialog.Content className="fixed inset-y-0 right-0 z-50 flex w-full max-w-sm flex-col gap-8 bg-background p-6 shadow-2xl focus:outline-none data-[state=open]:animate-slide-in-right">
                 <div className="flex items-start justify-between gap-4">
                   <Dialog.Title className="sr-only">
                     Health Beyond Hurdles / Santé Sans Obstacles
@@ -90,28 +99,43 @@ export function Header() {
                 </div>
 
                 <nav className="flex flex-col gap-1" aria-label="Primary">
-                  {navItems.map((item) => (
-                    <Link
+                  {navItems.map((item, i) => (
+                    <motion.div
                       key={item.href}
-                      href={item.href}
-                      onClick={() => setOpen(false)}
-                      className={cn(
-                        "rounded-2xl px-4 py-3 text-lg font-medium transition-colors hover:bg-surface-muted",
-                        pathname === item.href ? "text-brand-600" : "text-foreground",
-                      )}
+                      initial={{ opacity: 0, x: 28 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{
+                        duration: 0.45,
+                        delay: 0.06 + i * 0.05,
+                        ease: [0.22, 1, 0.36, 1],
+                      }}
                     >
-                      {t(item.key)}
-                    </Link>
+                      <Link
+                        href={item.href}
+                        onClick={() => setOpen(false)}
+                        className={cn(
+                          "block rounded-2xl px-4 py-3 text-lg font-medium transition-colors hover:bg-surface-muted",
+                          pathname === item.href ? "text-brand-600" : "text-foreground",
+                        )}
+                      >
+                        {t(item.key)}
+                      </Link>
+                    </motion.div>
                   ))}
                 </nav>
 
-                <div className="mt-auto flex flex-col gap-4">
+                <motion.div
+                  initial={{ opacity: 0, y: 16 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.45, delay: 0.42, ease: [0.22, 1, 0.36, 1] }}
+                  className="mt-auto flex flex-col gap-4"
+                >
                   <LocaleSwitcher className="self-start" />
                   <Button href="/donate" onClick={() => setOpen(false)} variant="accent">
                     {t("support")}
                     <ArrowRight className="h-4 w-4" />
                   </Button>
-                </div>
+                </motion.div>
               </Dialog.Content>
             </Dialog.Portal>
           </Dialog.Root>

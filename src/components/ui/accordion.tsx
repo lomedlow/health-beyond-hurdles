@@ -2,6 +2,7 @@
 
 import * as RadixAccordion from "@radix-ui/react-accordion";
 import { ChevronDown } from "lucide-react";
+import { CountUpValue } from "@/components/ui/count-up-value";
 import { cn } from "@/lib/utils";
 
 type AccordionProps = {
@@ -56,9 +57,10 @@ export function AccordionItem({
           <span className="font-display text-lg font-semibold sm:text-xl">{title}</span>
           <span className="flex shrink-0 items-center gap-3">
             {badge && (
-              <span className="hidden rounded-full bg-brand-100 px-3 py-1 text-xs font-semibold text-brand-800 sm:inline-block">
-                {badge}
-              </span>
+              <CountUpValue
+                value={badge}
+                className="hidden rounded-full bg-brand-100 px-3 py-1 text-xs font-semibold tabular-nums text-brand-800 sm:inline-block"
+              />
             )}
             <ChevronDown
               className="h-5 w-5 text-muted-foreground transition-transform duration-300 group-data-[state=open]:rotate-180"

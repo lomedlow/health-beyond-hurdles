@@ -14,6 +14,7 @@ import {
 import { Section, Eyebrow } from "@/components/ui/section";
 import { IconTile } from "@/components/ui/icon-tile";
 import { Button } from "@/components/ui/button";
+import { AnimatedHeading } from "@/components/motion/animated-heading";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/reveal";
 import { RoadmapPhases } from "@/components/about/roadmap-phases";
 
@@ -55,9 +56,11 @@ function AboutBody() {
         <div className="mx-auto max-w-4xl px-6 py-24 text-center sm:py-32 lg:px-8">
           <Reveal>
             <Eyebrow className="justify-center">{t("hero.eyebrow")}</Eyebrow>
-            <h1 className="font-display text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-              {t("hero.title")}
-            </h1>
+            <AnimatedHeading
+                as="h1"
+                className="font-display text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl"
+                text={t("hero.title")}
+              />
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
               {t("hero.subtitle")}
             </p>
@@ -69,9 +72,11 @@ function AboutBody() {
       <Section>
         <div className="mx-auto max-w-3xl">
           <Reveal>
-            <h2 className="font-display text-3xl font-semibold sm:text-4xl">
-              {t("overview.title")}
-            </h2>
+            <AnimatedHeading
+                as="h2"
+                className="font-display text-3xl font-semibold sm:text-4xl"
+                text={t("overview.title")}
+              />
           </Reveal>
           <div className="mt-8 space-y-6">
             {overviewParagraphs.map((p, i) => (
@@ -110,9 +115,11 @@ function AboutBody() {
         <Reveal>
           <div className="mx-auto max-w-2xl text-center">
             <Eyebrow className="justify-center">{t("challenge.eyebrow")}</Eyebrow>
-            <h2 className="font-display text-3xl font-semibold sm:text-4xl">
-              {t("challenge.title")}
-            </h2>
+            <AnimatedHeading
+                as="h2"
+                className="font-display text-3xl font-semibold sm:text-4xl"
+                text={t("challenge.title")}
+              />
             <p className="mt-4 text-base text-muted-foreground">{t("challenge.subtitle")}</p>
           </div>
         </Reveal>
@@ -143,9 +150,11 @@ function AboutBody() {
         <div className="grid grid-cols-1 gap-14 lg:grid-cols-[1.1fr_1fr]">
           <Reveal>
             <Eyebrow className="text-brand-ink-accent">{t("bilingualism.eyebrow")}</Eyebrow>
-            <h2 className="font-display text-3xl font-semibold sm:text-4xl">
-              {t("bilingualism.title")}
-            </h2>
+            <AnimatedHeading
+                as="h2"
+                className="font-display text-3xl font-semibold sm:text-4xl"
+                text={t("bilingualism.title")}
+              />
             <div className="mt-6 space-y-5">
               {bilingualParagraphs.map((p, i) => (
                 <p key={i} className="text-base leading-relaxed text-white/70">
@@ -172,9 +181,11 @@ function AboutBody() {
         <div className="mx-auto max-w-2xl text-center">
           <Reveal>
             <Eyebrow className="justify-center">{t("longTerm.eyebrow")}</Eyebrow>
-            <h2 className="font-display text-3xl font-semibold sm:text-4xl">
-              {t("longTerm.title")}
-            </h2>
+            <AnimatedHeading
+                as="h2"
+                className="font-display text-3xl font-semibold sm:text-4xl"
+                text={t("longTerm.title")}
+              />
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
               {t("longTerm.body")}
             </p>

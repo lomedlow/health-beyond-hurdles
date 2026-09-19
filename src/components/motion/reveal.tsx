@@ -3,11 +3,17 @@
 import { motion, useReducedMotion } from "framer-motion";
 import type { ReactNode } from "react";
 
+/**
+ * Scroll-triggered entrance for a block of content. The travel distance is
+ * deliberately generous (a third of a heading's height, not a few pixels)
+ * so the arrival is legible on a phone, where hover states don't exist and
+ * scrolling is the only interaction.
+ */
 export function Reveal({
   children,
   delay = 0,
   className,
-  y = 16,
+  y = 36,
 }: {
   children: ReactNode;
   delay?: number;
@@ -21,12 +27,12 @@ export function Reveal({
       initial={{
         opacity: 0,
         y: shouldReduceMotion ? 0 : y,
-        scale: shouldReduceMotion ? 1 : 0.98,
-        filter: shouldReduceMotion ? "blur(0px)" : "blur(4px)",
+        scale: shouldReduceMotion ? 1 : 0.96,
+        filter: shouldReduceMotion ? "blur(0px)" : "blur(6px)",
       }}
       whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
-      viewport={{ once: true, margin: "-80px" }}
-      transition={{ duration: 0.7, delay, ease: [0.16, 1, 0.3, 1] }}
+      viewport={{ once: true, margin: "-60px" }}
+      transition={{ duration: 0.8, delay, ease: [0.22, 1, 0.36, 1] }}
       className={className}
     >
       {children}
@@ -37,7 +43,7 @@ export function Reveal({
 export function RevealGroup({
   children,
   className,
-  stagger = 0.08,
+  stagger = 0.1,
 }: {
   children: ReactNode;
   className?: string;
@@ -49,7 +55,7 @@ export function RevealGroup({
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: "-80px" }}
+      viewport={{ once: true, margin: "-60px" }}
       variants={{
         hidden: {},
         visible: {
@@ -66,7 +72,7 @@ export function RevealGroup({
 export function RevealItem({
   children,
   className,
-  y = 16,
+  y = 32,
 }: {
   children: ReactNode;
   className?: string;
@@ -80,13 +86,13 @@ export function RevealItem({
         hidden: {
           opacity: 0,
           y: shouldReduceMotion ? 0 : y,
-          scale: shouldReduceMotion ? 1 : 0.97,
+          scale: shouldReduceMotion ? 1 : 0.95,
         },
         visible: {
           opacity: 1,
           y: 0,
           scale: 1,
-          transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] },
+          transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] },
         },
       }}
       className={className}
