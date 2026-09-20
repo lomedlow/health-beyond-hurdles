@@ -16,6 +16,10 @@ import type { ElementType } from "react";
  * heading invisible forever. The wrapper is unclipped, so it observes
  * correctly and drives the words through variant propagation.
  *
+ * `viewport.once` is false so the heading sinks back under its mask when
+ * scrolled away from and rises again on every re-entry, from either
+ * scroll direction.
+ *
  * The text stays a single readable string for screen readers and for
  * copy/paste; only the visual boxes are split.
  */
@@ -47,7 +51,7 @@ export function AnimatedHeading({
       <motion.span
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: "-60px" }}
+        viewport={{ once: false, margin: "-60px" }}
         variants={{
           hidden: {},
           visible: {

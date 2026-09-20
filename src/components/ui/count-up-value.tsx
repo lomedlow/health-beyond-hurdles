@@ -31,21 +31,32 @@ function formatCount(n: number, decimals: number, hasCommas: boolean) {
 
 /**
  * Renders `value` as-is, but if it contains a number, counts up to it from
- * zero the first time it scrolls into view. Falls back to the plain string
- * when there's nothing numeric to animate, or when the reader prefers
- * reduced motion.
+ * zero every time it scrolls into view. `once: false` plus the reset back
+ * to zero on exit (below) is what makes each pass genuinely re-count
+ * instead of silently flashing an already-settled number: without the
+ * reset, the motion value would already sit at the target and a second
+ * "entrance" would be a no-op. Falls back to the plain string when
+ * there's nothing numeric to animate, or when the reader prefers reduced
+ * motion.
  */
 export function CountUpValue({ value, className }: { value: string; className?: string }) {
   const ref = useRef<HTMLSpanElement>(null);
-  const inView = useInView(ref, { once: true, margin: "-40px" });
+  const inView = useInView(ref, { once: false, margin: "-40px" });
   const shouldReduceMotion = useReducedMotion();
   const parsed = splitNumeric(value);
   const motionValue = useMotionValue(0);
 
   useEffect(() => {
-    if (!parsed || !inView) return;
+    if (!parsed) return;
     if (shouldReduceMotion) {
       if (ref.current) ref.current.textContent = value;
+      return;
+    }
+    if (!inView) {
+      motionValue.set(0);
+      if (ref.current) {
+        ref.current.textContent = parsed.prefix + formatCount(0, parsed.decimals, parsed.hasCommas) + parsed.suffix;
+      }
       return;
     }
     const controls = animate(motionValue, parsed.target, {

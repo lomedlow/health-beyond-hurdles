@@ -8,6 +8,11 @@ import type { ReactNode } from "react";
  * deliberately generous (a third of a heading's height, not a few pixels)
  * so the arrival is legible on a phone, where hover states don't exist and
  * scrolling is the only interaction.
+ *
+ * `viewport.once` is false on purpose: the piece must play again every
+ * time it's scrolled to, in either direction, not just the first time.
+ * `exit` mirrors `initial` so the element visibly resets as it leaves the
+ * viewport, instead of just snapping back invisibly for the next entrance.
  */
 export function Reveal({
   children,
@@ -21,17 +26,19 @@ export function Reveal({
   y?: number;
 }) {
   const shouldReduceMotion = useReducedMotion();
+  const hidden = {
+    opacity: 0,
+    y: shouldReduceMotion ? 0 : y,
+    scale: shouldReduceMotion ? 1 : 0.96,
+    filter: shouldReduceMotion ? "blur(0px)" : "blur(6px)",
+  };
 
   return (
     <motion.div
-      initial={{
-        opacity: 0,
-        y: shouldReduceMotion ? 0 : y,
-        scale: shouldReduceMotion ? 1 : 0.96,
-        filter: shouldReduceMotion ? "blur(0px)" : "blur(6px)",
-      }}
+      initial={hidden}
       whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
-      viewport={{ once: true, margin: "-60px" }}
+      exit={hidden}
+      viewport={{ once: false, margin: "-60px" }}
       transition={{ duration: 0.8, delay, ease: [0.22, 1, 0.36, 1] }}
       className={className}
     >
@@ -55,7 +62,7 @@ export function RevealGroup({
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: "-60px" }}
+      viewport={{ once: false, margin: "-60px" }}
       variants={{
         hidden: {},
         visible: {
