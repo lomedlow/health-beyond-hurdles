@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
 import { List, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -53,14 +54,23 @@ function TocList({
       {entries.map((entry) => {
         const active = entry.id === activeId;
         return (
-          <li key={entry.id}>
+          <li key={entry.id} className="relative">
+            {/* one shared pill that slides between sections as you read */}
+            {active && (
+              <motion.span
+                layoutId="toc-active"
+                className="absolute inset-0 rounded-lg bg-surface-muted"
+                transition={{ type: "spring", stiffness: 380, damping: 32 }}
+                aria-hidden="true"
+              />
+            )}
             <a
               href={`#${entry.id}`}
               onClick={onNavigate}
               className={cn(
-                "flex items-baseline gap-3 rounded-lg px-3 py-2 text-sm transition-colors",
+                "relative flex items-baseline gap-3 rounded-lg px-3 py-2 text-sm transition-colors",
                 active
-                  ? "bg-surface-muted font-semibold text-brand-600"
+                  ? "font-semibold text-brand-600"
                   : "text-muted-foreground hover:bg-surface-muted hover:text-foreground",
               )}
             >
