@@ -3,6 +3,9 @@
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Logo } from "@/components/icons/logo";
+import { getLocaleOrigin } from "@/config/site";
+import { useOnLocaleDomain } from "@/lib/use-on-locale-domain";
+import type { Locale } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 
 /**
@@ -22,6 +25,7 @@ export function BrandLockup({
 }) {
   const locale = useLocale();
   const t = useTranslations("nav");
+  const onLocaleDomain = useOnLocaleDomain();
 
   const names = {
     en: {
@@ -56,6 +60,11 @@ export function BrandLockup({
   const line =
     "block whitespace-nowrap font-display font-semibold uppercase leading-tight tracking-[0.01em] transition-colors";
 
+  // The current language's own line always stays same-origin; only the
+  // other line can point across domains, and only when we're actually on
+  // one of the two real domains (see LocaleSwitcher for the same logic).
+  const bottomHref = onLocaleDomain ? `${getLocaleOrigin(bottom.locale as Locale)}/` : undefined;
+
   return (
     <div className={cn("flex items-center gap-2.5 min-[360px]:gap-3", className)}>
       <Logo className={iconSize} />
@@ -71,16 +80,28 @@ export function BrandLockup({
           {top.label}
         </Link>
         <span className="my-1 h-px w-full bg-border" aria-hidden="true" />
-        <Link
-          href="/"
-          locale={bottom.locale}
-          lang={bottom.lang}
-          onClick={onNavigate}
-          aria-label={bottom.aria}
-          className={cn(line, bottomText, "text-muted-foreground hover:text-brand-600")}
-        >
-          {bottom.label}
-        </Link>
+        {bottomHref ? (
+          <a
+            href={bottomHref}
+            lang={bottom.lang}
+            onClick={onNavigate}
+            aria-label={bottom.aria}
+            className={cn(line, bottomText, "text-muted-foreground hover:text-brand-600")}
+          >
+            {bottom.label}
+          </a>
+        ) : (
+          <Link
+            href="/"
+            locale={bottom.locale}
+            lang={bottom.lang}
+            onClick={onNavigate}
+            aria-label={bottom.aria}
+            className={cn(line, bottomText, "text-muted-foreground hover:text-brand-600")}
+          >
+            {bottom.label}
+          </Link>
+        )}
       </div>
     </div>
   );

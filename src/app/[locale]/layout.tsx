@@ -7,7 +7,7 @@ import { routing } from "@/i18n/routing";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
-import { siteConfig } from "@/config/site";
+import { siteConfig, getLocaleOrigin } from "@/config/site";
 import "../globals.css";
 
 const fraunces = Fraunces({
@@ -32,9 +32,10 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
+  const origin = getLocaleOrigin(locale as (typeof routing.locales)[number]);
 
   return {
-    metadataBase: new URL(siteConfig.url),
+    metadataBase: new URL(origin),
     title: {
       default: t("defaultTitle"),
       template: `%s · ${siteConfig.name}`,
@@ -42,8 +43,8 @@ export async function generateMetadata({
     description: t("description"),
     alternates: {
       languages: {
-        en: "/en",
-        fr: "/fr",
+        en: getLocaleOrigin("en"),
+        fr: getLocaleOrigin("fr"),
       },
     },
     openGraph: {
