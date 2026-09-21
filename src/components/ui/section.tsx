@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { EyebrowRule } from "@/components/ui/eyebrow-rule";
 
 type Tint = "none" | "surface" | "coral" | "peach" | "butter" | "mint" | "sky" | "lavender" | "brand";
 
@@ -40,7 +41,7 @@ export function Eyebrow({ children, className }: { children: React.ReactNode; cl
         className,
       )}
     >
-      <span className="h-px w-8 bg-brand-500" aria-hidden="true" />
+      <EyebrowRule />
       {children}
     </p>
   );

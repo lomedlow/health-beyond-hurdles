@@ -21,6 +21,7 @@ import {
 import type { LucideIcon } from "lucide-react";
 import { Section, Eyebrow } from "@/components/ui/section";
 import { Button } from "@/components/ui/button";
+import { AnimatedHeading } from "@/components/motion/animated-heading";
 import { Reveal } from "@/components/motion/reveal";
 import { SectionRenderer } from "@/components/guide/section-renderer";
 import { DesktopToc, MobileToc } from "@/components/guide/toc";
@@ -86,9 +87,11 @@ function GuideBody({ locale }: { locale: Locale }) {
         <div className="mx-auto max-w-4xl px-6 py-20 text-center sm:py-28 lg:px-8">
           <Reveal>
             <Eyebrow className="justify-center">{t("hero.eyebrow")}</Eyebrow>
-            <h1 className="font-display text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-              {t("hero.title")}
-            </h1>
+            <AnimatedHeading
+                as="h1"
+                className="font-display text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl"
+                text={t("hero.title")}
+              />
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
               {t("hero.subtitle")}
             </p>

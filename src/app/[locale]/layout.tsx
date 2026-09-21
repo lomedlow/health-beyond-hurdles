@@ -5,6 +5,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { ThemeProvider } from "@/components/theme/theme-provider";
+import { ScrollProgress } from "@/components/motion/scroll-progress";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { siteConfig } from "@/config/site";
@@ -89,6 +90,7 @@ export default async function LocaleLayout({
             >
               Skip to content
             </a>
+            <ScrollProgress />
             <Header />
             <main id="main-content" className="flex-1">
               {children}

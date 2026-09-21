@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { HeartHandshake } from "lucide-react";
 import { Section, Eyebrow } from "@/components/ui/section";
+import { AnimatedHeading } from "@/components/motion/animated-heading";
 import { Reveal } from "@/components/motion/reveal";
 import { NewsletterForm } from "@/components/sections/newsletter-form";
 
@@ -35,9 +36,11 @@ function DonateBody() {
           <Reveal>
             <HeartHandshake className="mx-auto h-8 w-8 text-brand-600" aria-hidden="true" strokeWidth={1.5} />
             <Eyebrow className="mt-6 justify-center">{t("hero.eyebrow")}</Eyebrow>
-            <h1 className="font-display text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-              {t("hero.title")}
-            </h1>
+            <AnimatedHeading
+                as="h1"
+                className="font-display text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl"
+                text={t("hero.title")}
+              />
             <p className="mt-4 text-base text-muted-foreground">{t("hero.subtitle")}</p>
           </Reveal>
         </div>

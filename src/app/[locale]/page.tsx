@@ -17,6 +17,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Section, Eyebrow } from "@/components/ui/section";
 import { IconTile } from "@/components/ui/icon-tile";
+import { AnimatedHeading } from "@/components/motion/animated-heading";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/reveal";
 import { NewsletterForm } from "@/components/sections/newsletter-form";
 import { HeroIllustration } from "@/components/sections/hero-illustration";
@@ -73,9 +74,11 @@ function HomeBody() {
               </p>
             </Reveal>
             <Reveal delay={0.05}>
-              <h1 className="mt-7 font-display text-[2.75rem] font-semibold leading-[1.06] tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-                {t("hero.title")}
-              </h1>
+              <AnimatedHeading
+                as="h1"
+                className="mt-7 font-display text-[2.75rem] font-semibold leading-[1.06] tracking-tight text-foreground sm:text-6xl lg:text-7xl"
+                text={t("hero.title")}
+              />
             </Reveal>
             <Reveal delay={0.1}>
               <p className="mx-auto mt-7 max-w-xl text-lg leading-relaxed text-muted-foreground">
@@ -102,9 +105,11 @@ function HomeBody() {
         <div className="grid grid-cols-1 items-start gap-14 lg:grid-cols-2">
           <Reveal>
             <Eyebrow>{t("programTeaser.eyebrow")}</Eyebrow>
-            <h2 className="font-display text-3xl font-semibold sm:text-4xl lg:text-5xl">
-              {t("programTeaser.title")}
-            </h2>
+            <AnimatedHeading
+                as="h2"
+                className="font-display text-3xl font-semibold sm:text-4xl lg:text-5xl"
+                text={t("programTeaser.title")}
+              />
             <p className="mt-5 max-w-lg text-base leading-relaxed text-muted-foreground">
               {t("programTeaser.body")}
             </p>
@@ -136,9 +141,11 @@ function HomeBody() {
         <div className="grid grid-cols-1 gap-14 lg:grid-cols-2 lg:items-center">
           <Reveal>
             <Eyebrow>{t("whoWeServe.eyebrow")}</Eyebrow>
-            <h2 className="font-display text-3xl font-semibold sm:text-4xl">
-              {t("whoWeServe.title")}
-            </h2>
+            <AnimatedHeading
+                as="h2"
+                className="font-display text-3xl font-semibold sm:text-4xl"
+                text={t("whoWeServe.title")}
+              />
             <p className="mt-4 max-w-lg text-base leading-relaxed text-muted-foreground">
               {t("whoWeServe.body")}
             </p>
@@ -166,9 +173,11 @@ function HomeBody() {
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start lg:gap-20">
           <Reveal>
             <Eyebrow>{t("evidence.eyebrow")}</Eyebrow>
-            <h2 className="font-display text-3xl font-semibold sm:text-4xl">
-              {t("evidence.title")}
-            </h2>
+            <AnimatedHeading
+                as="h2"
+                className="font-display text-3xl font-semibold sm:text-4xl"
+                text={t("evidence.title")}
+              />
             <p className="mt-4 max-w-md text-base leading-relaxed text-muted-foreground">
               {t("evidence.body")}
             </p>
@@ -200,9 +209,11 @@ function HomeBody() {
         <div className="grid grid-cols-1 gap-14 lg:grid-cols-[1fr_1.1fr] lg:items-start">
           <Reveal>
             <Eyebrow className="text-brand-ink-accent">{t("bilingual.eyebrow")}</Eyebrow>
-            <h2 className="font-display text-3xl font-semibold sm:text-4xl lg:text-5xl">
-              {t("bilingual.title")}
-            </h2>
+            <AnimatedHeading
+                as="h2"
+                className="font-display text-3xl font-semibold sm:text-4xl lg:text-5xl"
+                text={t("bilingual.title")}
+              />
             <p className="mt-5 text-base leading-relaxed text-white/70">{t("bilingual.body")}</p>
             <Button
               href="/about"
@@ -234,9 +245,11 @@ function HomeBody() {
         <Reveal>
           <div className="mx-auto max-w-2xl text-center">
             <Eyebrow className="justify-center">{t("outcomes.eyebrow")}</Eyebrow>
-            <h2 className="font-display text-3xl font-semibold sm:text-4xl">
-              {t("outcomes.title")}
-            </h2>
+            <AnimatedHeading
+                as="h2"
+                className="font-display text-3xl font-semibold sm:text-4xl"
+                text={t("outcomes.title")}
+              />
           </div>
         </Reveal>
         <RevealGroup className="mx-auto mt-14 grid max-w-4xl grid-cols-1 gap-x-12 gap-y-6 sm:grid-cols-2">
@@ -300,9 +313,11 @@ function HomeBody() {
         <Reveal>
           <div className="mx-auto flex max-w-2xl flex-col items-center text-center">
             <Eyebrow className="justify-center">{t("newsletterCta.eyebrow")}</Eyebrow>
-            <h2 className="font-display text-3xl font-semibold sm:text-4xl">
-              {t("newsletterCta.title")}
-            </h2>
+            <AnimatedHeading
+                as="h2"
+                className="font-display text-3xl font-semibold sm:text-4xl"
+                text={t("newsletterCta.title")}
+              />
             <p className="mt-4 max-w-lg text-base text-muted-foreground">
               {t("newsletterCta.body")}
             </p>

@@ -17,6 +17,7 @@ import { Section, Eyebrow } from "@/components/ui/section";
 import { Tag } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionItem } from "@/components/ui/accordion";
+import { AnimatedHeading } from "@/components/motion/animated-heading";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/reveal";
 import { StatTile } from "@/components/ui/stat-tile";
 import { CountUpValue } from "@/components/ui/count-up-value";
@@ -67,9 +68,11 @@ function ProgramBody() {
         <div className="mx-auto max-w-4xl px-6 py-24 text-center sm:py-32 lg:px-8">
           <Reveal>
             <Eyebrow className="justify-center">{t("hero.eyebrow")}</Eyebrow>
-            <h1 className="font-display text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-              {t("hero.title")}
-            </h1>
+            <AnimatedHeading
+                as="h1"
+                className="font-display text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl"
+                text={t("hero.title")}
+              />
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
               {t("hero.subtitle")}
             </p>
@@ -81,9 +84,11 @@ function ProgramBody() {
       <Section>
         <div className="mx-auto max-w-3xl">
           <Reveal>
-            <h2 className="font-display text-3xl font-semibold sm:text-4xl">
-              {t("overview.title")}
-            </h2>
+            <AnimatedHeading
+                as="h2"
+                className="font-display text-3xl font-semibold sm:text-4xl"
+                text={t("overview.title")}
+              />
           </Reveal>
           <div className="mt-8 space-y-6">
             {overviewParagraphs.map((p, i) => (
@@ -100,9 +105,11 @@ function ProgramBody() {
         <div className="mx-auto max-w-3xl">
           <Reveal>
             <Eyebrow>{t("evidence.eyebrow")}</Eyebrow>
-            <h2 className="font-display text-3xl font-semibold sm:text-4xl">
-              {t("evidence.title")}
-            </h2>
+            <AnimatedHeading
+                as="h2"
+                className="font-display text-3xl font-semibold sm:text-4xl"
+                text={t("evidence.title")}
+              />
             <p className="mt-6 text-lg leading-relaxed text-foreground/85">
               {t("evidence.intro")}
             </p>
@@ -188,9 +195,11 @@ function ProgramBody() {
         <Reveal>
           <div className="mx-auto max-w-2xl text-center">
             <Eyebrow className="justify-center">{t("hero.eyebrow")}</Eyebrow>
-            <h2 className="font-display text-3xl font-semibold sm:text-4xl">
-              {t("topics.title")}
-            </h2>
+            <AnimatedHeading
+                as="h2"
+                className="font-display text-3xl font-semibold sm:text-4xl"
+                text={t("topics.title")}
+              />
           </div>
         </Reveal>
 
@@ -297,9 +306,11 @@ function ProgramBody() {
       <Section id="who-we-serve">
         <Reveal>
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="font-display text-3xl font-semibold sm:text-4xl">
-              {t("whoWeServe.title")}
-            </h2>
+            <AnimatedHeading
+                as="h2"
+                className="font-display text-3xl font-semibold sm:text-4xl"
+                text={t("whoWeServe.title")}
+              />
             <p className="mt-4 text-base text-muted-foreground">{t("whoWeServe.body")}</p>
           </div>
         </Reveal>

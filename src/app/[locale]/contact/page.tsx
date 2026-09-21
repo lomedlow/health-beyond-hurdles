@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { MapPin, Mail, ArrowRight, HeartHandshake } from "lucide-react";
 import { Section } from "@/components/ui/section";
 import { Button } from "@/components/ui/button";
+import { AnimatedHeading } from "@/components/motion/animated-heading";
 import { Reveal } from "@/components/motion/reveal";
 import { ContactForm } from "@/components/sections/contact-form";
 import { siteConfig } from "@/config/site";
@@ -35,9 +36,11 @@ function ContactBody() {
       <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 to-background dark:from-brand-950/30">
         <div className="mx-auto max-w-4xl px-6 py-24 text-center sm:py-32 lg:px-8">
           <Reveal>
-            <h1 className="font-display text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-              {t("hero.title")}
-            </h1>
+            <AnimatedHeading
+                as="h1"
+                className="font-display text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl"
+                text={t("hero.title")}
+              />
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
               {t("hero.subtitle")}
             </p>
@@ -64,9 +67,11 @@ function ContactBody() {
             </Reveal>
             <Reveal delay={0.06}>
               <HeartHandshake className="h-6 w-6 text-brand-600" aria-hidden="true" strokeWidth={1.5} />
-              <h2 className="mt-4 font-display text-lg font-semibold">
-                {t("donateTeaser.title")}
-              </h2>
+              <AnimatedHeading
+                as="h2"
+                className="mt-4 font-display text-lg font-semibold"
+                text={t("donateTeaser.title")}
+              />
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                 {t("donateTeaser.body")}
               </p>
