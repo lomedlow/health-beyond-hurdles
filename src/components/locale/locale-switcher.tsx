@@ -1,9 +1,11 @@
 "use client";
 
 import { useLocale } from "next-intl";
-import { usePathname, useRouter } from "@/i18n/navigation";
+import { usePathname, useRouter, getPathname } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { useParams } from "next/navigation";
+import { getLocaleOrigin } from "@/config/site";
+import { useOnLocaleDomain } from "@/lib/use-on-locale-domain";
 import { cn } from "@/lib/utils";
 
 const labels: Record<string, string> = {
@@ -16,6 +18,34 @@ export function LocaleSwitcher({ className }: { className?: string }) {
   const router = useRouter();
   const pathname = usePathname();
   const params = useParams();
+  const onLocaleDomain = useOnLocaleDomain();
+
+  function switchTo(loc: string) {
+    if (loc === locale) return;
+
+    // On the real domains, jump straight to the sibling domain's bare,
+    // unprefixed URL for this same page. `router.replace({ locale })`
+    // below would also arrive there eventually (the middleware redirects
+    // a mismatched locale/domain pair to the right domain automatically),
+    // but it forces a "/fr" or "/en" prefix that's then immediately
+    // redirected away on arrival, since the target domain serves that
+    // locale with no prefix. Building the final URL here skips that
+    // extra hop.
+    if (onLocaleDomain) {
+      const target =
+        getLocaleOrigin(loc as (typeof routing.locales)[number]) +
+        // @ts-expect-error -- pathname/params are dynamically typed by next-intl
+        getPathname({ locale: loc, href: { pathname, params }, forcePrefix: false });
+      window.location.assign(target);
+      return;
+    }
+
+    router.replace(
+      // @ts-expect-error -- pathname/params are dynamically typed by next-intl
+      { pathname, params },
+      { locale: loc },
+    );
+  }
 
   return (
     <div
@@ -31,13 +61,7 @@ export function LocaleSwitcher({ className }: { className?: string }) {
           key={loc}
           type="button"
           aria-current={loc === locale}
-          onClick={() =>
-            router.replace(
-              // @ts-expect-error -- pathname/params are dynamically typed by next-intl
-              { pathname, params },
-              { locale: loc },
-            )
-          }
+          onClick={() => switchTo(loc)}
           className={cn(
             "rounded-full px-2.5 py-1.5 text-xs font-semibold tracking-wide transition-colors",
             loc === locale
