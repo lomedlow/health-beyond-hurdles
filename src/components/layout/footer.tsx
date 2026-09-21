@@ -95,6 +95,14 @@ export function Footer() {
               <Link href="/terms" className="transition-colors hover:text-foreground">
                 {tf("terms")}
               </Link>
+              <a
+                href="https://webglow.ca"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-foreground"
+              >
+                {tf("madeBy")} WebGlow
+              </a>
             </nav>
           </div>
         </div>
